@@ -1,0 +1,43 @@
+{
+  "name": "cms",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/plugin-cloud": "4.19.1",
+    "@strapi/plugin-graphql": "^4.19.1",
+    "@strapi/plugin-i18n": "4.19.1",
+    "@strapi/plugin-seo": "^1.9.8",
+    "@strapi/plugin-users-permissions": "4.19.1",
+    "@strapi/strapi": "4.19.1",
+    "better-sqlite3": "8.6.0",
+    "pg": "^8.11.3",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "5.3.4",
+    "strapi-plugin-config-sync": "^1.2.3",
+    "strapi-plugin-duplicate-button": "^1.1.14",
+    "strapi-plugin-preview-button": "^2.2.1",
+    "strapi-plugin-publisher": "^1.5.7",
+    "strapi-plugin-redirects": "^0.0.6",
+    "styled-components": "5.3.3"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "bedbd822-ab47-47a7-a564-6573aff187ae"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT",
+  "packageManager": "yarn@4.1.0"
+}
