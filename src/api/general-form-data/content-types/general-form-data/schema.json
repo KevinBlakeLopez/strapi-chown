@@ -1,0 +1,299 @@
+{
+  "kind": "singleType",
+  "collectionName": "general_form_datas",
+  "info": {
+    "singularName": "general-form-data",
+    "pluralName": "general-form-datas",
+    "displayName": "General Form Data",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "newsletterTitle": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "default": "Subscribe"
+    },
+    "sampleRequestTitle": {
+      "type": "string",
+      "default": "Request Finish Sample",
+      "required": true,
+      "maxLength": 255
+    },
+    "warrantyClaimTitme": {
+      "type": "string",
+      "default": "Submit a warranty claim.",
+      "required": true,
+      "maxLength": 255
+    },
+    "appointmentTitle": {
+      "type": "string",
+      "default": "Book an appointment",
+      "required": true,
+      "maxLength": 255
+    },
+    "nameLabel": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "default": "Name"
+    },
+    "namePlaceholder": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "default": "Enter your name"
+    },
+    "emailLabel": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "default": "Email"
+    },
+    "emailPlaceholder": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "default": "email@email.com"
+    },
+    "addressLabel": {
+      "type": "string",
+      "default": "Address",
+      "required": true,
+      "maxLength": 255
+    },
+    "addressPlaceholder": {
+      "type": "string",
+      "default": "Enter your address",
+      "required": true,
+      "maxLength": 255
+    },
+    "cityLabel": {
+      "type": "string",
+      "default": "City",
+      "required": true,
+      "maxLength": 255
+    },
+    "stateLabel": {
+      "type": "string",
+      "default": "Enter your state",
+      "required": true,
+      "maxLength": 255
+    },
+    "statePlaceholder": {
+      "type": "string",
+      "default": "Enter your state",
+      "required": true,
+      "maxLength": 255
+    },
+    "zipLabel": {
+      "type": "string",
+      "default": "Zip",
+      "required": true,
+      "maxLength": 255
+    },
+    "zipPlaceholder": {
+      "type": "string",
+      "default": "XXXXX",
+      "required": true,
+      "maxLength": 255
+    },
+    "phoneLabel": {
+      "type": "string",
+      "default": "Phone Number",
+      "required": true,
+      "maxLength": 255
+    },
+    "phonePlaceholder": {
+      "type": "string",
+      "default": "XXX-XXX-XXXX",
+      "required": true,
+      "maxLength": 255
+    },
+    "companyLabel": {
+      "type": "string",
+      "default": "Company Name",
+      "required": true,
+      "maxLength": 255
+    },
+    "companyPlaceholder": {
+      "type": "string",
+      "default": "Enter your company name",
+      "required": true,
+      "maxLength": 255
+    },
+    "brandLabel": {
+      "type": "string",
+      "default": "Brand",
+      "required": true,
+      "maxLength": 255
+    },
+    "finishLabel": {
+      "type": "string",
+      "default": "Finish",
+      "required": true,
+      "maxLength": 255
+    },
+    "orderLabel": {
+      "type": "string",
+      "default": "Order ID",
+      "required": true,
+      "maxLength": 255
+    },
+    "productLabel": {
+      "type": "string",
+      "default": "Product ID",
+      "required": true,
+      "maxLength": 255
+    },
+    "appointmentSubtitle": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "default": "Tell us a little about you."
+    },
+    "selfIdentifierLabel": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "default": "Are you a...?"
+    },
+    "selfIdentifierOptions": {
+      "type": "json",
+      "required": true
+    },
+    "tradeProfessionalLabel": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "default": "Are you working with a Trade Professional?"
+    },
+    "tradeProfessionalOptions": {
+      "type": "json"
+    },
+    "projectInfoTitle": {
+      "type": "string",
+      "default": "Tell us about your project.",
+      "required": true,
+      "maxLength": 255
+    },
+    "projectNeedLabel": {
+      "type": "string",
+      "default": "What are you shopping for?",
+      "required": true,
+      "maxLength": 255
+    },
+    "projectDetailLabel": {
+      "type": "string",
+      "default": "Please tell us a little more about your project needs.",
+      "required": true,
+      "maxLength": 255
+    },
+    "optInLabel": {
+      "type": "string",
+      "default": "Check to sign up for our newsletter.",
+      "required": true,
+      "maxLength": 255
+    },
+    "defectDetailsLabel": {
+      "type": "string",
+      "default": "Details of defect",
+      "required": true,
+      "maxLength": 255
+    },
+    "uploadLabel": {
+      "type": "string",
+      "default": "Upload Photo(s)",
+      "required": true,
+      "maxLength": 255
+    },
+    "fileSizeLabel": {
+      "type": "string",
+      "default": "Maximum file size: 10MB",
+      "required": true,
+      "maxLength": 20
+    },
+    "fileTypeLabel": {
+      "type": "string",
+      "default": "Allowed extensions: jpg, png, pdf",
+      "required": true,
+      "maxLength": 255
+    },
+    "fileUploadLabel": {
+      "type": "string",
+      "default": "Drag and drop or <link>browser</link> your files",
+      "required": true,
+      "maxLength": 255
+    },
+    "sampleDateLabel": {
+      "type": "string",
+      "default": "When do you need to receive the sample?",
+      "required": true,
+      "maxLength": 255
+    },
+    "sampleDatePlaceholder": {
+      "type": "string",
+      "default": "MM/DD/YYYY",
+      "required": true,
+      "maxLength": 255
+    },
+    "additionalCommentsLabel": {
+      "type": "string",
+      "default": "Additional Comments",
+      "required": true,
+      "maxLength": 255
+    },
+    "referralLabel": {
+      "type": "string",
+      "default": "How did you hear about us?",
+      "required": true,
+      "maxLength": 255
+    },
+    "referralOptions": {
+      "type": "json"
+    },
+    "locationLabel": {
+      "type": "string",
+      "default": "What showroom are you interested in working with?",
+      "required": true,
+      "maxLength": 255
+    },
+    "professionLabel": {
+      "type": "string",
+      "default": "What is your profession?",
+      "required": true,
+      "maxLength": 255
+    },
+    "professionOptions": {
+      "type": "json"
+    },
+    "locationPlaceholder": {
+      "type": "string",
+      "default": "Select a showroom",
+      "required": true,
+      "maxLength": 255
+    },
+    "professionPlaceholder": {
+      "type": "string",
+      "default": "Check all that applies.",
+      "required": true,
+      "maxLength": 255
+    },
+    "newsletterButtonLabel": {
+      "type": "string",
+      "default": "Subscribe",
+      "required": true,
+      "maxLength": 255
+    },
+    "submitButtonLabel": {
+      "type": "string",
+      "default": "Submit",
+      "required": true,
+      "maxLength": 255
+    }
+  }
+}

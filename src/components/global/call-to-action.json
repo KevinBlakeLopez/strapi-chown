@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_global_call_to_actions",
+  "info": {
+    "displayName": "Call to Action",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "label": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "internal",
+        "external",
+        "form"
+      ],
+      "default": "external",
+      "required": true
+    },
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "default",
+        "text"
+      ],
+      "default": "default",
+      "required": true
+    }
+  }
+}

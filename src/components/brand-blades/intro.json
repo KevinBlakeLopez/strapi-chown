@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_brand_blades_intros",
+  "info": {
+    "displayName": "intro",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "richtext"
+    },
+    "brandCta": {
+      "type": "component",
+      "repeatable": true,
+      "component": "global.call-to-action"
+    },
+    "secondaryTitle": {
+      "type": "string",
+      "required": false,
+      "maxLength": 255
+    },
+    "secondaryDescription": {
+      "type": "richtext",
+      "required": false
+    },
+    "secondaryCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.call-to-action"
+    }
+  }
+}

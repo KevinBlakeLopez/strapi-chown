@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_project_blades_heroes",
+  "info": {
+    "displayName": "Hero",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "copy": {
+      "type": "richtext"
+    },
+    "images": {
+      "type": "component",
+      "repeatable": true,
+      "component": "global.collection-image"
+    },
+    "imageOrientation": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right"
+      ],
+      "default": "right",
+      "required": true
+    }
+  }
+}

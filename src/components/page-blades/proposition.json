@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_page_blades_propositions",
+  "info": {
+    "displayName": "Proposition"
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "subcopy": {
+      "type": "richtext"
+    },
+    "images": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}

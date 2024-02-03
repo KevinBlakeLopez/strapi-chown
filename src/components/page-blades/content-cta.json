@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_global_content_ctas",
+  "info": {
+    "displayName": "Content CTA",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "subcopy": {
+      "type": "richtext"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.call-to-action"
+    },
+    "bgImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "bgColor": {
+      "type": "enumeration",
+      "enum": [
+        "darkblue",
+        "eggshell",
+        "skyblue"
+      ],
+      "default": "darkblue",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_page_blades_quotes",
+  "info": {
+    "displayName": "Quote"
+  },
+  "options": {},
+  "attributes": {
+    "quote": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::quote.quote"
+    }
+  }
+}

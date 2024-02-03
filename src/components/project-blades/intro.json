@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_project_blades_intros",
+  "info": {
+    "displayName": "Intro"
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "overview": {
+      "type": "richtext"
+    },
+    "location": {
+      "type": "richtext"
+    },
+    "photographer": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "client": {
+      "type": "string",
+      "required": false,
+      "maxLength": 255
+    }
+  }
+}

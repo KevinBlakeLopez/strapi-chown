@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "newsletter_ctas",
+  "info": {
+    "singularName": "newsletter-cta",
+    "pluralName": "newsletter-ctas",
+    "displayName": "Newsletter CTA"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "default": "Join our newsletter to  stay up to date on the latest trends."
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.call-to-action"
+    }
+  }
+}

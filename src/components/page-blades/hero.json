@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_page_blades_heroes",
+  "info": {
+    "displayName": "Hero",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "subcopy": {
+      "type": "richtext"
+    },
+    "media": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.media"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.call-to-action"
+    },
+    "bgColor": {
+      "type": "enumeration",
+      "enum": [
+        "darkblue",
+        "eggshell",
+        "skyblue"
+      ],
+      "default": "darkblue",
+      "required": true
+    },
+    "imageOrientation": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right"
+      ],
+      "default": "right",
+      "required": true
+    }
+  }
+}

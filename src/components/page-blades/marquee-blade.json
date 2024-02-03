@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_page_blades_marquee_blades",
+  "info": {
+    "displayName": "Marque",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "string"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.call-to-action"
+    },
+    "media": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.media"
+    }
+  }
+}

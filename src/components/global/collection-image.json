@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_global_collection_images",
+  "info": {
+    "displayName": "Collection Image"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
