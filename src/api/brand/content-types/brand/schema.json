@@ -1,0 +1,99 @@
+{
+  "kind": "collectionType",
+  "collectionName": "brands",
+  "info": {
+    "singularName": "brand",
+    "pluralName": "brands",
+    "displayName": "Brand",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "brands"
+    },
+    "cost": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::price-tier.price-tier",
+      "inversedBy": "brands"
+    },
+    "lead_time": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::lead-time.lead-time",
+      "inversedBy": "brands"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::project.project",
+      "mappedBy": "brands"
+    },
+    "collections": {
+      "type": "component",
+      "repeatable": false,
+      "component": "brand-blades.collections"
+    },
+    "intro": {
+      "displayName": "intro",
+      "type": "component",
+      "repeatable": false,
+      "component": "brand-blades.intro"
+    },
+    "contentCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-blades.content-cta"
+    },
+    "featuredProjects": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-blades.featured-content"
+    },
+    "banner": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": false
+    },
+    "card": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": false
+    }
+  }
+}

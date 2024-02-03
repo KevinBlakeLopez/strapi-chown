@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_page_blades_team_members",
+  "info": {
+    "displayName": "Team Members"
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "string"
+    },
+    "subcopy": {
+      "type": "richtext"
+    },
+    "teamMembers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::team-member.team-member",
+      "required": true,
+      "min": 1,
+      "max": 6
+    }
+  }
+}

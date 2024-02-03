@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_brand_blades_collections",
+  "info": {
+    "displayName": "Collections",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "subhead": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "Collection": {
+      "displayName": "Collection",
+      "type": "component",
+      "repeatable": true,
+      "component": "global.collection",
+      "required": true,
+      "max": 6,
+      "min": 1
+    }
+  }
+}

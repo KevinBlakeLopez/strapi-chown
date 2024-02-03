@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "price_tier",
+  "info": {
+    "singularName": "price-tier",
+    "pluralName": "price-tiers",
+    "displayName": "Price Tiers",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "brands": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::brand.brand",
+      "mappedBy": "cost"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lead_times",
+  "info": {
+    "singularName": "lead-time",
+    "pluralName": "lead-times",
+    "displayName": "Lead Time",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "brands": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::brand.brand",
+      "mappedBy": "lead_time"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

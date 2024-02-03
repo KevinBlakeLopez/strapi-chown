@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "quotes",
+  "info": {
+    "singularName": "quote",
+    "pluralName": "quotes",
+    "displayName": "Quote"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "quote": {
+      "type": "text",
+      "required": true
+    },
+    "attribution": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

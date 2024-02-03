@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_page_blades_multi_columns",
+  "info": {
+    "displayName": "Multi Columns"
+  },
+  "options": {},
+  "attributes": {
+    "columns": {
+      "type": "component",
+      "repeatable": true,
+      "component": "global.column",
+      "required": true,
+      "min": 2,
+      "max": 3
+    }
+  }
+}

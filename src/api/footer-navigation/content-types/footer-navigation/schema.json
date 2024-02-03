@@ -1,0 +1,49 @@
+{
+  "kind": "singleType",
+  "collectionName": "footer_navigations",
+  "info": {
+    "singularName": "footer-navigation",
+    "pluralName": "footer-navigations",
+    "displayName": "Navigation - Footer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "exploreNavigation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navigation.nav-item",
+      "required": true,
+      "min": 1
+    },
+    "companyNavigation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navigation.nav-item",
+      "required": true,
+      "min": 1
+    },
+    "legalLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navigation.nav-item",
+      "required": true,
+      "min": 1
+    },
+    "exploreLabel": {
+      "type": "string",
+      "default": "Explore",
+      "required": true,
+      "maxLength": 255
+    },
+    "companyLabel": {
+      "type": "string",
+      "default": "Company",
+      "required": true,
+      "maxLength": 255
+    }
+  }
+}

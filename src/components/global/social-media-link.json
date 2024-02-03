@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_global_social_media_links",
+  "info": {
+    "displayName": "Social Media Link"
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "label": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    }
+  }
+}

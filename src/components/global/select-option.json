@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_global_select_options",
+  "info": {
+    "displayName": "Select Option"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    }
+  }
+}

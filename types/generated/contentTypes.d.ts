@@ -403,12 +403,9 @@ export interface PluginUploadFile extends Schema.CollectionType {
     folderPath: Attribute.String &
       Attribute.Required &
       Attribute.Private &
-      Attribute.SetMinMax<
-        {
-          min: 1;
-        },
-        number
-      >;
+      Attribute.SetMinMax<{
+        min: 1;
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -444,12 +441,9 @@ export interface PluginUploadFolder extends Schema.CollectionType {
   attributes: {
     name: Attribute.String &
       Attribute.Required &
-      Attribute.SetMinMax<
-        {
-          min: 1;
-        },
-        number
-      >;
+      Attribute.SetMinMax<{
+        min: 1;
+      }>;
     pathId: Attribute.Integer & Attribute.Required & Attribute.Unique;
     parent: Attribute.Relation<
       'plugin::upload.folder',
@@ -468,12 +462,9 @@ export interface PluginUploadFolder extends Schema.CollectionType {
     >;
     path: Attribute.String &
       Attribute.Required &
-      Attribute.SetMinMax<
-        {
-          min: 1;
-        },
-        number
-      >;
+      Attribute.SetMinMax<{
+        min: 1;
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -560,7 +551,6 @@ export interface PluginContentReleasesReleaseAction
       'morphToOne'
     >;
     contentType: Attribute.String & Attribute.Required;
-    locale: Attribute.String;
     release: Attribute.Relation<
       'plugin::content-releases.release-action',
       'manyToOne',
@@ -576,6 +566,91 @@ export interface PluginContentReleasesReleaseAction
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'plugin::content-releases.release-action',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface PluginPublisherAction extends Schema.CollectionType {
+  collectionName: 'actions';
+  info: {
+    singularName: 'action';
+    pluralName: 'actions';
+    displayName: 'actions';
+  };
+  options: {
+    draftAndPublish: false;
+    comment: '';
+  };
+  pluginOptions: {
+    'content-manager': {
+      visible: false;
+    };
+    'content-type-builder': {
+      visible: false;
+    };
+  };
+  attributes: {
+    executeAt: Attribute.DateTime;
+    mode: Attribute.String;
+    entityId: Attribute.Integer;
+    entitySlug: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'plugin::publisher.action',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'plugin::publisher.action',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface PluginI18NLocale extends Schema.CollectionType {
+  collectionName: 'i18n_locale';
+  info: {
+    singularName: 'locale';
+    pluralName: 'locales';
+    collectionName: 'locales';
+    displayName: 'Locale';
+    description: '';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  pluginOptions: {
+    'content-manager': {
+      visible: false;
+    };
+    'content-type-builder': {
+      visible: false;
+    };
+  };
+  attributes: {
+    name: Attribute.String &
+      Attribute.SetMinMax<{
+        min: 1;
+        max: 50;
+      }>;
+    code: Attribute.String & Attribute.Unique;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'plugin::i18n.locale',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'plugin::i18n.locale',
       'oneToOne',
       'admin::user'
     > &
@@ -734,17 +809,16 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
   };
 }
 
-export interface PluginI18NLocale extends Schema.CollectionType {
-  collectionName: 'i18n_locale';
+export interface PluginRedirectsRedirect extends Schema.CollectionType {
+  collectionName: 'redirects';
   info: {
-    singularName: 'locale';
-    pluralName: 'locales';
-    collectionName: 'locales';
-    displayName: 'Locale';
-    description: '';
+    singularName: 'redirect';
+    pluralName: 'redirects';
+    displayName: 'redirect';
   };
   options: {
     draftAndPublish: false;
+    comment: '';
   };
   pluginOptions: {
     'content-manager': {
@@ -755,25 +829,972 @@ export interface PluginI18NLocale extends Schema.CollectionType {
     };
   };
   attributes: {
-    name: Attribute.String &
-      Attribute.SetMinMax<
-        {
-          min: 1;
-          max: 50;
-        },
-        number
-      >;
-    code: Attribute.String & Attribute.Unique;
+    from: Attribute.String & Attribute.Required;
+    to: Attribute.String & Attribute.Required;
+    type: Attribute.Enumeration<['permanent', 'temporary']> &
+      Attribute.Required &
+      Attribute.DefaultTo<'permanent'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
-      'plugin::i18n.locale',
+      'plugin::redirects.redirect',
       'oneToOne',
       'admin::user'
     > &
       Attribute.Private;
     updatedBy: Attribute.Relation<
-      'plugin::i18n.locale',
+      'plugin::redirects.redirect',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiBrandBrand extends Schema.CollectionType {
+  collectionName: 'brands';
+  info: {
+    singularName: 'brand';
+    pluralName: 'brands';
+    displayName: 'Brand';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    name: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
+    logo: Attribute.Media & Attribute.Required;
+    seo: Attribute.Component<'shared.seo'>;
+    slug: Attribute.UID<'api::brand.brand', 'name'>;
+    categories: Attribute.Relation<
+      'api::brand.brand',
+      'manyToMany',
+      'api::category.category'
+    >;
+    cost: Attribute.Relation<
+      'api::brand.brand',
+      'manyToOne',
+      'api::price-tier.price-tier'
+    >;
+    lead_time: Attribute.Relation<
+      'api::brand.brand',
+      'manyToOne',
+      'api::lead-time.lead-time'
+    >;
+    projects: Attribute.Relation<
+      'api::brand.brand',
+      'manyToMany',
+      'api::project.project'
+    >;
+    collections: Attribute.Component<'brand-blades.collections'>;
+    intro: Attribute.Component<'brand-blades.intro'>;
+    contentCta: Attribute.Component<'page-blades.content-cta'>;
+    featuredProjects: Attribute.Component<'page-blades.featured-content'>;
+    banner: Attribute.Media;
+    card: Attribute.Media;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::brand.brand',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::brand.brand',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiCategoryCategory extends Schema.CollectionType {
+  collectionName: 'categories';
+  info: {
+    singularName: 'category';
+    pluralName: 'categories';
+    displayName: 'Category';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String;
+    slug: Attribute.UID<'api::category.category', 'title'>;
+    brands: Attribute.Relation<
+      'api::category.category',
+      'manyToMany',
+      'api::brand.brand'
+    >;
+    projects: Attribute.Relation<
+      'api::category.category',
+      'manyToMany',
+      'api::project.project'
+    >;
+    description: Attribute.Text;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::category.category',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::category.category',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiDesignerDesigner extends Schema.CollectionType {
+  collectionName: 'designers';
+  info: {
+    singularName: 'designer';
+    pluralName: 'designers';
+    displayName: 'Designer';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    name: Attribute.String;
+    headshot: Attribute.Media;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::designer.designer',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::designer.designer',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiFooterNavigationFooterNavigation extends Schema.SingleType {
+  collectionName: 'footer_navigations';
+  info: {
+    singularName: 'footer-navigation';
+    pluralName: 'footer-navigations';
+    displayName: 'Navigation - Footer';
+    description: '';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    exploreNavigation: Attribute.Component<'navigation.nav-item', true> &
+      Attribute.Required &
+      Attribute.SetMinMax<{
+        min: 1;
+      }>;
+    companyNavigation: Attribute.Component<'navigation.nav-item', true> &
+      Attribute.Required &
+      Attribute.SetMinMax<{
+        min: 1;
+      }>;
+    legalLinks: Attribute.Component<'navigation.nav-item', true> &
+      Attribute.Required &
+      Attribute.SetMinMax<{
+        min: 1;
+      }>;
+    exploreLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Explore'>;
+    companyLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Company'>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::footer-navigation.footer-navigation',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::footer-navigation.footer-navigation',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiGeneralFormDataGeneralFormData extends Schema.SingleType {
+  collectionName: 'general_form_datas';
+  info: {
+    singularName: 'general-form-data';
+    pluralName: 'general-form-datas';
+    displayName: 'General Form Data';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    newsletterTitle: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Subscribe'>;
+    sampleRequestTitle: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Request Finish Sample'>;
+    warrantyClaimTitme: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Submit a warranty claim.'>;
+    appointmentTitle: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Book an appointment'>;
+    nameLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Name'>;
+    namePlaceholder: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Enter your name'>;
+    emailLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Email'>;
+    emailPlaceholder: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'email@email.com'>;
+    addressLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Address'>;
+    addressPlaceholder: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Enter your address'>;
+    cityLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'City'>;
+    stateLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Enter your state'>;
+    statePlaceholder: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Enter your state'>;
+    zipLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Zip'>;
+    zipPlaceholder: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'XXXXX'>;
+    phoneLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Phone Number'>;
+    phonePlaceholder: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'XXX-XXX-XXXX'>;
+    companyLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Company Name'>;
+    companyPlaceholder: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Enter your company name'>;
+    brandLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Brand'>;
+    finishLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Finish'>;
+    orderLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Order ID'>;
+    productLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Product ID'>;
+    appointmentSubtitle: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Tell us a little about you.'>;
+    selfIdentifierLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Are you a...?'>;
+    selfIdentifierOptions: Attribute.JSON & Attribute.Required;
+    tradeProfessionalLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Are you working with a Trade Professional?'>;
+    tradeProfessionalOptions: Attribute.JSON;
+    projectInfoTitle: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Tell us about your project.'>;
+    projectNeedLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'What are you shopping for?'>;
+    projectDetailLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Please tell us a little more about your project needs.'>;
+    optInLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Check to sign up for our newsletter.'>;
+    defectDetailsLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Details of defect'>;
+    uploadLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Upload Photo(s)'>;
+    fileSizeLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 20;
+      }> &
+      Attribute.DefaultTo<'Maximum file size: 10MB'>;
+    fileTypeLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Allowed extensions: jpg, png, pdf'>;
+    fileUploadLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Drag and drop or <link>browser</link> your files'>;
+    sampleDateLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'When do you need to receive the sample?'>;
+    sampleDatePlaceholder: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'MM/DD/YYYY'>;
+    additionalCommentsLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Additional Comments'>;
+    referralLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'How did you hear about us?'>;
+    referralOptions: Attribute.JSON;
+    locationLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'What showroom are you interested in working with?'>;
+    professionLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'What is your profession?'>;
+    professionOptions: Attribute.JSON;
+    locationPlaceholder: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Select a showroom'>;
+    professionPlaceholder: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Check all that applies.'>;
+    newsletterButtonLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Subscribe'>;
+    submitButtonLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Submit'>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::general-form-data.general-form-data',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::general-form-data.general-form-data',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiGlobalDataGlobalData extends Schema.SingleType {
+  collectionName: 'global_datas';
+  info: {
+    singularName: 'global-data';
+    pluralName: 'global-datas';
+    displayName: 'Global Data';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    siteTitle: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Chown Hardware | Est 1879'>;
+    copyright: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Copyright 2024 Chown Hardware. All Rights Reserved.'>;
+    defaultSeo: Attribute.Component<'shared.seo', true>;
+    socialMediaLinks: Attribute.Component<'global.social-media-link', true>;
+    showMoreLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Show more'>;
+    clearFiltersLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Clear Filters'>;
+    designerLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Designer'>;
+    photographerLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Photographer'>;
+    clientLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Client'>;
+    categoriesLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Categories'>;
+    priceTierLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Price Tier'>;
+    leadTimeLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Lead Time'>;
+    leadTimeInfo: Attribute.Text & Attribute.Required;
+    learnMoreLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Learn More'>;
+    associatedBrandLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Associated Brand Partners'>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::global-data.global-data',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::global-data.global-data',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiHeaderNavigationHeaderNavigation extends Schema.SingleType {
+  collectionName: 'header_navigations';
+  info: {
+    singularName: 'header-navigation';
+    pluralName: 'header-navigations';
+    displayName: 'Navigation - Header';
+    description: '';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    primaryNavigation: Attribute.Component<'navigation.nav-item', true> &
+      Attribute.Required &
+      Attribute.SetMinMax<{
+        min: 1;
+      }>;
+    secondaryNavigation: Attribute.Component<'navigation.nav-item', true> &
+      Attribute.Required &
+      Attribute.SetMinMax<{
+        min: 1;
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::header-navigation.header-navigation',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::header-navigation.header-navigation',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiLeadTimeLeadTime extends Schema.CollectionType {
+  collectionName: 'lead_times';
+  info: {
+    singularName: 'lead-time';
+    pluralName: 'lead-times';
+    displayName: 'Lead Time';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String;
+    slug: Attribute.UID<'api::lead-time.lead-time', 'title'>;
+    brands: Attribute.Relation<
+      'api::lead-time.lead-time',
+      'oneToMany',
+      'api::brand.brand'
+    >;
+    description: Attribute.Text;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::lead-time.lead-time',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::lead-time.lead-time',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiNewsletterCtaNewsletterCta extends Schema.SingleType {
+  collectionName: 'newsletter_ctas';
+  info: {
+    singularName: 'newsletter-cta';
+    pluralName: 'newsletter-ctas';
+    displayName: 'Newsletter CTA';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Join our newsletter to  stay up to date on the latest trends.'>;
+    cta: Attribute.Component<'global.call-to-action'>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::newsletter-cta.newsletter-cta',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::newsletter-cta.newsletter-cta',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiPagePage extends Schema.CollectionType {
+  collectionName: 'pages';
+  info: {
+    singularName: 'page';
+    pluralName: 'pages';
+    displayName: 'Page';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
+    slug: Attribute.UID<'api::page.page', 'title'> &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
+    pageContent: Attribute.DynamicZone<
+      [
+        'page-blades.all-brands',
+        'page-blades.content-column',
+        'page-blades.content-cta',
+        'page-blades.embed',
+        'page-blades.featured-content',
+        'page-blades.hero',
+        'page-blades.marquee-blade',
+        'page-blades.multi-columns',
+        'page-blades.proposition',
+        'page-blades.quote',
+        'page-blades.rich-text',
+        'page-blades.team-members'
+      ]
+    >;
+    seo: Attribute.Component<'shared.seo'>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::page.page', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::page.page', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+  };
+}
+
+export interface ApiPriceTierPriceTier extends Schema.CollectionType {
+  collectionName: 'price_tier';
+  info: {
+    singularName: 'price-tier';
+    pluralName: 'price-tiers';
+    displayName: 'Price Tiers';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
+    brands: Attribute.Relation<
+      'api::price-tier.price-tier',
+      'oneToMany',
+      'api::brand.brand'
+    >;
+    description: Attribute.Text;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::price-tier.price-tier',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::price-tier.price-tier',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiProjectProject extends Schema.CollectionType {
+  collectionName: 'projects';
+  info: {
+    singularName: 'project';
+    pluralName: 'projects';
+    displayName: 'Project';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
+    slug: Attribute.UID<'api::project.project', 'title'> &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
+    seo: Attribute.Component<'shared.seo'>;
+    categories: Attribute.Relation<
+      'api::project.project',
+      'manyToMany',
+      'api::category.category'
+    >;
+    brands: Attribute.Relation<
+      'api::project.project',
+      'manyToMany',
+      'api::brand.brand'
+    >;
+    designer: Attribute.Relation<
+      'api::project.project',
+      'oneToOne',
+      'api::designer.designer'
+    >;
+    hero: Attribute.Media;
+    card: Attribute.Media;
+    intro: Attribute.Component<'project-blades.intro'>;
+    projectCta: Attribute.Component<'page-blades.content-cta'>;
+    projectHero: Attribute.Component<'page-blades.hero'>;
+    projectDynamicContent: Attribute.DynamicZone<
+      ['project-blades.hero', 'page-blades.quote', 'page-blades.rich-text']
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::project.project',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::project.project',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiQuoteQuote extends Schema.CollectionType {
+  collectionName: 'quotes';
+  info: {
+    singularName: 'quote';
+    pluralName: 'quotes';
+    displayName: 'Quote';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    quote: Attribute.Text & Attribute.Required;
+    attribution: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
+    image: Attribute.Media;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::quote.quote',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::quote.quote',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiTeamMemberTeamMember extends Schema.CollectionType {
+  collectionName: 'team_members';
+  info: {
+    singularName: 'team-member';
+    pluralName: 'team-members';
+    displayName: 'Team Member';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    name: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
+    title: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
+    experience: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
+    image: Attribute.Media & Attribute.Required;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::team-member.team-member',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::team-member.team-member',
       'oneToOne',
       'admin::user'
     > &
@@ -795,10 +1816,26 @@ declare module '@strapi/types' {
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
+      'plugin::publisher.action': PluginPublisherAction;
+      'plugin::i18n.locale': PluginI18NLocale;
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
-      'plugin::i18n.locale': PluginI18NLocale;
+      'plugin::redirects.redirect': PluginRedirectsRedirect;
+      'api::brand.brand': ApiBrandBrand;
+      'api::category.category': ApiCategoryCategory;
+      'api::designer.designer': ApiDesignerDesigner;
+      'api::footer-navigation.footer-navigation': ApiFooterNavigationFooterNavigation;
+      'api::general-form-data.general-form-data': ApiGeneralFormDataGeneralFormData;
+      'api::global-data.global-data': ApiGlobalDataGlobalData;
+      'api::header-navigation.header-navigation': ApiHeaderNavigationHeaderNavigation;
+      'api::lead-time.lead-time': ApiLeadTimeLeadTime;
+      'api::newsletter-cta.newsletter-cta': ApiNewsletterCtaNewsletterCta;
+      'api::page.page': ApiPagePage;
+      'api::price-tier.price-tier': ApiPriceTierPriceTier;
+      'api::project.project': ApiProjectProject;
+      'api::quote.quote': ApiQuoteQuote;
+      'api::team-member.team-member': ApiTeamMemberTeamMember;
     }
   }
 }

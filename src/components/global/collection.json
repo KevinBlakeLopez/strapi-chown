@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_global_collections",
+  "info": {
+    "displayName": "Collection"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "image": {
+      "type": "component",
+      "repeatable": true,
+      "component": "global.collection-image",
+      "required": true,
+      "min": 1
+    }
+  }
+}

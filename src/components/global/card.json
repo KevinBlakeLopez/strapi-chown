@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_global_cards",
+  "info": {
+    "displayName": "Card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "link": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "linkType": {
+      "type": "enumeration",
+      "enum": [
+        "internal",
+        "external"
+      ],
+      "required": true,
+      "default": "external"
+    },
+    "project": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::project.project"
+    }
+  }
+}

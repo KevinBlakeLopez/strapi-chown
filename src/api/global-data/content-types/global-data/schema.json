@@ -1,0 +1,103 @@
+{
+  "kind": "singleType",
+  "collectionName": "global_datas",
+  "info": {
+    "singularName": "global-data",
+    "pluralName": "global-datas",
+    "displayName": "Global Data",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "siteTitle": {
+      "type": "string",
+      "required": true,
+      "default": "Chown Hardware | Est 1879",
+      "maxLength": 255
+    },
+    "copyright": {
+      "type": "string",
+      "default": "Copyright 2024 Chown Hardware. All Rights Reserved.",
+      "required": true,
+      "maxLength": 255
+    },
+    "defaultSeo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.seo"
+    },
+    "socialMediaLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "global.social-media-link",
+      "required": false
+    },
+    "showMoreLabel": {
+      "type": "string",
+      "required": true,
+      "default": "Show more",
+      "maxLength": 255
+    },
+    "clearFiltersLabel": {
+      "type": "string",
+      "default": "Clear Filters",
+      "required": true,
+      "maxLength": 255
+    },
+    "designerLabel": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "default": "Designer"
+    },
+    "photographerLabel": {
+      "type": "string",
+      "default": "Photographer",
+      "required": true,
+      "maxLength": 255
+    },
+    "clientLabel": {
+      "type": "string",
+      "default": "Client",
+      "required": true,
+      "maxLength": 255
+    },
+    "categoriesLabel": {
+      "type": "string",
+      "default": "Categories",
+      "required": true,
+      "maxLength": 255
+    },
+    "priceTierLabel": {
+      "type": "string",
+      "default": "Price Tier",
+      "required": true,
+      "maxLength": 255
+    },
+    "leadTimeLabel": {
+      "type": "string",
+      "default": "Lead Time",
+      "required": true,
+      "maxLength": 255
+    },
+    "leadTimeInfo": {
+      "type": "text",
+      "required": true
+    },
+    "learnMoreLabel": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "default": "Learn More"
+    },
+    "associatedBrandLabel": {
+      "type": "string",
+      "default": "Associated Brand Partners",
+      "required": true,
+      "maxLength": 255
+    }
+  }
+}
