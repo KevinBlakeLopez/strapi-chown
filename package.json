@@ -28,7 +28,7 @@
     "strapi-plugin-preview-button": "^2.2.1",
     "strapi-plugin-publisher": "^1.5.7",
     "strapi-plugin-redirects": "^0.0.6",
-    "strapi-provider-upload-do": "^3.6.9",
+    "strapi-provider-upload-dos": "^4.0.5",
     "styled-components": "5.3.3"
   },
   "author": {
