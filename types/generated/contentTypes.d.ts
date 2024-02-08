@@ -1254,7 +1254,7 @@ export interface ApiGeneralFormDataGeneralFormData extends Schema.SingleType {
     fileSizeLabel: Attribute.String &
       Attribute.Required &
       Attribute.SetMinMaxLength<{
-        maxLength: 20;
+        maxLength: 255;
       }> &
       Attribute.DefaultTo<'Maximum file size: 10MB'>;
     fileTypeLabel: Attribute.String &
