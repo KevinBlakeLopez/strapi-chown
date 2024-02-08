@@ -22,7 +22,7 @@
       },
       "headline": {
         "edit": {
-          "label": "headline",
+          "label": "Headline",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -36,7 +36,7 @@
       },
       "subhead": {
         "edit": {
-          "label": "subhead",
+          "label": "Sub-Headline",
           "description": "",
           "placeholder": "",
           "visible": true,

@@ -22,7 +22,7 @@
       },
       "description": {
         "edit": {
-          "label": "description",
+          "label": "Description",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -36,7 +36,7 @@
       },
       "title": {
         "edit": {
-          "label": "title",
+          "label": "Title",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -50,7 +50,7 @@
       },
       "image": {
         "edit": {
-          "label": "image",
+          "label": "Image",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -73,11 +73,11 @@
       "edit": [
         [
           {
-            "name": "description",
+            "name": "title",
             "size": 6
           },
           {
-            "name": "title",
+            "name": "description",
             "size": 6
           }
         ],

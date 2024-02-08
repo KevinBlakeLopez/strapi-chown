@@ -22,7 +22,7 @@
       },
       "headline": {
         "edit": {
-          "label": "headline",
+          "label": "Headline",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -36,7 +36,7 @@
       },
       "overview": {
         "edit": {
-          "label": "overview",
+          "label": "Overview",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -50,7 +50,7 @@
       },
       "location": {
         "edit": {
-          "label": "location",
+          "label": "Location",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -64,7 +64,7 @@
       },
       "photographer": {
         "edit": {
-          "label": "photographer",
+          "label": "Photographer",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -78,7 +78,7 @@
       },
       "client": {
         "edit": {
-          "label": "client",
+          "label": "Client",
           "description": "",
           "placeholder": "",
           "visible": true,

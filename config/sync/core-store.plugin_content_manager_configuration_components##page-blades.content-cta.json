@@ -22,7 +22,7 @@
       },
       "headline": {
         "edit": {
-          "label": "headline",
+          "label": "Headline",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -36,7 +36,7 @@
       },
       "subcopy": {
         "edit": {
-          "label": "subcopy",
+          "label": "Sub Copy",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -50,7 +50,7 @@
       },
       "cta": {
         "edit": {
-          "label": "cta",
+          "label": "CTA",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -64,7 +64,7 @@
       },
       "bgImage": {
         "edit": {
-          "label": "bgImage",
+          "label": "Background Image",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -78,7 +78,7 @@
       },
       "bgColor": {
         "edit": {
-          "label": "bgColor",
+          "label": "Background Color",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -103,6 +103,16 @@
           {
             "name": "headline",
             "size": 6
+          },
+          {
+            "name": "bgColor",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "bgImage",
+            "size": 6
           }
         ],
         [
@@ -115,16 +125,6 @@
           {
             "name": "cta",
             "size": 12
-          }
-        ],
-        [
-          {
-            "name": "bgImage",
-            "size": 6
-          },
-          {
-            "name": "bgColor",
-            "size": 6
           }
         ]
       ]

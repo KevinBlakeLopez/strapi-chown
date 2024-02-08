@@ -22,7 +22,7 @@
       },
       "copy": {
         "edit": {
-          "label": "copy",
+          "label": "Copy",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -36,7 +36,7 @@
       },
       "images": {
         "edit": {
-          "label": "images",
+          "label": "Images",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -50,7 +50,7 @@
       },
       "imageOrientation": {
         "edit": {
-          "label": "imageOrientation",
+          "label": "Image Orientation",
           "description": "",
           "placeholder": "",
           "visible": true,
