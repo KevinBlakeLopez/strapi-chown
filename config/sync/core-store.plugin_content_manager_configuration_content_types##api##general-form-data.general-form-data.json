@@ -1,0 +1,1034 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::general-form-data.general-form-data",
+  "value": {
+    "uid": "api::general-form-data.general-form-data",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "newsletterTitle",
+      "defaultSortBy": "newsletterTitle",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "newsletterTitle": {
+        "edit": {
+          "label": "newsletterTitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "newsletterTitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "sampleRequestTitle": {
+        "edit": {
+          "label": "sampleRequestTitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "sampleRequestTitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "warrantyClaimTitme": {
+        "edit": {
+          "label": "warrantyClaimTitme",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "warrantyClaimTitme",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "appointmentTitle": {
+        "edit": {
+          "label": "appointmentTitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "appointmentTitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "nameLabel": {
+        "edit": {
+          "label": "nameLabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "nameLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "namePlaceholder": {
+        "edit": {
+          "label": "namePlaceholder",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "namePlaceholder",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "emailLabel": {
+        "edit": {
+          "label": "emailLabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "emailLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "emailPlaceholder": {
+        "edit": {
+          "label": "emailPlaceholder",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "emailPlaceholder",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "addressLabel": {
+        "edit": {
+          "label": "addressLabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "addressLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "addressPlaceholder": {
+        "edit": {
+          "label": "addressPlaceholder",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "addressPlaceholder",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "cityLabel": {
+        "edit": {
+          "label": "cityLabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "cityLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "stateLabel": {
+        "edit": {
+          "label": "stateLabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "stateLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "statePlaceholder": {
+        "edit": {
+          "label": "statePlaceholder",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "statePlaceholder",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "zipLabel": {
+        "edit": {
+          "label": "zipLabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "zipLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "zipPlaceholder": {
+        "edit": {
+          "label": "zipPlaceholder",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "zipPlaceholder",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "phoneLabel": {
+        "edit": {
+          "label": "phoneLabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "phoneLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "phonePlaceholder": {
+        "edit": {
+          "label": "phonePlaceholder",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "phonePlaceholder",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "companyLabel": {
+        "edit": {
+          "label": "companyLabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "companyLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "companyPlaceholder": {
+        "edit": {
+          "label": "companyPlaceholder",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "companyPlaceholder",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "brandLabel": {
+        "edit": {
+          "label": "brandLabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "brandLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "finishLabel": {
+        "edit": {
+          "label": "finishLabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "finishLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "orderLabel": {
+        "edit": {
+          "label": "orderLabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "orderLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "productLabel": {
+        "edit": {
+          "label": "productLabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "productLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "appointmentSubtitle": {
+        "edit": {
+          "label": "appointmentSubtitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "appointmentSubtitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "selfIdentifierLabel": {
+        "edit": {
+          "label": "selfIdentifierLabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "selfIdentifierLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "selfIdentifierOptions": {
+        "edit": {
+          "label": "selfIdentifierOptions",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "selfIdentifierOptions",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "tradeProfessionalLabel": {
+        "edit": {
+          "label": "tradeProfessionalLabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "tradeProfessionalLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "tradeProfessionalOptions": {
+        "edit": {
+          "label": "tradeProfessionalOptions",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "tradeProfessionalOptions",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "projectInfoTitle": {
+        "edit": {
+          "label": "projectInfoTitle",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "projectInfoTitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "projectNeedLabel": {
+        "edit": {
+          "label": "projectNeedLabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "projectNeedLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "projectDetailLabel": {
+        "edit": {
+          "label": "projectDetailLabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "projectDetailLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "optInLabel": {
+        "edit": {
+          "label": "optInLabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "optInLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "defectDetailsLabel": {
+        "edit": {
+          "label": "defectDetailsLabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "defectDetailsLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "uploadLabel": {
+        "edit": {
+          "label": "uploadLabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "uploadLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "fileSizeLabel": {
+        "edit": {
+          "label": "fileSizeLabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "fileSizeLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "fileTypeLabel": {
+        "edit": {
+          "label": "fileTypeLabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "fileTypeLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "fileUploadLabel": {
+        "edit": {
+          "label": "fileUploadLabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "fileUploadLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "sampleDateLabel": {
+        "edit": {
+          "label": "sampleDateLabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "sampleDateLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "sampleDatePlaceholder": {
+        "edit": {
+          "label": "sampleDatePlaceholder",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "sampleDatePlaceholder",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "additionalCommentsLabel": {
+        "edit": {
+          "label": "additionalCommentsLabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "additionalCommentsLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "referralLabel": {
+        "edit": {
+          "label": "referralLabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "referralLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "referralOptions": {
+        "edit": {
+          "label": "referralOptions",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "referralOptions",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "locationLabel": {
+        "edit": {
+          "label": "locationLabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "locationLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "professionLabel": {
+        "edit": {
+          "label": "professionLabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "professionLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "professionOptions": {
+        "edit": {
+          "label": "professionOptions",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "professionOptions",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "locationPlaceholder": {
+        "edit": {
+          "label": "locationPlaceholder",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "locationPlaceholder",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "professionPlaceholder": {
+        "edit": {
+          "label": "professionPlaceholder",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "professionPlaceholder",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "newsletterButtonLabel": {
+        "edit": {
+          "label": "newsletterButtonLabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "newsletterButtonLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "submitButtonLabel": {
+        "edit": {
+          "label": "submitButtonLabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "submitButtonLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "newsletterTitle",
+        "sampleRequestTitle",
+        "warrantyClaimTitme"
+      ],
+      "edit": [
+        [
+          {
+            "name": "newsletterTitle",
+            "size": 6
+          },
+          {
+            "name": "sampleRequestTitle",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "warrantyClaimTitme",
+            "size": 6
+          },
+          {
+            "name": "appointmentTitle",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "nameLabel",
+            "size": 6
+          },
+          {
+            "name": "namePlaceholder",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "emailLabel",
+            "size": 6
+          },
+          {
+            "name": "emailPlaceholder",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "addressLabel",
+            "size": 6
+          },
+          {
+            "name": "addressPlaceholder",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "cityLabel",
+            "size": 6
+          },
+          {
+            "name": "stateLabel",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "statePlaceholder",
+            "size": 6
+          },
+          {
+            "name": "zipLabel",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "zipPlaceholder",
+            "size": 6
+          },
+          {
+            "name": "phoneLabel",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "phonePlaceholder",
+            "size": 6
+          },
+          {
+            "name": "companyLabel",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "companyPlaceholder",
+            "size": 6
+          },
+          {
+            "name": "brandLabel",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "finishLabel",
+            "size": 6
+          },
+          {
+            "name": "orderLabel",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "productLabel",
+            "size": 6
+          },
+          {
+            "name": "appointmentSubtitle",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "selfIdentifierLabel",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "selfIdentifierOptions",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "tradeProfessionalLabel",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "tradeProfessionalOptions",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "projectInfoTitle",
+            "size": 6
+          },
+          {
+            "name": "projectNeedLabel",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "projectDetailLabel",
+            "size": 6
+          },
+          {
+            "name": "optInLabel",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "defectDetailsLabel",
+            "size": 6
+          },
+          {
+            "name": "uploadLabel",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "fileSizeLabel",
+            "size": 6
+          },
+          {
+            "name": "fileTypeLabel",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "fileUploadLabel",
+            "size": 6
+          },
+          {
+            "name": "sampleDateLabel",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "sampleDatePlaceholder",
+            "size": 6
+          },
+          {
+            "name": "additionalCommentsLabel",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "referralLabel",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "referralOptions",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "locationLabel",
+            "size": 6
+          },
+          {
+            "name": "professionLabel",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "professionOptions",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "locationPlaceholder",
+            "size": 6
+          },
+          {
+            "name": "professionPlaceholder",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "newsletterButtonLabel",
+            "size": 6
+          },
+          {
+            "name": "submitButtonLabel",
+            "size": 6
+          }
+        ]
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

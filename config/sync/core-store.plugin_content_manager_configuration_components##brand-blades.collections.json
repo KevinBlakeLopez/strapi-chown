@@ -1,0 +1,97 @@
+{
+  "key": "plugin_content_manager_configuration_components::brand-blades.collections",
+  "value": {
+    "uid": "brand-blades.collections",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "headline",
+      "defaultSortBy": "headline",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "headline": {
+        "edit": {
+          "label": "headline",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "headline",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "subhead": {
+        "edit": {
+          "label": "subhead",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "subhead",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Collection": {
+        "edit": {
+          "label": "Collection",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Collection",
+          "searchable": false,
+          "sortable": false
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "headline",
+        "subhead",
+        "Collection"
+      ],
+      "edit": [
+        [
+          {
+            "name": "headline",
+            "size": 6
+          },
+          {
+            "name": "subhead",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "Collection",
+            "size": 12
+          }
+        ]
+      ]
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

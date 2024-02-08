@@ -1,0 +1,196 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::footer-navigation.footer-navigation",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "exploreNavigation": {
+        "edit": {
+          "label": "Explore Navigation",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "exploreNavigation",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "companyNavigation": {
+        "edit": {
+          "label": "Company Navigation",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "companyNavigation",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "legalLinks": {
+        "edit": {
+          "label": "Legal Links",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "legalLinks",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "exploreLabel": {
+        "edit": {
+          "label": "Label for Explore Navigation List",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "exploreLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "companyLabel": {
+        "edit": {
+          "label": "Label for Company Navigation List",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "companyLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "edit": [
+        [
+          {
+            "name": "exploreLabel",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "exploreNavigation",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "companyLabel",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "companyNavigation",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "legalLinks",
+            "size": 12
+          }
+        ]
+      ],
+      "list": [
+        "id",
+        "exploreNavigation",
+        "companyNavigation",
+        "legalLinks"
+      ]
+    },
+    "uid": "api::footer-navigation.footer-navigation"
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}
