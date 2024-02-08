@@ -215,7 +215,7 @@
       "type": "string",
       "default": "Maximum file size: 10MB",
       "required": true,
-      "maxLength": 20
+      "maxLength": 255
     },
     "fileTypeLabel": {
       "type": "string",
