@@ -1,0 +1,97 @@
+{
+  "key": "plugin_content_manager_configuration_components::page-blades.embed",
+  "value": {
+    "uid": "page-blades.embed",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "headline",
+      "defaultSortBy": "headline",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "headline": {
+        "edit": {
+          "label": "Headline",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "headline",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "posterImage": {
+        "edit": {
+          "label": "Poster Image",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "posterImage",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "virtualShowroomLInk": {
+        "edit": {
+          "label": "Virtual Showroom URL",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "virtualShowroomLInk",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "headline",
+        "posterImage",
+        "virtualShowroomLInk"
+      ],
+      "edit": [
+        [
+          {
+            "name": "headline",
+            "size": 6
+          },
+          {
+            "name": "virtualShowroomLInk",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "posterImage",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

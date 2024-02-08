@@ -4,10 +4,11 @@
   "info": {
     "singularName": "newsletter-cta",
     "pluralName": "newsletter-ctas",
-    "displayName": "Newsletter CTA"
+    "displayName": "Newsletter CTA",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {

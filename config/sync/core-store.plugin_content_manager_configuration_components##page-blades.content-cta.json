@@ -1,0 +1,137 @@
+{
+  "key": "plugin_content_manager_configuration_components::page-blades.content-cta",
+  "value": {
+    "uid": "page-blades.content-cta",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "headline",
+      "defaultSortBy": "headline",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "headline": {
+        "edit": {
+          "label": "headline",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "headline",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "subcopy": {
+        "edit": {
+          "label": "subcopy",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "subcopy",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "cta": {
+        "edit": {
+          "label": "cta",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "cta",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "bgImage": {
+        "edit": {
+          "label": "bgImage",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "bgImage",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "bgColor": {
+        "edit": {
+          "label": "bgColor",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "bgColor",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "headline",
+        "cta",
+        "bgImage"
+      ],
+      "edit": [
+        [
+          {
+            "name": "headline",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "subcopy",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "cta",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "bgImage",
+            "size": 6
+          },
+          {
+            "name": "bgColor",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

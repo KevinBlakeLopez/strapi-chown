@@ -1054,7 +1054,7 @@ export interface ApiGeneralFormDataGeneralFormData extends Schema.SingleType {
     description: '';
   };
   options: {
-    draftAndPublish: true;
+    draftAndPublish: false;
   };
   attributes: {
     newsletterTitle: Attribute.String &
@@ -1333,7 +1333,6 @@ export interface ApiGeneralFormDataGeneralFormData extends Schema.SingleType {
       Attribute.DefaultTo<'Submit'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::general-form-data.general-form-data',
       'oneToOne',
@@ -1358,7 +1357,7 @@ export interface ApiGlobalDataGlobalData extends Schema.SingleType {
     description: '';
   };
   options: {
-    draftAndPublish: true;
+    draftAndPublish: false;
   };
   attributes: {
     siteTitle: Attribute.String &
@@ -1438,7 +1437,6 @@ export interface ApiGlobalDataGlobalData extends Schema.SingleType {
       Attribute.DefaultTo<'Associated Brand Partners'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::global-data.global-data',
       'oneToOne',
@@ -1537,9 +1535,10 @@ export interface ApiNewsletterCtaNewsletterCta extends Schema.SingleType {
     singularName: 'newsletter-cta';
     pluralName: 'newsletter-ctas';
     displayName: 'Newsletter CTA';
+    description: '';
   };
   options: {
-    draftAndPublish: true;
+    draftAndPublish: false;
   };
   attributes: {
     title: Attribute.String &
@@ -1551,7 +1550,6 @@ export interface ApiNewsletterCtaNewsletterCta extends Schema.SingleType {
     cta: Attribute.Component<'global.call-to-action'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::newsletter-cta.newsletter-cta',
       'oneToOne',

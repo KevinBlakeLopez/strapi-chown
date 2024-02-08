@@ -1,0 +1,58 @@
+{
+  "key": "plugin_content_manager_configuration_components::page-blades.quote",
+  "value": {
+    "uid": "page-blades.quote",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "quote": {
+        "edit": {
+          "label": "Quote",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "attribution"
+        },
+        "list": {
+          "label": "quote",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "quote"
+      ],
+      "edit": [
+        [
+          {
+            "name": "quote",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

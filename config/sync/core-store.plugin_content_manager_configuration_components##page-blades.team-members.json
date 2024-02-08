@@ -1,0 +1,99 @@
+{
+  "key": "plugin_content_manager_configuration_components::page-blades.team-members",
+  "value": {
+    "uid": "page-blades.team-members",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "headline",
+      "defaultSortBy": "headline",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "headline": {
+        "edit": {
+          "label": "Headline",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "headline",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "subcopy": {
+        "edit": {
+          "label": "Copy",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "subcopy",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "teamMembers": {
+        "edit": {
+          "label": "Team Members",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "teamMembers",
+          "searchable": false,
+          "sortable": false
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "headline",
+        "teamMembers"
+      ],
+      "edit": [
+        [
+          {
+            "name": "headline",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "subcopy",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "teamMembers",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

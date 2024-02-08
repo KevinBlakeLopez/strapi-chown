@@ -1,0 +1,388 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::global-data.global-data",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "siteTitle",
+      "defaultSortBy": "siteTitle",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "siteTitle": {
+        "edit": {
+          "label": "Website Title",
+          "description": "Alternative text for Chown Logo",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "siteTitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "copyright": {
+        "edit": {
+          "label": "Copyright Text",
+          "description": "Copyright text found in the footer",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "copyright",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "defaultSeo": {
+        "edit": {
+          "label": "Default SEO - fallback SEO for Pages/Brand/Product Pages",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "defaultSeo",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "socialMediaLinks": {
+        "edit": {
+          "label": "Social Media Links",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "socialMediaLinks",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "showMoreLabel": {
+        "edit": {
+          "label": "Show More Label",
+          "description": "Text for Show More buttons",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "showMoreLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "clearFiltersLabel": {
+        "edit": {
+          "label": "Clear Filters Label",
+          "description": "Text for Clear Filters button",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "clearFiltersLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "designerLabel": {
+        "edit": {
+          "label": "Designer Label",
+          "description": "Label for Designer sections",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "designerLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "photographerLabel": {
+        "edit": {
+          "label": "Photographer Label",
+          "description": "Label for Photographer section",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "photographerLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "clientLabel": {
+        "edit": {
+          "label": "Client Label",
+          "description": "Label for Client Section",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "clientLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "categoriesLabel": {
+        "edit": {
+          "label": "Categories Label",
+          "description": "Label for Categories Section",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "categoriesLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "priceTierLabel": {
+        "edit": {
+          "label": "Price Tier Label",
+          "description": "Label for Price Tier section",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "priceTierLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "leadTimeLabel": {
+        "edit": {
+          "label": "Lead Time Label",
+          "description": "Label for Lead Time section",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "leadTimeLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "leadTimeInfo": {
+        "edit": {
+          "label": "Lead Time Info",
+          "description": "Text for Lead Time tooltip",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "leadTimeInfo",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "learnMoreLabel": {
+        "edit": {
+          "label": "Learn More Label",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "learnMoreLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "associatedBrandLabel": {
+        "edit": {
+          "label": "associatedBrandLabel",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "associatedBrandLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "siteTitle",
+        "copyright",
+        "createdAt"
+      ],
+      "edit": [
+        [
+          {
+            "name": "siteTitle",
+            "size": 6
+          },
+          {
+            "name": "copyright",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "showMoreLabel",
+            "size": 6
+          },
+          {
+            "name": "clearFiltersLabel",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "designerLabel",
+            "size": 6
+          },
+          {
+            "name": "photographerLabel",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "clientLabel",
+            "size": 6
+          },
+          {
+            "name": "categoriesLabel",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "priceTierLabel",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "leadTimeLabel",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "leadTimeInfo",
+            "size": 8
+          }
+        ],
+        [
+          {
+            "name": "learnMoreLabel",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "socialMediaLinks",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "defaultSeo",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "associatedBrandLabel",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "api::global-data.global-data"
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}
