@@ -22,7 +22,7 @@
       },
       "title": {
         "edit": {
-          "label": "title",
+          "label": "Title",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -36,7 +36,7 @@
       },
       "slug": {
         "edit": {
-          "label": "slug",
+          "label": "Slug",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -50,7 +50,7 @@
       },
       "brands": {
         "edit": {
-          "label": "brands",
+          "label": "Brands",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -65,7 +65,7 @@
       },
       "description": {
         "edit": {
-          "label": "description",
+          "label": "Description",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -137,12 +137,6 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "title",
-        "slug",
-        "brands"
-      ],
       "edit": [
         [
           {
@@ -156,14 +150,20 @@
         ],
         [
           {
-            "name": "brands",
+            "name": "description",
             "size": 6
           },
           {
-            "name": "description",
+            "name": "brands",
             "size": 6
           }
         ]
+      ],
+      "list": [
+        "id",
+        "title",
+        "slug",
+        "brands"
       ]
     }
   },

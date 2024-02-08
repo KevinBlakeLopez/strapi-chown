@@ -50,7 +50,7 @@
       "type": {
         "edit": {
           "label": "Type of LInk",
-          "description": "",
+          "description": "Internal - /slug or External - URL",
           "placeholder": "",
           "visible": true,
           "editable": true

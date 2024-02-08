@@ -22,7 +22,7 @@
       },
       "name": {
         "edit": {
-          "label": "name",
+          "label": "Brand Name",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -50,7 +50,7 @@
       },
       "seo": {
         "edit": {
-          "label": "SEO",
+          "label": "Brand Landing Page SEO",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -78,7 +78,7 @@
       },
       "categories": {
         "edit": {
-          "label": "categories",
+          "label": "Categories",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -93,7 +93,7 @@
       },
       "cost": {
         "edit": {
-          "label": "cost",
+          "label": "Cost",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -108,7 +108,7 @@
       },
       "lead_time": {
         "edit": {
-          "label": "lead_time",
+          "label": "Lead Time",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -123,7 +123,7 @@
       },
       "projects": {
         "edit": {
-          "label": "projects",
+          "label": "Projects",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -138,7 +138,7 @@
       },
       "collections": {
         "edit": {
-          "label": "collections",
+          "label": "Collections",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -152,7 +152,7 @@
       },
       "intro": {
         "edit": {
-          "label": "intro",
+          "label": "Brand Page Intro",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -166,7 +166,7 @@
       },
       "contentCta": {
         "edit": {
-          "label": "contentCta",
+          "label": "Content CTA",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -180,7 +180,7 @@
       },
       "featuredProjects": {
         "edit": {
-          "label": "featuredProjects",
+          "label": "Feature Projects",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -194,7 +194,7 @@
       },
       "banner": {
         "edit": {
-          "label": "banner",
+          "label": "Banner Image",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -208,8 +208,8 @@
       },
       "card": {
         "edit": {
-          "label": "card",
-          "description": "",
+          "label": "Card Image",
+          "description": "Image used in brand cards",
           "placeholder": "",
           "visible": true,
           "editable": true
@@ -280,14 +280,12 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "logo",
-        "slug",
-        "name"
-      ],
       "edit": [
         [
+          {
+            "name": "name",
+            "size": 6
+          },
           {
             "name": "slug",
             "size": 6
@@ -301,7 +299,17 @@
         ],
         [
           {
-            "name": "seo",
+            "name": "banner",
+            "size": 6
+          },
+          {
+            "name": "card",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "intro",
             "size": 12
           }
         ],
@@ -327,19 +335,7 @@
         ],
         [
           {
-            "name": "name",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "collections",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "intro",
+            "name": "featuredProjects",
             "size": 12
           }
         ],
@@ -351,20 +347,22 @@
         ],
         [
           {
-            "name": "featuredProjects",
+            "name": "collections",
             "size": 12
           }
         ],
         [
           {
-            "name": "banner",
-            "size": 6
-          },
-          {
-            "name": "card",
-            "size": 6
+            "name": "seo",
+            "size": 12
           }
         ]
+      ],
+      "list": [
+        "id",
+        "logo",
+        "slug",
+        "name"
       ]
     }
   },

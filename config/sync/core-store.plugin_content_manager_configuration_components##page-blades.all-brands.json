@@ -22,7 +22,7 @@
       },
       "headline": {
         "edit": {
-          "label": "headline",
+          "label": "Headline",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -36,7 +36,7 @@
       },
       "subcopy": {
         "edit": {
-          "label": "subcopy",
+          "label": "SubCopy",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -50,7 +50,7 @@
       },
       "cta": {
         "edit": {
-          "label": "cta",
+          "label": "CTA",
           "description": "",
           "placeholder": "",
           "visible": true,

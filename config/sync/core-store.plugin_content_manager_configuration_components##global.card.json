@@ -22,7 +22,7 @@
       },
       "title": {
         "edit": {
-          "label": "title",
+          "label": "Title",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -36,7 +36,7 @@
       },
       "image": {
         "edit": {
-          "label": "image",
+          "label": "Image",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -50,7 +50,7 @@
       },
       "link": {
         "edit": {
-          "label": "link",
+          "label": "Link",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -64,8 +64,8 @@
       },
       "linkType": {
         "edit": {
-          "label": "linkType",
-          "description": "",
+          "label": "Type of Link",
+          "description": "Internal - /slug or External - URL",
           "placeholder": "",
           "visible": true,
           "editable": true
@@ -78,7 +78,7 @@
       },
       "project": {
         "edit": {
-          "label": "project",
+          "label": "Project",
           "description": "",
           "placeholder": "",
           "visible": true,

@@ -22,7 +22,7 @@
       },
       "description": {
         "edit": {
-          "label": "description",
+          "label": "Brand Description",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -36,7 +36,7 @@
       },
       "brandCta": {
         "edit": {
-          "label": "brandCta",
+          "label": "Brand CTA - link to brand website",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -50,8 +50,8 @@
       },
       "secondaryTitle": {
         "edit": {
-          "label": "secondaryTitle",
-          "description": "",
+          "label": "Chown-based Title",
+          "description": "Chown specific block title",
           "placeholder": "",
           "visible": true,
           "editable": true
@@ -64,7 +64,7 @@
       },
       "secondaryDescription": {
         "edit": {
-          "label": "secondaryDescription",
+          "label": "Chown-based Description",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -78,7 +78,7 @@
       },
       "secondaryCta": {
         "edit": {
-          "label": "secondaryCta",
+          "label": "Chown-based CTA",
           "description": "",
           "placeholder": "",
           "visible": true,

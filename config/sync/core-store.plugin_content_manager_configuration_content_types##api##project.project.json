@@ -64,7 +64,7 @@
       },
       "categories": {
         "edit": {
-          "label": "categories",
+          "label": "Categories",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -79,7 +79,7 @@
       },
       "brands": {
         "edit": {
-          "label": "brands",
+          "label": "Brands",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -94,7 +94,7 @@
       },
       "designer": {
         "edit": {
-          "label": "designer",
+          "label": "Designer",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -109,7 +109,7 @@
       },
       "hero": {
         "edit": {
-          "label": "hero",
+          "label": "Hero Image",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -123,7 +123,7 @@
       },
       "card": {
         "edit": {
-          "label": "card",
+          "label": "Card Image",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -137,7 +137,7 @@
       },
       "intro": {
         "edit": {
-          "label": "intro",
+          "label": "Project Intro Block",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -151,7 +151,7 @@
       },
       "projectCta": {
         "edit": {
-          "label": "projectCta",
+          "label": "Project CTA Block",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -165,7 +165,7 @@
       },
       "projectHero": {
         "edit": {
-          "label": "projectHero",
+          "label": "Project Hero Block",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -179,7 +179,7 @@
       },
       "projectDynamicContent": {
         "edit": {
-          "label": "projectDynamicContent",
+          "label": "Project Dynamic Content Blocks",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -251,12 +251,6 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "title",
-        "slug",
-        "seo"
-      ],
       "edit": [
         [
           {
@@ -270,7 +264,7 @@
         ],
         [
           {
-            "name": "seo",
+            "name": "intro",
             "size": 12
           }
         ],
@@ -302,12 +296,6 @@
         ],
         [
           {
-            "name": "intro",
-            "size": 12
-          }
-        ],
-        [
-          {
             "name": "projectCta",
             "size": 12
           }
@@ -323,7 +311,19 @@
             "name": "projectDynamicContent",
             "size": 12
           }
+        ],
+        [
+          {
+            "name": "seo",
+            "size": 12
+          }
         ]
+      ],
+      "list": [
+        "id",
+        "title",
+        "slug",
+        "seo"
       ]
     }
   },
