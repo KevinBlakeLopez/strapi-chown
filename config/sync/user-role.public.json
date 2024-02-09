@@ -4,6 +4,78 @@
   "type": "public",
   "permissions": [
     {
+      "action": "api::brand.brand.find"
+    },
+    {
+      "action": "api::brand.brand.findOne"
+    },
+    {
+      "action": "api::category.category.find"
+    },
+    {
+      "action": "api::category.category.findOne"
+    },
+    {
+      "action": "api::designer.designer.find"
+    },
+    {
+      "action": "api::designer.designer.findOne"
+    },
+    {
+      "action": "api::footer-navigation.footer-navigation.find"
+    },
+    {
+      "action": "api::general-form-data.general-form-data.find"
+    },
+    {
+      "action": "api::global-data.global-data.find"
+    },
+    {
+      "action": "api::header-navigation.header-navigation.find"
+    },
+    {
+      "action": "api::lead-time.lead-time.delete"
+    },
+    {
+      "action": "api::lead-time.lead-time.find"
+    },
+    {
+      "action": "api::newsletter-cta.newsletter-cta.find"
+    },
+    {
+      "action": "api::page.page.find"
+    },
+    {
+      "action": "api::page.page.findOne"
+    },
+    {
+      "action": "api::price-tier.price-tier.find"
+    },
+    {
+      "action": "api::price-tier.price-tier.findOne"
+    },
+    {
+      "action": "api::project.project.find"
+    },
+    {
+      "action": "api::project.project.findOne"
+    },
+    {
+      "action": "api::quote.quote.find"
+    },
+    {
+      "action": "api::quote.quote.findOne"
+    },
+    {
+      "action": "api::team-member.team-member.find"
+    },
+    {
+      "action": "api::team-member.team-member.findOne"
+    },
+    {
+      "action": "plugin::redirects.redirect.find"
+    },
+    {
       "action": "plugin::users-permissions.auth.callback"
     },
     {
