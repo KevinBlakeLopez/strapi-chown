@@ -1372,7 +1372,7 @@ export interface ApiGlobalDataGlobalData extends Schema.SingleType {
         maxLength: 255;
       }> &
       Attribute.DefaultTo<'Copyright 2024 Chown Hardware. All Rights Reserved.'>;
-    defaultSeo: Attribute.Component<'shared.seo', true>;
+    defaultSeo: Attribute.Component<'shared.seo'>;
     socialMediaLinks: Attribute.Component<'global.social-media-link', true>;
     showMoreLabel: Attribute.String &
       Attribute.Required &
