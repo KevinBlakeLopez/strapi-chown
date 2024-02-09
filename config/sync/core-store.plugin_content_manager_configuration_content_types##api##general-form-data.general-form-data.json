@@ -22,7 +22,7 @@
       },
       "newsletterTitle": {
         "edit": {
-          "label": "newsletterTitle",
+          "label": "Newsletter Form Title",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -36,7 +36,7 @@
       },
       "sampleRequestTitle": {
         "edit": {
-          "label": "sampleRequestTitle",
+          "label": "Sample Request Form Title",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -50,7 +50,7 @@
       },
       "warrantyClaimTitme": {
         "edit": {
-          "label": "warrantyClaimTitme",
+          "label": "Warranty Claim Form Title",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -64,7 +64,7 @@
       },
       "appointmentTitle": {
         "edit": {
-          "label": "appointmentTitle",
+          "label": "Appointment Form Title",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -78,7 +78,7 @@
       },
       "nameLabel": {
         "edit": {
-          "label": "nameLabel",
+          "label": "Name Label",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -92,7 +92,7 @@
       },
       "namePlaceholder": {
         "edit": {
-          "label": "namePlaceholder",
+          "label": "Name Placeholder",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -106,7 +106,7 @@
       },
       "emailLabel": {
         "edit": {
-          "label": "emailLabel",
+          "label": "Email Label",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -120,7 +120,7 @@
       },
       "emailPlaceholder": {
         "edit": {
-          "label": "emailPlaceholder",
+          "label": "Email Placeholder",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -134,7 +134,7 @@
       },
       "addressLabel": {
         "edit": {
-          "label": "addressLabel",
+          "label": "Address Label",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -148,7 +148,7 @@
       },
       "addressPlaceholder": {
         "edit": {
-          "label": "addressPlaceholder",
+          "label": "Address Placeholder",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -162,7 +162,7 @@
       },
       "cityLabel": {
         "edit": {
-          "label": "cityLabel",
+          "label": "City Label",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -176,7 +176,7 @@
       },
       "stateLabel": {
         "edit": {
-          "label": "stateLabel",
+          "label": "State Label",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -190,7 +190,7 @@
       },
       "statePlaceholder": {
         "edit": {
-          "label": "statePlaceholder",
+          "label": "State Placeholder",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -204,7 +204,7 @@
       },
       "zipLabel": {
         "edit": {
-          "label": "zipLabel",
+          "label": "Zip Code Label",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -218,7 +218,7 @@
       },
       "zipPlaceholder": {
         "edit": {
-          "label": "zipPlaceholder",
+          "label": "Zip Code Placeholder",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -232,7 +232,7 @@
       },
       "phoneLabel": {
         "edit": {
-          "label": "phoneLabel",
+          "label": "Phone Label",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -246,7 +246,7 @@
       },
       "phonePlaceholder": {
         "edit": {
-          "label": "phonePlaceholder",
+          "label": "Phone Placeholder",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -260,7 +260,7 @@
       },
       "companyLabel": {
         "edit": {
-          "label": "companyLabel",
+          "label": "Company Label",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -274,7 +274,7 @@
       },
       "companyPlaceholder": {
         "edit": {
-          "label": "companyPlaceholder",
+          "label": "Company Placeholder",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -288,7 +288,7 @@
       },
       "brandLabel": {
         "edit": {
-          "label": "brandLabel",
+          "label": "Brand Label",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -302,7 +302,7 @@
       },
       "finishLabel": {
         "edit": {
-          "label": "finishLabel",
+          "label": "Finish Label",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -316,7 +316,7 @@
       },
       "orderLabel": {
         "edit": {
-          "label": "orderLabel",
+          "label": "Order Label",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -330,7 +330,7 @@
       },
       "productLabel": {
         "edit": {
-          "label": "productLabel",
+          "label": "Product Label",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -344,7 +344,7 @@
       },
       "appointmentSubtitle": {
         "edit": {
-          "label": "appointmentSubtitle",
+          "label": "Appointment Form Subtitle",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -358,7 +358,7 @@
       },
       "selfIdentifierLabel": {
         "edit": {
-          "label": "selfIdentifierLabel",
+          "label": "Self-Identifier Label",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -372,7 +372,7 @@
       },
       "selfIdentifierOptions": {
         "edit": {
-          "label": "selfIdentifierOptions",
+          "label": "Self-Identifier Options",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -386,7 +386,7 @@
       },
       "tradeProfessionalLabel": {
         "edit": {
-          "label": "tradeProfessionalLabel",
+          "label": "Trade Professional Label",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -400,7 +400,7 @@
       },
       "tradeProfessionalOptions": {
         "edit": {
-          "label": "tradeProfessionalOptions",
+          "label": "Trade Professional Options",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -414,7 +414,7 @@
       },
       "projectInfoTitle": {
         "edit": {
-          "label": "projectInfoTitle",
+          "label": "Project Info Title",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -428,7 +428,7 @@
       },
       "projectNeedLabel": {
         "edit": {
-          "label": "projectNeedLabel",
+          "label": "Project Need Label",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -442,7 +442,7 @@
       },
       "projectDetailLabel": {
         "edit": {
-          "label": "projectDetailLabel",
+          "label": "Project Detail Label",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -456,7 +456,7 @@
       },
       "optInLabel": {
         "edit": {
-          "label": "optInLabel",
+          "label": "Opt-In Label",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -470,7 +470,7 @@
       },
       "defectDetailsLabel": {
         "edit": {
-          "label": "defectDetailsLabel",
+          "label": "Defect Details Input Label",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -484,7 +484,7 @@
       },
       "uploadLabel": {
         "edit": {
-          "label": "uploadLabel",
+          "label": "Upload Label",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -498,7 +498,7 @@
       },
       "fileSizeLabel": {
         "edit": {
-          "label": "fileSizeLabel",
+          "label": "File Size Label",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -512,7 +512,7 @@
       },
       "fileTypeLabel": {
         "edit": {
-          "label": "fileTypeLabel",
+          "label": "File Type Label",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -526,7 +526,7 @@
       },
       "fileUploadLabel": {
         "edit": {
-          "label": "fileUploadLabel",
+          "label": "File Upload Label",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -540,7 +540,7 @@
       },
       "sampleDateLabel": {
         "edit": {
-          "label": "sampleDateLabel",
+          "label": "Sample Date Label",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -554,7 +554,7 @@
       },
       "sampleDatePlaceholder": {
         "edit": {
-          "label": "sampleDatePlaceholder",
+          "label": "Sample Date Placeholder",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -568,7 +568,7 @@
       },
       "additionalCommentsLabel": {
         "edit": {
-          "label": "additionalCommentsLabel",
+          "label": "Additional Comments Label",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -582,7 +582,7 @@
       },
       "referralLabel": {
         "edit": {
-          "label": "referralLabel",
+          "label": "Referral Label",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -596,7 +596,7 @@
       },
       "referralOptions": {
         "edit": {
-          "label": "referralOptions",
+          "label": "Referral Options",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -610,7 +610,7 @@
       },
       "locationLabel": {
         "edit": {
-          "label": "locationLabel",
+          "label": "Location Label",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -624,7 +624,7 @@
       },
       "professionLabel": {
         "edit": {
-          "label": "professionLabel",
+          "label": "Profession Label",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -638,7 +638,7 @@
       },
       "professionOptions": {
         "edit": {
-          "label": "professionOptions",
+          "label": "Profession Options",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -652,7 +652,7 @@
       },
       "locationPlaceholder": {
         "edit": {
-          "label": "locationPlaceholder",
+          "label": "Location Placeholder",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -666,7 +666,7 @@
       },
       "professionPlaceholder": {
         "edit": {
-          "label": "professionPlaceholder",
+          "label": "Profession Placeholder",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -680,7 +680,7 @@
       },
       "newsletterButtonLabel": {
         "edit": {
-          "label": "newsletterButtonLabel",
+          "label": "Newsletter Button Label",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -694,7 +694,7 @@
       },
       "submitButtonLabel": {
         "edit": {
-          "label": "submitButtonLabel",
+          "label": "Submit Button Label",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -766,12 +766,6 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "newsletterTitle",
-        "sampleRequestTitle",
-        "warrantyClaimTitme"
-      ],
       "edit": [
         [
           {
@@ -787,9 +781,15 @@
           {
             "name": "warrantyClaimTitme",
             "size": 6
-          },
+          }
+        ],
+        [
           {
             "name": "appointmentTitle",
+            "size": 6
+          },
+          {
+            "name": "appointmentSubtitle",
             "size": 6
           }
         ],
@@ -827,69 +827,65 @@
           {
             "name": "cityLabel",
             "size": 6
-          },
+          }
+        ],
+        [
           {
             "name": "stateLabel",
             "size": 6
-          }
-        ],
-        [
+          },
           {
             "name": "statePlaceholder",
             "size": 6
-          },
+          }
+        ],
+        [
           {
             "name": "zipLabel",
             "size": 6
-          }
-        ],
-        [
+          },
           {
             "name": "zipPlaceholder",
             "size": 6
-          },
+          }
+        ],
+        [
           {
             "name": "phoneLabel",
             "size": 6
-          }
-        ],
-        [
+          },
           {
             "name": "phonePlaceholder",
             "size": 6
-          },
+          }
+        ],
+        [
           {
             "name": "companyLabel",
             "size": 6
-          }
-        ],
-        [
+          },
           {
             "name": "companyPlaceholder",
             "size": 6
-          },
+          }
+        ],
+        [
           {
             "name": "brandLabel",
             "size": 6
-          }
-        ],
-        [
+          },
           {
             "name": "finishLabel",
             "size": 6
-          },
-          {
-            "name": "orderLabel",
-            "size": 6
           }
         ],
         [
           {
-            "name": "productLabel",
+            "name": "orderLabel",
             "size": 6
           },
           {
-            "name": "appointmentSubtitle",
+            "name": "productLabel",
             "size": 6
           }
         ],
@@ -933,45 +929,41 @@
             "size": 6
           },
           {
-            "name": "optInLabel",
+            "name": "defectDetailsLabel",
             "size": 6
           }
         ],
         [
-          {
-            "name": "defectDetailsLabel",
-            "size": 6
-          },
           {
             "name": "uploadLabel",
             "size": 6
-          }
-        ],
-        [
+          },
           {
             "name": "fileSizeLabel",
             "size": 6
-          },
+          }
+        ],
+        [
           {
             "name": "fileTypeLabel",
             "size": 6
-          }
-        ],
-        [
+          },
           {
             "name": "fileUploadLabel",
             "size": 6
-          },
-          {
-            "name": "sampleDateLabel",
-            "size": 6
           }
         ],
         [
           {
-            "name": "sampleDatePlaceholder",
+            "name": "sampleDateLabel",
             "size": 6
           },
+          {
+            "name": "sampleDatePlaceholder",
+            "size": 6
+          }
+        ],
+        [
           {
             "name": "additionalCommentsLabel",
             "size": 6
@@ -995,7 +987,17 @@
             "size": 6
           },
           {
+            "name": "locationPlaceholder",
+            "size": 6
+          }
+        ],
+        [
+          {
             "name": "professionLabel",
+            "size": 6
+          },
+          {
+            "name": "professionPlaceholder",
             "size": 6
           }
         ],
@@ -1007,11 +1009,7 @@
         ],
         [
           {
-            "name": "locationPlaceholder",
-            "size": 6
-          },
-          {
-            "name": "professionPlaceholder",
+            "name": "optInLabel",
             "size": 6
           }
         ],
@@ -1025,6 +1023,12 @@
             "size": 6
           }
         ]
+      ],
+      "list": [
+        "id",
+        "newsletterTitle",
+        "sampleRequestTitle",
+        "warrantyClaimTitme"
       ]
     }
   },
