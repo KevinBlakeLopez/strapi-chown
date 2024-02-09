@@ -217,7 +217,7 @@
       },
       "associatedBrandLabel": {
         "edit": {
-          "label": "associatedBrandLabel",
+          "label": "Associated Brand Label",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -289,12 +289,6 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "siteTitle",
-        "copyright",
-        "createdAt"
-      ],
       "edit": [
         [
           {
@@ -340,6 +334,10 @@
           {
             "name": "priceTierLabel",
             "size": 6
+          },
+          {
+            "name": "associatedBrandLabel",
+            "size": 6
           }
         ],
         [
@@ -371,13 +369,13 @@
             "name": "defaultSeo",
             "size": 12
           }
-        ],
-        [
-          {
-            "name": "associatedBrandLabel",
-            "size": 6
-          }
         ]
+      ],
+      "list": [
+        "id",
+        "siteTitle",
+        "copyright",
+        "createdAt"
       ]
     },
     "uid": "api::global-data.global-data"
