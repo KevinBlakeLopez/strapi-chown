@@ -332,7 +332,11 @@ export interface PageBladesMarqueeBlade extends Schema.Component {
     description: '';
   };
   attributes: {
-    headline: Attribute.String;
+    headline: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
     cta: Attribute.Component<'global.call-to-action'>;
     media: Attribute.Component<'global.media'>;
   };
@@ -397,9 +401,14 @@ export interface PageBladesTeamMembers extends Schema.Component {
   collectionName: 'components_page_blades_team_members';
   info: {
     displayName: 'Team Members';
+    description: '';
   };
   attributes: {
-    headline: Attribute.String;
+    headline: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
     subcopy: Attribute.RichText;
     teamMembers: Attribute.Relation<
       'page-blades.team-members',

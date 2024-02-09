@@ -1,12 +1,15 @@
 {
   "collectionName": "components_page_blades_team_members",
   "info": {
-    "displayName": "Team Members"
+    "displayName": "Team Members",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "headline": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "maxLength": 255
     },
     "subcopy": {
       "type": "richtext"
