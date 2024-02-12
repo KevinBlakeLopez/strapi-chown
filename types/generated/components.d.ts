@@ -227,6 +227,7 @@ export interface PageBladesContentColumn extends Schema.Component {
   collectionName: 'components_page_blades_content_columns';
   info: {
     displayName: 'Content Column';
+    description: '';
   };
   attributes: {
     headline: Attribute.String &
@@ -236,7 +237,9 @@ export interface PageBladesContentColumn extends Schema.Component {
       }>;
     subcopy: Attribute.RichText;
     cta: Attribute.Component<'global.call-to-action'>;
-    bgColor: Attribute.Enumeration<['darkblue', 'eggshell', 'skyblue']>;
+    bgColor: Attribute.Enumeration<['darkblue', 'eggshell', 'skyblue']> &
+      Attribute.Required &
+      Attribute.DefaultTo<'darkblue'>;
   };
 }
 
@@ -328,7 +331,7 @@ export interface PageBladesHero extends Schema.Component {
 export interface PageBladesMarqueeBlade extends Schema.Component {
   collectionName: 'components_page_blades_marquee_blades';
   info: {
-    displayName: 'Marque';
+    displayName: 'Marquee';
     description: '';
   };
   attributes: {
@@ -339,6 +342,7 @@ export interface PageBladesMarqueeBlade extends Schema.Component {
       }>;
     cta: Attribute.Component<'global.call-to-action'>;
     media: Attribute.Component<'global.media'>;
+    additionalImages: Attribute.Media;
   };
 }
 
