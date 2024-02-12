@@ -35,7 +35,7 @@
       },
       "image": {
         "edit": {
-          "label": "Image(s)",
+          "label": "Image",
           "description": "If using video, image will be posterframe",
           "placeholder": "",
           "visible": true,

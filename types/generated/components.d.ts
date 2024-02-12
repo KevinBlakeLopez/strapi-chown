@@ -331,7 +331,7 @@ export interface PageBladesHero extends Schema.Component {
 export interface PageBladesMarqueeBlade extends Schema.Component {
   collectionName: 'components_page_blades_marquee_blades';
   info: {
-    displayName: 'Marque';
+    displayName: 'Marquee';
     description: '';
   };
   attributes: {
@@ -342,6 +342,7 @@ export interface PageBladesMarqueeBlade extends Schema.Component {
       }>;
     cta: Attribute.Component<'global.call-to-action'>;
     media: Attribute.Component<'global.media'>;
+    additionalImages: Attribute.Media;
   };
 }
 

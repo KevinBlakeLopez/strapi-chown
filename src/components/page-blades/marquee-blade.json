@@ -1,7 +1,7 @@
 {
   "collectionName": "components_page_blades_marquee_blades",
   "info": {
-    "displayName": "Marque",
+    "displayName": "Marquee",
     "description": ""
   },
   "options": {},
@@ -20,6 +20,13 @@
       "type": "component",
       "repeatable": false,
       "component": "global.media"
+    },
+    "additionalImages": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
