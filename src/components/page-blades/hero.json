@@ -31,7 +31,7 @@
         "eggshell",
         "skyblue"
       ],
-      "default": "darkblue",
+      "default": "eggshell",
       "required": true
     },
     "imageOrientation": {

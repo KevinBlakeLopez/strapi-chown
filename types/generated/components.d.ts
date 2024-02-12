@@ -321,7 +321,7 @@ export interface PageBladesHero extends Schema.Component {
     cta: Attribute.Component<'global.call-to-action'>;
     bgColor: Attribute.Enumeration<['darkblue', 'eggshell', 'skyblue']> &
       Attribute.Required &
-      Attribute.DefaultTo<'darkblue'>;
+      Attribute.DefaultTo<'eggshell'>;
     imageOrientation: Attribute.Enumeration<['left', 'right']> &
       Attribute.Required &
       Attribute.DefaultTo<'right'>;
