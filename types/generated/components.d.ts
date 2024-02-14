@@ -143,10 +143,21 @@ export interface GlobalColumn extends Schema.Component {
   };
 }
 
+export interface GlobalMediaImageAndVideoOnly extends Schema.Component {
+  collectionName: 'components_global_media_image_and_video_onlies';
+  info: {
+    displayName: 'Media - Image and Video only';
+  };
+  attributes: {
+    image: Attribute.Media & Attribute.Required;
+    video: Attribute.Media;
+  };
+}
+
 export interface GlobalMedia extends Schema.Component {
   collectionName: 'components_global_media';
   info: {
-    displayName: 'media';
+    displayName: 'Media with Youtube';
     description: '';
   };
   attributes: {
@@ -321,7 +332,7 @@ export interface PageBladesHero extends Schema.Component {
     cta: Attribute.Component<'global.call-to-action'>;
     bgColor: Attribute.Enumeration<['darkblue', 'eggshell', 'skyblue']> &
       Attribute.Required &
-      Attribute.DefaultTo<'darkblue'>;
+      Attribute.DefaultTo<'eggshell'>;
     imageOrientation: Attribute.Enumeration<['left', 'right']> &
       Attribute.Required &
       Attribute.DefaultTo<'right'>;
@@ -342,6 +353,7 @@ export interface PageBladesMarqueeBlade extends Schema.Component {
       }>;
     cta: Attribute.Component<'global.call-to-action'>;
     media: Attribute.Component<'global.media'>;
+    mainMedia: Attribute.Component<'global.media-image-and-video-only'>;
     additionalImages: Attribute.Media;
   };
 }
@@ -430,7 +442,7 @@ export interface PageBladesTeamMembers extends Schema.Component {
 export interface ProjectBladesHero extends Schema.Component {
   collectionName: 'components_project_blades_heroes';
   info: {
-    displayName: 'Hero';
+    displayName: 'Project Hero';
     description: '';
   };
   attributes: {
@@ -522,6 +534,7 @@ declare module '@strapi/types' {
       'global.collection-image': GlobalCollectionImage;
       'global.collection': GlobalCollection;
       'global.column': GlobalColumn;
+      'global.media-image-and-video-only': GlobalMediaImageAndVideoOnly;
       'global.media': GlobalMedia;
       'global.select-option': GlobalSelectOption;
       'global.social-media-link': GlobalSocialMediaLink;
