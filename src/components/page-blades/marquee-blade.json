@@ -21,6 +21,11 @@
       "repeatable": false,
       "component": "global.media"
     },
+    "mainMedia": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.media-image-and-video-only"
+    },
     "additionalImages": {
       "allowedTypes": [
         "images"

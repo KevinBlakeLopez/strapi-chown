@@ -137,7 +137,7 @@
       },
       "intro": {
         "edit": {
-          "label": "Project Intro Block",
+          "label": "Project Introduction Blade",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -151,7 +151,7 @@
       },
       "projectCta": {
         "edit": {
-          "label": "Project CTA Block",
+          "label": "Content CTA Blade",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -165,7 +165,7 @@
       },
       "projectHero": {
         "edit": {
-          "label": "Project Hero Block",
+          "label": "Hero Blade",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -264,23 +264,23 @@
         ],
         [
           {
-            "name": "intro",
-            "size": 12
+            "name": "brands",
+            "size": 6
+          },
+          {
+            "name": "designer",
+            "size": 6
           }
         ],
         [
           {
             "name": "categories",
             "size": 6
-          },
-          {
-            "name": "brands",
-            "size": 6
           }
         ],
         [
           {
-            "name": "designer",
+            "name": "card",
             "size": 6
           },
           {
@@ -290,8 +290,14 @@
         ],
         [
           {
-            "name": "card",
-            "size": 6
+            "name": "intro",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "projectDynamicContent",
+            "size": 12
           }
         ],
         [
@@ -303,12 +309,6 @@
         [
           {
             "name": "projectHero",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "projectDynamicContent",
             "size": 12
           }
         ],
