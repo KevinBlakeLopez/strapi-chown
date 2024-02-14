@@ -16,6 +16,30 @@ module.exports = ({ env }) => ({
             url: env('STRAPI_FE_URL') + '/{slug}',
           },
         },
+        {
+          uid: 'api::brand.brand',
+          draft: {
+            url: env('STRAPI_FE_URL') + '/{slug}',
+            query: {
+              preview: env('STRAPI_PREVIEW_SECRET'),
+            },
+          },
+          published: {
+            url: env('STRAPI_FE_URL') + '/{slug}',
+          },
+        },
+        {
+          uid: 'api::project.project',
+          draft: {
+            url: env('STRAPI_FE_URL') + '/{slug}',
+            query: {
+              preview: env('STRAPI_PREVIEW_SECRET'),
+            },
+          },
+          published: {
+            url: env('STRAPI_FE_URL') + '/{slug}',
+          },
+        },
       ],
     },
   },
