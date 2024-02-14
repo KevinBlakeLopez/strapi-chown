@@ -61,9 +61,23 @@
           "sortable": false
         }
       },
+      "mainMedia": {
+        "edit": {
+          "label": "Main Media",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "mainMedia",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "additionalImages": {
         "edit": {
-          "label": "additionalImages",
+          "label": "Carousel Images",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -92,6 +106,18 @@
         ],
         [
           {
+            "name": "mainMedia",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "additionalImages",
+            "size": 12
+          }
+        ],
+        [
+          {
             "name": "media",
             "size": 12
           }
@@ -100,12 +126,6 @@
           {
             "name": "cta",
             "size": 12
-          }
-        ],
-        [
-          {
-            "name": "additionalImages",
-            "size": 6
           }
         ]
       ]

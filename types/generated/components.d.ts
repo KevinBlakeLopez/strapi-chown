@@ -147,6 +147,7 @@ export interface GlobalMediaImageAndVideoOnly extends Schema.Component {
   collectionName: 'components_global_media_image_and_video_onlies';
   info: {
     displayName: 'Media - Image and Video only';
+    description: '';
   };
   attributes: {
     image: Attribute.Media & Attribute.Required;

@@ -1,24 +1,26 @@
 {
   "collectionName": "components_global_media_image_and_video_onlies",
   "info": {
-    "displayName": "Media - Image and Video only"
+    "displayName": "Media - Image and Video only",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "videos"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }
