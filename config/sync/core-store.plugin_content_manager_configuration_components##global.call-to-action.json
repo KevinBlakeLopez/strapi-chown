@@ -22,7 +22,7 @@
       "link": {
         "edit": {
           "label": "Link",
-          "description": "Internal - /slug, External - URL, or Form - form name",
+          "description": "Internal - /slug, External - URL, or Form - form name (newsletter, service-inquiry, warranty-claim, or request-a-sample)",
           "placeholder": "",
           "visible": true,
           "editable": true
