@@ -47,20 +47,6 @@
           "sortable": false
         }
       },
-      "media": {
-        "edit": {
-          "label": "Media",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "media",
-          "searchable": false,
-          "sortable": false
-        }
-      },
       "mainMedia": {
         "edit": {
           "label": "Main Media",
@@ -94,8 +80,7 @@
       "list": [
         "id",
         "headline",
-        "cta",
-        "media"
+        "cta"
       ],
       "edit": [
         [
@@ -113,12 +98,6 @@
         [
           {
             "name": "additionalImages",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "media",
             "size": 12
           }
         ],

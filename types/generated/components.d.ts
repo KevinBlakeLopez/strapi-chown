@@ -353,7 +353,6 @@ export interface PageBladesMarqueeBlade extends Schema.Component {
         maxLength: 255;
       }>;
     cta: Attribute.Component<'global.call-to-action'>;
-    media: Attribute.Component<'global.media'>;
     mainMedia: Attribute.Component<'global.media-image-and-video-only'>;
     additionalImages: Attribute.Media;
   };

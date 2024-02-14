@@ -16,22 +16,18 @@
       "repeatable": false,
       "component": "global.call-to-action"
     },
-    "media": {
-      "type": "component",
-      "repeatable": false,
-      "component": "global.media"
-    },
     "mainMedia": {
       "type": "component",
       "repeatable": false,
       "component": "global.media-image-and-video-only"
     },
     "additionalImages": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     }
   }
 }

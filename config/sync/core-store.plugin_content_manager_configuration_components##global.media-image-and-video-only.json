@@ -22,8 +22,8 @@
       },
       "image": {
         "edit": {
-          "label": "image",
-          "description": "",
+          "label": "Image",
+          "description": "If using video, image will be posterframe",
           "placeholder": "",
           "visible": true,
           "editable": true
@@ -36,7 +36,7 @@
       },
       "video": {
         "edit": {
-          "label": "video",
+          "label": "Video",
           "description": "",
           "placeholder": "",
           "visible": true,
