@@ -138,7 +138,7 @@
       },
       "collections": {
         "edit": {
-          "label": "Collections",
+          "label": "Collections Blade",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -166,7 +166,7 @@
       },
       "contentCta": {
         "edit": {
-          "label": "Content CTA",
+          "label": "Content CTA Blade",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -180,7 +180,7 @@
       },
       "featuredProjects": {
         "edit": {
-          "label": "Feature Projects",
+          "label": "Feature Content Blade",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -293,6 +293,26 @@
         ],
         [
           {
+            "name": "categories",
+            "size": 6
+          },
+          {
+            "name": "cost",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "lead_time",
+            "size": 6
+          },
+          {
+            "name": "projects",
+            "size": 6
+          }
+        ],
+        [
+          {
             "name": "logo",
             "size": 6
           }
@@ -315,27 +335,7 @@
         ],
         [
           {
-            "name": "categories",
-            "size": 6
-          },
-          {
-            "name": "cost",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "lead_time",
-            "size": 6
-          },
-          {
-            "name": "projects",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "featuredProjects",
+            "name": "collections",
             "size": 12
           }
         ],
@@ -347,7 +347,7 @@
         ],
         [
           {
-            "name": "collections",
+            "name": "featuredProjects",
             "size": 12
           }
         ],
