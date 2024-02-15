@@ -116,9 +116,8 @@ export interface GlobalCollection extends Schema.Component {
     displayName: 'Collection';
   };
   attributes: {
-    description: Attribute.Text & Attribute.Required;
+    description: Attribute.Text;
     title: Attribute.String &
-      Attribute.Required &
       Attribute.SetMinMaxLength<{
         maxLength: 255;
       }>;
