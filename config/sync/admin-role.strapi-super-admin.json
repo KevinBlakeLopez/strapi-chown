@@ -562,7 +562,8 @@
           "leadTimeLabel",
           "leadTimeInfo",
           "learnMoreLabel",
-          "associatedBrandLabel"
+          "associatedBrandLabel",
+          "locationLabel"
         ]
       },
       "conditions": []
@@ -597,7 +598,8 @@
           "leadTimeLabel",
           "leadTimeInfo",
           "learnMoreLabel",
-          "associatedBrandLabel"
+          "associatedBrandLabel",
+          "locationLabel"
         ]
       },
       "conditions": []
@@ -625,7 +627,8 @@
           "leadTimeLabel",
           "leadTimeInfo",
           "learnMoreLabel",
-          "associatedBrandLabel"
+          "associatedBrandLabel",
+          "locationLabel"
         ]
       },
       "conditions": []
