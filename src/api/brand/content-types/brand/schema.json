@@ -67,7 +67,8 @@
       "displayName": "intro",
       "type": "component",
       "repeatable": false,
-      "component": "brand-blades.intro"
+      "component": "brand-blades.intro",
+      "required": true
     },
     "contentCta": {
       "type": "component",
