@@ -1435,6 +1435,12 @@ export interface ApiGlobalDataGlobalData extends Schema.SingleType {
         maxLength: 255;
       }> &
       Attribute.DefaultTo<'Associated Brand Partners'>;
+    locationLabel: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Location'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
