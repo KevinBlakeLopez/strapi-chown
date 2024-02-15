@@ -904,6 +904,7 @@ export interface ApiBrandBrand extends Schema.CollectionType {
   attributes: {
     name: Attribute.String &
       Attribute.Required &
+      Attribute.Unique &
       Attribute.SetMinMaxLength<{
         maxLength: 255;
       }>;
@@ -966,7 +967,12 @@ export interface ApiCategoryCategory extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    title: Attribute.String;
+    title: Attribute.String &
+      Attribute.Required &
+      Attribute.Unique &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
     slug: Attribute.UID<'api::category.category', 'title'>;
     brands: Attribute.Relation<
       'api::category.category',
@@ -1548,7 +1554,12 @@ export interface ApiLeadTimeLeadTime extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    title: Attribute.String;
+    title: Attribute.String &
+      Attribute.Required &
+      Attribute.Unique &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
     slug: Attribute.UID<'api::lead-time.lead-time', 'title'>;
     brands: Attribute.Relation<
       'api::lead-time.lead-time',
@@ -1624,6 +1635,7 @@ export interface ApiPagePage extends Schema.CollectionType {
   attributes: {
     title: Attribute.String &
       Attribute.Required &
+      Attribute.Unique &
       Attribute.SetMinMaxLength<{
         maxLength: 255;
       }>;
@@ -1672,6 +1684,7 @@ export interface ApiPriceTierPriceTier extends Schema.CollectionType {
   attributes: {
     title: Attribute.String &
       Attribute.Required &
+      Attribute.Unique &
       Attribute.SetMinMaxLength<{
         maxLength: 255;
       }>;
@@ -1713,6 +1726,7 @@ export interface ApiProjectProject extends Schema.CollectionType {
   attributes: {
     title: Attribute.String &
       Attribute.Required &
+      Attribute.Unique &
       Attribute.SetMinMaxLength<{
         maxLength: 255;
       }>;
