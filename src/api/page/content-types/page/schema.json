@@ -38,7 +38,10 @@
         "page-blades.proposition",
         "page-blades.quote",
         "page-blades.rich-text",
-        "page-blades.team-members"
+        "page-blades.team-members",
+        "brand-blades.brands-grid",
+        "page-blades.more-information-blade",
+        "project-blades.projects-grid"
       ]
     },
     "seo": {

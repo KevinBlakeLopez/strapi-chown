@@ -1,7 +1,7 @@
 {
   "collectionName": "components_page_blades_embeds",
   "info": {
-    "displayName": "Virtual Showroom",
+    "displayName": "Media Embed Blade",
     "description": ""
   },
   "options": {},
@@ -12,12 +12,12 @@
       "maxLength": 255
     },
     "posterImage": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": false
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "virtualShowroomLInk": {
       "type": "string",

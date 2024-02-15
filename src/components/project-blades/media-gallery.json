@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_page_blades_featured_contents",
+  "collectionName": "components_project_blades_media_galleries",
   "info": {
-    "displayName": "Featured Content Blade",
+    "displayName": "Media Gallery Blade",
     "description": ""
   },
   "options": {},
@@ -11,13 +11,10 @@
       "required": true,
       "maxLength": 255
     },
-    "contentCard": {
+    "images": {
       "type": "component",
       "repeatable": true,
-      "component": "global.card",
-      "required": true,
-      "min": 1,
-      "max": 5
+      "component": "global.collection-image"
     }
   }
 }

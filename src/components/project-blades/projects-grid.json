@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_project_blades_projects_grids",
+  "info": {
+    "displayName": "Projects Grid"
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    }
+  }
+}

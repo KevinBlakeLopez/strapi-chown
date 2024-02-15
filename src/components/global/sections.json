@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_global_sections",
+  "info": {
+    "displayName": "Sections"
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "body": {
+      "type": "richtext"
+    }
+  }
+}

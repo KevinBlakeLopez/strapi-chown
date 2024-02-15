@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_page_blades_more_information_blades",
+  "info": {
+    "displayName": "More Information Blade",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "media": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.media-image-and-video-only"
+    },
+    "section": {
+      "displayName": "Sections",
+      "type": "component",
+      "repeatable": true,
+      "component": "global.sections"
+    },
+    "orientation": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right"
+      ]
+    }
+  }
+}

@@ -1,7 +1,8 @@
 {
   "collectionName": "components_page_blades_propositions",
   "info": {
-    "displayName": "Proposition"
+    "displayName": "Proposition Blade",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -14,12 +15,12 @@
       "type": "richtext"
     },
     "images": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": true,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }

@@ -8,7 +8,7 @@
   "attributes": {
     "headline": {
       "type": "string",
-      "required": true,
+      "required": false,
       "maxLength": 255
     },
     "cta": {
