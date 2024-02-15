@@ -152,7 +152,7 @@
       },
       "intro": {
         "edit": {
-          "label": "Brand Page Intro",
+          "label": "Brands Introduction Blade",
           "description": "",
           "placeholder": "",
           "visible": true,

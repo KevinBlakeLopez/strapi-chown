@@ -11,7 +11,7 @@
     },
     "brandCta": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "global.call-to-action"
     },
     "secondaryTitle": {
