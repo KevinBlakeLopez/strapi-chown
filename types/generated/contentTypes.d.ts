@@ -573,6 +573,45 @@ export interface PluginContentReleasesReleaseAction
   };
 }
 
+export interface PluginSlugifySlug extends Schema.CollectionType {
+  collectionName: 'slugs';
+  info: {
+    singularName: 'slug';
+    pluralName: 'slugs';
+    displayName: 'slug';
+  };
+  options: {
+    draftAndPublish: false;
+    comment: '';
+  };
+  pluginOptions: {
+    'content-manager': {
+      visible: false;
+    };
+    'content-type-builder': {
+      visible: false;
+    };
+  };
+  attributes: {
+    slug: Attribute.Text;
+    count: Attribute.Integer;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'plugin::slugify.slug',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'plugin::slugify.slug',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface PluginPublisherAction extends Schema.CollectionType {
   collectionName: 'actions';
   info: {
@@ -1589,7 +1628,6 @@ export interface ApiPagePage extends Schema.CollectionType {
         maxLength: 255;
       }>;
     slug: Attribute.UID<'api::page.page', 'title'> &
-      Attribute.Required &
       Attribute.SetMinMaxLength<{
         maxLength: 255;
       }>;
@@ -1679,7 +1717,6 @@ export interface ApiProjectProject extends Schema.CollectionType {
         maxLength: 255;
       }>;
     slug: Attribute.UID<'api::project.project', 'title'> &
-      Attribute.Required &
       Attribute.SetMinMaxLength<{
         maxLength: 255;
       }>;
@@ -1820,6 +1857,7 @@ declare module '@strapi/types' {
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
+      'plugin::slugify.slug': PluginSlugifySlug;
       'plugin::publisher.action': PluginPublisherAction;
       'plugin::i18n.locale': PluginI18NLocale;
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;

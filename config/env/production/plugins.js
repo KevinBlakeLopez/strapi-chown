@@ -1,4 +1,31 @@
 module.exports = ({ env }) => ({
+  slugify: {
+    enabled: true,
+    config: {
+      contentTypes: {
+        page: {
+          field: 'slug',
+          references: 'title',
+        },
+        brand: {
+          field: 'slug',
+          references: 'name',
+        },
+        project: {
+          field: 'slug',
+          references: 'title',
+        },
+        category: {
+          field: 'slug',
+          references: 'title',
+        },
+        'lead-time': {
+          field: 'slug',
+          references: 'title',
+        },
+      },
+    },
+  },
   'preview-button': {
     config: {
       injectListViewColumn: false,

@@ -20,7 +20,7 @@
     "slug": {
       "type": "uid",
       "targetField": "title",
-      "required": true,
+      "required": false,
       "maxLength": 255
     },
     "pageContent": {
