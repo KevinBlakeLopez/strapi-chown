@@ -64,7 +64,8 @@
     "intro": {
       "type": "component",
       "repeatable": false,
-      "component": "project-blades.intro"
+      "component": "project-blades.intro",
+      "required": true
     },
     "projectCta": {
       "type": "component",

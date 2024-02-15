@@ -1701,7 +1701,7 @@ export interface ApiProjectProject extends Schema.CollectionType {
     >;
     hero: Attribute.Media;
     card: Attribute.Media;
-    intro: Attribute.Component<'project-blades.intro'>;
+    intro: Attribute.Component<'project-blades.intro'> & Attribute.Required;
     projectCta: Attribute.Component<'page-blades.content-cta'>;
     projectHero: Attribute.Component<'page-blades.hero'>;
     projectDynamicContent: Attribute.DynamicZone<
