@@ -6,12 +6,10 @@
   "options": {},
   "attributes": {
     "description": {
-      "type": "text",
-      "required": true
+      "type": "text"
     },
     "title": {
       "type": "string",
-      "required": true,
       "maxLength": 255
     },
     "image": {

@@ -1656,7 +1656,10 @@ export interface ApiPagePage extends Schema.CollectionType {
         'page-blades.proposition',
         'page-blades.quote',
         'page-blades.rich-text',
-        'page-blades.team-members'
+        'page-blades.team-members',
+        'brand-blades.brands-grid',
+        'page-blades.more-information-blade',
+        'project-blades.projects-grid'
       ]
     >;
     seo: Attribute.Component<'shared.seo'>;
@@ -1756,7 +1759,12 @@ export interface ApiProjectProject extends Schema.CollectionType {
     projectCta: Attribute.Component<'page-blades.content-cta'>;
     projectHero: Attribute.Component<'page-blades.hero'>;
     projectDynamicContent: Attribute.DynamicZone<
-      ['project-blades.hero', 'page-blades.quote', 'page-blades.rich-text']
+      [
+        'project-blades.hero',
+        'project-blades.media-gallery',
+        'page-blades.quote',
+        'page-blades.rich-text'
+      ]
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;

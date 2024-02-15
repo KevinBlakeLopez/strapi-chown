@@ -82,6 +82,7 @@
       "type": "dynamiczone",
       "components": [
         "project-blades.hero",
+        "project-blades.media-gallery",
         "page-blades.quote",
         "page-blades.rich-text"
       ]

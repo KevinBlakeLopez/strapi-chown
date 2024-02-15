@@ -1,7 +1,8 @@
 {
   "collectionName": "components_page_blades_all_brands",
   "info": {
-    "displayName": "All Brands"
+    "displayName": "All Brands Blade",
+    "description": ""
   },
   "options": {},
   "attributes": {

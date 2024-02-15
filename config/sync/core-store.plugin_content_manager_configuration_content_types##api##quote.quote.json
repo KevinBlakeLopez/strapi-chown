@@ -23,7 +23,7 @@
       "quote": {
         "edit": {
           "label": "Quote",
-          "description": "",
+          "description": "Do not include quotation marks",
           "placeholder": "",
           "visible": true,
           "editable": true

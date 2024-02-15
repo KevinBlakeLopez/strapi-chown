@@ -1,9 +1,23 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
+export interface BrandBladesBrandsGrid extends Schema.Component {
+  collectionName: 'components_brand_blades_brands_grids';
+  info: {
+    displayName: 'Brands Grid';
+  };
+  attributes: {
+    headline: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
+  };
+}
+
 export interface BrandBladesCollections extends Schema.Component {
   collectionName: 'components_brand_blades_collections';
   info: {
-    displayName: 'Collections';
+    displayName: 'Collections Blade';
     description: '';
   };
   attributes: {
@@ -116,9 +130,8 @@ export interface GlobalCollection extends Schema.Component {
     displayName: 'Collection';
   };
   attributes: {
-    description: Attribute.Text & Attribute.Required;
+    description: Attribute.Text;
     title: Attribute.String &
-      Attribute.Required &
       Attribute.SetMinMaxLength<{
         maxLength: 255;
       }>;
@@ -165,6 +178,21 @@ export interface GlobalMedia extends Schema.Component {
     video: Attribute.Media;
     image: Attribute.Media & Attribute.Required;
     youtubeUrl: Attribute.Text & Attribute.CustomField<'plugin::oembed.oembed'>;
+  };
+}
+
+export interface GlobalSections extends Schema.Component {
+  collectionName: 'components_global_sections';
+  info: {
+    displayName: 'Sections';
+  };
+  attributes: {
+    headline: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
+    body: Attribute.RichText;
   };
 }
 
@@ -222,7 +250,8 @@ export interface NavigationNavItem extends Schema.Component {
 export interface PageBladesAllBrands extends Schema.Component {
   collectionName: 'components_page_blades_all_brands';
   info: {
-    displayName: 'All Brands';
+    displayName: 'All Brands Blade';
+    description: '';
   };
   attributes: {
     headline: Attribute.String &
@@ -238,7 +267,7 @@ export interface PageBladesAllBrands extends Schema.Component {
 export interface PageBladesContentColumn extends Schema.Component {
   collectionName: 'components_page_blades_content_columns';
   info: {
-    displayName: 'Content Column';
+    displayName: 'Content Column Blade';
     description: '';
   };
   attributes: {
@@ -258,7 +287,7 @@ export interface PageBladesContentColumn extends Schema.Component {
 export interface PageBladesContentCta extends Schema.Component {
   collectionName: 'components_global_content_ctas';
   info: {
-    displayName: 'Content CTA';
+    displayName: 'Content CTA Blade';
     description: '';
   };
   attributes: {
@@ -279,7 +308,7 @@ export interface PageBladesContentCta extends Schema.Component {
 export interface PageBladesEmbed extends Schema.Component {
   collectionName: 'components_page_blades_embeds';
   info: {
-    displayName: 'Virtual Showroom';
+    displayName: 'Media Embed Blade';
     description: '';
   };
   attributes: {
@@ -299,7 +328,8 @@ export interface PageBladesEmbed extends Schema.Component {
 export interface PageBladesFeaturedContent extends Schema.Component {
   collectionName: 'components_page_blades_featured_contents';
   info: {
-    displayName: 'Featured Content';
+    displayName: 'Featured Content Blade';
+    description: '';
   };
   attributes: {
     headline: Attribute.String &
@@ -319,7 +349,7 @@ export interface PageBladesFeaturedContent extends Schema.Component {
 export interface PageBladesHero extends Schema.Component {
   collectionName: 'components_page_blades_heroes';
   info: {
-    displayName: 'Hero';
+    displayName: 'Hero Blade';
     description: '';
   };
   attributes: {
@@ -348,7 +378,6 @@ export interface PageBladesMarqueeBlade extends Schema.Component {
   };
   attributes: {
     headline: Attribute.String &
-      Attribute.Required &
       Attribute.SetMinMaxLength<{
         maxLength: 255;
       }>;
@@ -358,10 +387,29 @@ export interface PageBladesMarqueeBlade extends Schema.Component {
   };
 }
 
+export interface PageBladesMoreInformationBlade extends Schema.Component {
+  collectionName: 'components_page_blades_more_information_blades';
+  info: {
+    displayName: 'More Information Blade';
+    description: '';
+  };
+  attributes: {
+    headline: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
+    body: Attribute.RichText;
+    media: Attribute.Component<'global.media-image-and-video-only'>;
+    section: Attribute.Component<'global.sections', true>;
+    orientation: Attribute.Enumeration<['left', 'right']>;
+  };
+}
+
 export interface PageBladesMultiColumns extends Schema.Component {
   collectionName: 'components_page_blades_multi_columns';
   info: {
-    displayName: 'Multi Columns';
+    displayName: 'Multiple Columns Blade';
   };
   attributes: {
     columns: Attribute.Component<'global.column', true> &
@@ -376,7 +424,8 @@ export interface PageBladesMultiColumns extends Schema.Component {
 export interface PageBladesProposition extends Schema.Component {
   collectionName: 'components_page_blades_propositions';
   info: {
-    displayName: 'Proposition';
+    displayName: 'Proposition Blade';
+    description: '';
   };
   attributes: {
     headline: Attribute.String &
@@ -392,7 +441,8 @@ export interface PageBladesProposition extends Schema.Component {
 export interface PageBladesQuote extends Schema.Component {
   collectionName: 'components_page_blades_quotes';
   info: {
-    displayName: 'Quote';
+    displayName: 'Quote Blade';
+    description: '';
   };
   attributes: {
     quote: Attribute.Relation<
@@ -406,7 +456,8 @@ export interface PageBladesQuote extends Schema.Component {
 export interface PageBladesRichText extends Schema.Component {
   collectionName: 'components_page_blades_rich_texts';
   info: {
-    displayName: 'Rich Text';
+    displayName: 'Rich-Text Editor';
+    description: '';
   };
   attributes: {
     copy: Attribute.RichText;
@@ -416,7 +467,7 @@ export interface PageBladesRichText extends Schema.Component {
 export interface PageBladesTeamMembers extends Schema.Component {
   collectionName: 'components_page_blades_team_members';
   info: {
-    displayName: 'Team Members';
+    displayName: 'Team Members Blade';
     description: '';
   };
   attributes: {
@@ -442,7 +493,7 @@ export interface PageBladesTeamMembers extends Schema.Component {
 export interface ProjectBladesHero extends Schema.Component {
   collectionName: 'components_project_blades_heroes';
   info: {
-    displayName: 'Project Hero';
+    displayName: 'Project Hero Blade';
     description: '';
   };
   attributes: {
@@ -472,6 +523,36 @@ export interface ProjectBladesIntro extends Schema.Component {
         maxLength: 255;
       }>;
     client: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
+  };
+}
+
+export interface ProjectBladesMediaGallery extends Schema.Component {
+  collectionName: 'components_project_blades_media_galleries';
+  info: {
+    displayName: 'Media Gallery Blade';
+    description: '';
+  };
+  attributes: {
+    headline: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
+    images: Attribute.Component<'global.collection-image', true>;
+  };
+}
+
+export interface ProjectBladesProjectsGrid extends Schema.Component {
+  collectionName: 'components_project_blades_projects_grids';
+  info: {
+    displayName: 'Projects Grid';
+  };
+  attributes: {
+    headline: Attribute.String &
+      Attribute.Required &
       Attribute.SetMinMaxLength<{
         maxLength: 255;
       }>;
@@ -527,6 +608,7 @@ export interface SharedSeo extends Schema.Component {
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
+      'brand-blades.brands-grid': BrandBladesBrandsGrid;
       'brand-blades.collections': BrandBladesCollections;
       'brand-blades.intro': BrandBladesIntro;
       'global.call-to-action': GlobalCallToAction;
@@ -536,6 +618,7 @@ declare module '@strapi/types' {
       'global.column': GlobalColumn;
       'global.media-image-and-video-only': GlobalMediaImageAndVideoOnly;
       'global.media': GlobalMedia;
+      'global.sections': GlobalSections;
       'global.select-option': GlobalSelectOption;
       'global.social-media-link': GlobalSocialMediaLink;
       'navigation.nav-item': NavigationNavItem;
@@ -546,6 +629,7 @@ declare module '@strapi/types' {
       'page-blades.featured-content': PageBladesFeaturedContent;
       'page-blades.hero': PageBladesHero;
       'page-blades.marquee-blade': PageBladesMarqueeBlade;
+      'page-blades.more-information-blade': PageBladesMoreInformationBlade;
       'page-blades.multi-columns': PageBladesMultiColumns;
       'page-blades.proposition': PageBladesProposition;
       'page-blades.quote': PageBladesQuote;
@@ -553,6 +637,8 @@ declare module '@strapi/types' {
       'page-blades.team-members': PageBladesTeamMembers;
       'project-blades.hero': ProjectBladesHero;
       'project-blades.intro': ProjectBladesIntro;
+      'project-blades.media-gallery': ProjectBladesMediaGallery;
+      'project-blades.projects-grid': ProjectBladesProjectsGrid;
       'shared.meta-social': SharedMetaSocial;
       'shared.seo': SharedSeo;
     }

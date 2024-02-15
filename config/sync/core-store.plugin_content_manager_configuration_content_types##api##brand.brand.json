@@ -37,7 +37,7 @@
       "logo": {
         "edit": {
           "label": "Logo",
-          "description": "",
+          "description": "Logo will display in All Brands Blade, Associated Brands, and Brand Grid ",
           "placeholder": "",
           "visible": true,
           "editable": true
@@ -194,8 +194,8 @@
       },
       "banner": {
         "edit": {
-          "label": "Banner Image",
-          "description": "",
+          "label": "Hero Image",
+          "description": "Image used in the Brand Introduction Blade",
           "placeholder": "",
           "visible": true,
           "editable": true
@@ -209,7 +209,7 @@
       "card": {
         "edit": {
           "label": "Card Image",
-          "description": "Image used in brand cards",
+          "description": "Image used in Brand Grid and Associated Brands",
           "placeholder": "",
           "visible": true,
           "editable": true

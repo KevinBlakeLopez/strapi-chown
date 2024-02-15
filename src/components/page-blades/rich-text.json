@@ -1,7 +1,8 @@
 {
   "collectionName": "components_page_blades_rich_texts",
   "info": {
-    "displayName": "Rich Text"
+    "displayName": "Rich-Text Editor",
+    "description": ""
   },
   "options": {},
   "attributes": {

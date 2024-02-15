@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_brand_blades_brands_grids",
+  "info": {
+    "displayName": "Brands Grid"
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    }
+  }
+}
