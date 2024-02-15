@@ -892,7 +892,7 @@ export interface ApiBrandBrand extends Schema.CollectionType {
       'api::project.project'
     >;
     collections: Attribute.Component<'brand-blades.collections'>;
-    intro: Attribute.Component<'brand-blades.intro'>;
+    intro: Attribute.Component<'brand-blades.intro'> & Attribute.Required;
     contentCta: Attribute.Component<'page-blades.content-cta'>;
     featuredProjects: Attribute.Component<'page-blades.featured-content'>;
     banner: Attribute.Media;
