@@ -402,7 +402,8 @@ export interface PageBladesMoreInformationBlade extends Schema.Component {
     body: Attribute.RichText;
     media: Attribute.Component<'global.media-image-and-video-only'>;
     section: Attribute.Component<'global.sections', true>;
-    orientation: Attribute.Enumeration<['left', 'right']>;
+    orientation: Attribute.Enumeration<['left', 'right']> &
+      Attribute.DefaultTo<'left'>;
   };
 }
 
