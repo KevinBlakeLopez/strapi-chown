@@ -949,7 +949,6 @@
           "projectHero.cta.label",
           "projectHero.cta.type",
           "projectHero.cta.style",
-          "projectHero.bgColor",
           "projectHero.imageOrientation",
           "projectDynamicContent"
         ]
@@ -1008,7 +1007,6 @@
           "projectHero.cta.label",
           "projectHero.cta.type",
           "projectHero.cta.style",
-          "projectHero.bgColor",
           "projectHero.imageOrientation",
           "projectDynamicContent"
         ]
@@ -1053,7 +1051,6 @@
           "projectHero.cta.label",
           "projectHero.cta.type",
           "projectHero.cta.style",
-          "projectHero.bgColor",
           "projectHero.imageOrientation",
           "projectDynamicContent"
         ]

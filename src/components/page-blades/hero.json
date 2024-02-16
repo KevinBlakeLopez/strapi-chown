@@ -24,16 +24,6 @@
       "repeatable": false,
       "component": "global.call-to-action"
     },
-    "bgColor": {
-      "type": "enumeration",
-      "enum": [
-        "darkblue",
-        "eggshell",
-        "skyblue"
-      ],
-      "default": "eggshell",
-      "required": true
-    },
     "imageOrientation": {
       "type": "enumeration",
       "enum": [

@@ -7,7 +7,7 @@
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "id",
+      "mainField": "headline",
       "defaultSortBy": "id",
       "defaultSortOrder": "ASC"
     },
@@ -61,15 +61,36 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "headline": {
+        "edit": {
+          "label": "Headline",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "headline",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
       "list": [
         "id",
         "images",
-        "imageOrientation"
+        "imageOrientation",
+        "headline"
       ],
       "edit": [
+        [
+          {
+            "name": "headline",
+            "size": 6
+          }
+        ],
         [
           {
             "name": "copy",

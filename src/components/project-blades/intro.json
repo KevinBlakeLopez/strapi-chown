@@ -14,7 +14,8 @@
       "type": "richtext"
     },
     "location": {
-      "type": "richtext"
+      "type": "string",
+      "maxLength": 255
     },
     "photographer": {
       "type": "string",
