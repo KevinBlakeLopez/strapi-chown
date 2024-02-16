@@ -147,12 +147,13 @@ export interface GlobalColumn extends Schema.Component {
   collectionName: 'components_global_columns';
   info: {
     displayName: 'Column';
+    description: '';
   };
   attributes: {
     headline: Attribute.String;
     subcopy: Attribute.RichText;
     image: Attribute.Media & Attribute.Required;
-    cta: Attribute.Component<'global.call-to-action'> & Attribute.Required;
+    cta: Attribute.Component<'global.call-to-action'>;
   };
 }
 
@@ -361,9 +362,6 @@ export interface PageBladesHero extends Schema.Component {
     subcopy: Attribute.RichText;
     media: Attribute.Component<'global.media'>;
     cta: Attribute.Component<'global.call-to-action'>;
-    bgColor: Attribute.Enumeration<['darkblue', 'eggshell', 'skyblue']> &
-      Attribute.Required &
-      Attribute.DefaultTo<'eggshell'>;
     imageOrientation: Attribute.Enumeration<['left', 'right']> &
       Attribute.Required &
       Attribute.DefaultTo<'right'>;
@@ -503,6 +501,10 @@ export interface ProjectBladesHero extends Schema.Component {
     imageOrientation: Attribute.Enumeration<['left', 'right']> &
       Attribute.Required &
       Attribute.DefaultTo<'right'>;
+    headline: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
   };
 }
 
@@ -518,7 +520,10 @@ export interface ProjectBladesIntro extends Schema.Component {
         maxLength: 255;
       }>;
     overview: Attribute.RichText;
-    location: Attribute.RichText;
+    location: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
     photographer: Attribute.String &
       Attribute.SetMinMaxLength<{
         maxLength: 255;

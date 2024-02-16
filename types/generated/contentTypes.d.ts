@@ -1486,6 +1486,18 @@ export interface ApiGlobalDataGlobalData extends Schema.SingleType {
         maxLength: 255;
       }> &
       Attribute.DefaultTo<'Location'>;
+    brandsLabel: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Brands'>;
+    chownTitle: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Let Chown Help'>;
+    chownDescription: Attribute.RichText;
+    chownCta: Attribute.Component<'global.call-to-action'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

@@ -563,7 +563,14 @@
           "leadTimeInfo",
           "learnMoreLabel",
           "associatedBrandLabel",
-          "locationLabel"
+          "locationLabel",
+          "brandsLabel",
+          "chownTitle",
+          "chownDescription",
+          "chownCta.link",
+          "chownCta.label",
+          "chownCta.type",
+          "chownCta.style"
         ]
       },
       "conditions": []
@@ -599,7 +606,14 @@
           "leadTimeInfo",
           "learnMoreLabel",
           "associatedBrandLabel",
-          "locationLabel"
+          "locationLabel",
+          "brandsLabel",
+          "chownTitle",
+          "chownDescription",
+          "chownCta.link",
+          "chownCta.label",
+          "chownCta.type",
+          "chownCta.style"
         ]
       },
       "conditions": []
@@ -628,7 +642,14 @@
           "leadTimeInfo",
           "learnMoreLabel",
           "associatedBrandLabel",
-          "locationLabel"
+          "locationLabel",
+          "brandsLabel",
+          "chownTitle",
+          "chownDescription",
+          "chownCta.link",
+          "chownCta.label",
+          "chownCta.type",
+          "chownCta.style"
         ]
       },
       "conditions": []
@@ -949,7 +970,6 @@
           "projectHero.cta.label",
           "projectHero.cta.type",
           "projectHero.cta.style",
-          "projectHero.bgColor",
           "projectHero.imageOrientation",
           "projectDynamicContent"
         ]
@@ -1008,7 +1028,6 @@
           "projectHero.cta.label",
           "projectHero.cta.type",
           "projectHero.cta.style",
-          "projectHero.bgColor",
           "projectHero.imageOrientation",
           "projectDynamicContent"
         ]
@@ -1053,7 +1072,6 @@
           "projectHero.cta.label",
           "projectHero.cta.type",
           "projectHero.cta.style",
-          "projectHero.bgColor",
           "projectHero.imageOrientation",
           "projectDynamicContent"
         ]

@@ -243,6 +243,62 @@
           "sortable": true
         }
       },
+      "brandsLabel": {
+        "edit": {
+          "label": "Brands Label",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "brandsLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "chownTitle": {
+        "edit": {
+          "label": "Brand Intro - Chown Title Default",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "chownTitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "chownDescription": {
+        "edit": {
+          "label": "Brand Intro - Chown Description Default",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "chownDescription",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "chownCta": {
+        "edit": {
+          "label": "Brand Intro - Chown CTA Default",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "chownCta",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -374,6 +430,10 @@
           {
             "name": "learnMoreLabel",
             "size": 6
+          },
+          {
+            "name": "brandsLabel",
+            "size": 6
           }
         ],
         [
@@ -385,6 +445,24 @@
         [
           {
             "name": "defaultSeo",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "chownTitle",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "chownDescription",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "chownCta",
             "size": 12
           }
         ]

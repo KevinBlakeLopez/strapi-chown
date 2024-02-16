@@ -114,7 +114,9 @@
           {
             "name": "link",
             "size": 6
-          },
+          }
+        ],
+        [
           {
             "name": "linkType",
             "size": 6
@@ -123,7 +125,7 @@
         [
           {
             "name": "project",
-            "size": 6
+            "size": 8
           }
         ]
       ]

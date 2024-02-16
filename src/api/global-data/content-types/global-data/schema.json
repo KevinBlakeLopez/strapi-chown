@@ -104,6 +104,25 @@
       "required": true,
       "maxLength": 255,
       "default": "Location"
+    },
+    "brandsLabel": {
+      "type": "string",
+      "default": "Brands",
+      "required": false,
+      "maxLength": 255
+    },
+    "chownTitle": {
+      "type": "string",
+      "maxLength": 255,
+      "default": "Let Chown Help"
+    },
+    "chownDescription": {
+      "type": "richtext"
+    },
+    "chownCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.call-to-action"
     }
   }
 }

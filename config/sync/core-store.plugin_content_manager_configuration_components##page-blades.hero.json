@@ -75,20 +75,6 @@
           "sortable": false
         }
       },
-      "bgColor": {
-        "edit": {
-          "label": "Background Color",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "bgColor",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "imageOrientation": {
         "edit": {
           "label": "Image Orientation",
@@ -137,10 +123,6 @@
           }
         ],
         [
-          {
-            "name": "bgColor",
-            "size": 6
-          },
           {
             "name": "imageOrientation",
             "size": 6

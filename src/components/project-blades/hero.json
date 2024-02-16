@@ -22,6 +22,10 @@
       ],
       "default": "right",
       "required": true
+    },
+    "headline": {
+      "type": "string",
+      "maxLength": 255
     }
   }
 }
