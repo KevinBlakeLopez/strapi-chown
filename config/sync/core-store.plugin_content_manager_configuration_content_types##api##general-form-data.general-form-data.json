@@ -708,7 +708,7 @@
       },
       "locationOptions": {
         "edit": {
-          "label": "locationOptions",
+          "label": "Location Options",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -716,34 +716,6 @@
         },
         "list": {
           "label": "locationOptions",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "roleLabel": {
-        "edit": {
-          "label": "Role Label",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "roleLabel",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "roleOptions": {
-        "edit": {
-          "label": "Role Options",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "roleOptions",
           "searchable": false,
           "sortable": false
         }
@@ -1103,24 +1075,18 @@
         ],
         [
           {
-            "name": "roleLabel",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "roleOptions",
-            "size": 12
-          }
-        ],
-        [
-          {
             "name": "locationLabel",
             "size": 6
           },
           {
             "name": "locationPlaceholder",
             "size": 6
+          }
+        ],
+        [
+          {
+            "name": "locationOptions",
+            "size": 12
           }
         ],
         [
@@ -1153,12 +1119,6 @@
           {
             "name": "submitButtonLabel",
             "size": 6
-          }
-        ],
-        [
-          {
-            "name": "locationOptions",
-            "size": 12
           }
         ]
       ],

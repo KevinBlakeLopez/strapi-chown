@@ -298,14 +298,6 @@
     "locationOptions": {
       "type": "json"
     },
-    "roleLabel": {
-      "type": "string",
-      "maxLength": 255,
-      "default": "What is your role in the project?"
-    },
-    "roleOptions": {
-      "type": "json"
-    },
     "defectDetailsPlaceholder": {
       "type": "string",
       "default": "Defective product? Warranty issue? Missing product?",
