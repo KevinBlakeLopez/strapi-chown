@@ -294,6 +294,34 @@
       "default": "Submit",
       "required": true,
       "maxLength": 255
+    },
+    "locationOptions": {
+      "type": "json"
+    },
+    "roleLabel": {
+      "type": "string",
+      "maxLength": 255,
+      "default": "What is your role in the project?"
+    },
+    "roleOptions": {
+      "type": "json"
+    },
+    "defectDetailsPlaceholder": {
+      "type": "string",
+      "default": "Defective product? Warranty issue? Missing product?",
+      "maxLength": 255
+    },
+    "additionalCommentsPlaceholder": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "preferredContactLabel": {
+      "type": "string",
+      "maxLength": 255,
+      "default": "How would you like to be contacted?"
+    },
+    "preferredContactOptions": {
+      "type": "json"
     }
   }
 }

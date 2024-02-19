@@ -1376,6 +1376,28 @@ export interface ApiGeneralFormDataGeneralFormData extends Schema.SingleType {
         maxLength: 255;
       }> &
       Attribute.DefaultTo<'Submit'>;
+    locationOptions: Attribute.JSON;
+    roleLabel: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'What is your role in the project?'>;
+    roleOptions: Attribute.JSON;
+    defectDetailsPlaceholder: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Defective product? Warranty issue? Missing product?'>;
+    additionalCommentsPlaceholder: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
+    preferredContactLabel: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'How would you like to be contacted?'>;
+    preferredContactOptions: Attribute.JSON;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
