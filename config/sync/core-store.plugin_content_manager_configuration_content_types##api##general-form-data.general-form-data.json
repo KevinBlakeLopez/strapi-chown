@@ -706,6 +706,104 @@
           "sortable": true
         }
       },
+      "locationOptions": {
+        "edit": {
+          "label": "locationOptions",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "locationOptions",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "roleLabel": {
+        "edit": {
+          "label": "Role Label",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "roleLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "roleOptions": {
+        "edit": {
+          "label": "Role Options",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "roleOptions",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "defectDetailsPlaceholder": {
+        "edit": {
+          "label": "Defect Details Input Placeholder",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "defectDetailsPlaceholder",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "additionalCommentsPlaceholder": {
+        "edit": {
+          "label": "Additional Comments Placeholder",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "additionalCommentsPlaceholder",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "preferredContactLabel": {
+        "edit": {
+          "label": "Preferred Contact Label",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "preferredContactLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "preferredContactOptions": {
+        "edit": {
+          "label": "Preferred Contact Options",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "preferredContactOptions",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -927,9 +1025,15 @@
           {
             "name": "projectDetailLabel",
             "size": 6
-          },
+          }
+        ],
+        [
           {
             "name": "defectDetailsLabel",
+            "size": 6
+          },
+          {
+            "name": "defectDetailsPlaceholder",
             "size": 6
           }
         ],
@@ -967,6 +1071,10 @@
           {
             "name": "additionalCommentsLabel",
             "size": 6
+          },
+          {
+            "name": "additionalCommentsPlaceholder",
+            "size": 6
           }
         ],
         [
@@ -978,6 +1086,30 @@
         [
           {
             "name": "referralOptions",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "preferredContactLabel",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "preferredContactOptions",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "roleLabel",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "roleOptions",
             "size": 12
           }
         ],
@@ -1021,6 +1153,12 @@
           {
             "name": "submitButtonLabel",
             "size": 6
+          }
+        ],
+        [
+          {
+            "name": "locationOptions",
+            "size": 12
           }
         ]
       ],

@@ -409,7 +409,14 @@
           "locationPlaceholder",
           "professionPlaceholder",
           "newsletterButtonLabel",
-          "submitButtonLabel"
+          "submitButtonLabel",
+          "locationOptions",
+          "roleLabel",
+          "roleOptions",
+          "defectDetailsPlaceholder",
+          "additionalCommentsPlaceholder",
+          "preferredContactLabel",
+          "preferredContactOptions"
         ]
       },
       "conditions": []
@@ -475,7 +482,14 @@
           "locationPlaceholder",
           "professionPlaceholder",
           "newsletterButtonLabel",
-          "submitButtonLabel"
+          "submitButtonLabel",
+          "locationOptions",
+          "roleLabel",
+          "roleOptions",
+          "defectDetailsPlaceholder",
+          "additionalCommentsPlaceholder",
+          "preferredContactLabel",
+          "preferredContactOptions"
         ]
       },
       "conditions": []
@@ -534,7 +548,14 @@
           "locationPlaceholder",
           "professionPlaceholder",
           "newsletterButtonLabel",
-          "submitButtonLabel"
+          "submitButtonLabel",
+          "locationOptions",
+          "roleLabel",
+          "roleOptions",
+          "defectDetailsPlaceholder",
+          "additionalCommentsPlaceholder",
+          "preferredContactLabel",
+          "preferredContactOptions"
         ]
       },
       "conditions": []
