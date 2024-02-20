@@ -1114,7 +1114,7 @@ export interface ApiGeneralFormDataGeneralFormData extends Schema.SingleType {
         maxLength: 255;
       }> &
       Attribute.DefaultTo<'Request Finish Sample'>;
-    warrantyClaimTitme: Attribute.String &
+    warrantyClaimTitle: Attribute.String &
       Attribute.Required &
       Attribute.SetMinMaxLength<{
         maxLength: 255;
@@ -1392,6 +1392,21 @@ export interface ApiGeneralFormDataGeneralFormData extends Schema.SingleType {
       }> &
       Attribute.DefaultTo<'How would you like to be contacted?'>;
     preferredContactOptions: Attribute.JSON;
+    tradeProfessionalPlaceholder: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'If yes, who'>;
+    projectNeedPlaceholder: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Example: Door hardware? Cabinet hardware? Kitchen plumbing? Bath plumbing?'>;
+    projectDetailPlaceholder: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Example: Full build? Kitchen or bath remodel?'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
