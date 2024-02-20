@@ -24,7 +24,7 @@
       "required": true,
       "maxLength": 255
     },
-    "warrantyClaimTitme": {
+    "warrantyClaimTitle": {
       "type": "string",
       "default": "Submit a warranty claim.",
       "required": true,
@@ -314,6 +314,22 @@
     },
     "preferredContactOptions": {
       "type": "json"
+    },
+    "tradeProfessionalPlaceholder": {
+      "type": "string",
+      "required": false,
+      "maxLength": 255,
+      "default": "If yes, who"
+    },
+    "projectNeedPlaceholder": {
+      "type": "string",
+      "maxLength": 255,
+      "default": "Example: Door hardware? Cabinet hardware? Kitchen plumbing? Bath plumbing?"
+    },
+    "projectDetailPlaceholder": {
+      "type": "string",
+      "maxLength": 255,
+      "default": "Example: Full build? Kitchen or bath remodel?"
     }
   }
 }

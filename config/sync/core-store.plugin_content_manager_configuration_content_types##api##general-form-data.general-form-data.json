@@ -48,7 +48,7 @@
           "sortable": true
         }
       },
-      "warrantyClaimTitme": {
+      "warrantyClaimTitle": {
         "edit": {
           "label": "Warranty Claim Form Title",
           "description": "",
@@ -57,7 +57,7 @@
           "editable": true
         },
         "list": {
-          "label": "warrantyClaimTitme",
+          "label": "warrantyClaimTitle",
           "searchable": true,
           "sortable": true
         }
@@ -776,6 +776,48 @@
           "sortable": false
         }
       },
+      "tradeProfessionalPlaceholder": {
+        "edit": {
+          "label": "Trade Professional Placeholder",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "tradeProfessionalPlaceholder",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "projectNeedPlaceholder": {
+        "edit": {
+          "label": "Project Need Placeholder",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "projectNeedPlaceholder",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "projectDetailPlaceholder": {
+        "edit": {
+          "label": "Project Detail Placeholder",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "projectDetailPlaceholder",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -849,7 +891,7 @@
         ],
         [
           {
-            "name": "warrantyClaimTitme",
+            "name": "warrantyClaimTitle",
             "size": 6
           }
         ],
@@ -975,6 +1017,10 @@
           {
             "name": "tradeProfessionalLabel",
             "size": 6
+          },
+          {
+            "name": "tradeProfessionalPlaceholder",
+            "size": 6
           }
         ],
         [
@@ -987,15 +1033,25 @@
           {
             "name": "projectInfoTitle",
             "size": 6
-          },
+          }
+        ],
+        [
           {
             "name": "projectNeedLabel",
+            "size": 6
+          },
+          {
+            "name": "projectNeedPlaceholder",
             "size": 6
           }
         ],
         [
           {
             "name": "projectDetailLabel",
+            "size": 6
+          },
+          {
+            "name": "projectDetailPlaceholder",
             "size": 6
           }
         ],
@@ -1126,7 +1182,7 @@
         "id",
         "newsletterTitle",
         "sampleRequestTitle",
-        "warrantyClaimTitme"
+        "warrantyClaimTitle"
       ]
     }
   },
