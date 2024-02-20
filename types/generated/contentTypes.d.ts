@@ -1745,7 +1745,6 @@ export interface ApiPriceTierPriceTier extends Schema.CollectionType {
       Attribute.SetMinMaxLength<{
         maxLength: 255;
       }>;
-    slug: Attribute.UID<'api::price-tier.price-tier', 'title'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
