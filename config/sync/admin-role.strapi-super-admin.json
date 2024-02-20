@@ -742,7 +742,8 @@
           "title",
           "slug",
           "brands",
-          "description"
+          "description",
+          "filterLabel"
         ]
       },
       "conditions": []
@@ -770,7 +771,8 @@
           "title",
           "slug",
           "brands",
-          "description"
+          "description",
+          "filterLabel"
         ]
       },
       "conditions": []
@@ -784,7 +786,8 @@
           "title",
           "slug",
           "brands",
-          "description"
+          "description",
+          "filterLabel"
         ]
       },
       "conditions": []
@@ -911,7 +914,9 @@
         "fields": [
           "title",
           "brands",
-          "description"
+          "description",
+          "filterLabel",
+          "slug"
         ]
       },
       "conditions": []
@@ -938,7 +943,9 @@
         "fields": [
           "title",
           "brands",
-          "description"
+          "description",
+          "filterLabel",
+          "slug"
         ]
       },
       "conditions": []
@@ -951,7 +958,9 @@
         "fields": [
           "title",
           "brands",
-          "description"
+          "description",
+          "filterLabel",
+          "slug"
         ]
       },
       "conditions": []

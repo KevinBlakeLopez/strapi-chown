@@ -1610,6 +1610,7 @@ export interface ApiLeadTimeLeadTime extends Schema.CollectionType {
       'api::brand.brand'
     >;
     description: Attribute.Text;
+    filterLabel: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1740,6 +1741,11 @@ export interface ApiPriceTierPriceTier extends Schema.CollectionType {
       'api::brand.brand'
     >;
     description: Attribute.Text;
+    filterLabel: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
+    slug: Attribute.UID<'api::price-tier.price-tier', 'title'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
