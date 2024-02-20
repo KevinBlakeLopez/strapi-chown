@@ -1407,6 +1407,31 @@ export interface ApiGeneralFormDataGeneralFormData extends Schema.SingleType {
         maxLength: 255;
       }> &
       Attribute.DefaultTo<'Example: Full build? Kitchen or bath remodel?'>;
+    newsletterSuccessTitle: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Thank You'>;
+    appointmentSuccessMessage: Attribute.Text;
+    warrantySuccessMessage: Attribute.Text;
+    sampleSuccessMessage: Attribute.Text;
+    newsletterSuccessMessage: Attribute.Text;
+    appointmentSuccessTitle: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Thank You for Reaching Out'>;
+    warrantySuccessTitle: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Thank You for Reaching Out'>;
+    sampleSuccessTitle: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Thank You for Reaching Out'>;
+    errorMessage: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

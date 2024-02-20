@@ -330,6 +330,41 @@
       "type": "string",
       "maxLength": 255,
       "default": "Example: Full build? Kitchen or bath remodel?"
+    },
+    "newsletterSuccessTitle": {
+      "type": "string",
+      "maxLength": 255,
+      "default": "Thank You"
+    },
+    "appointmentSuccessMessage": {
+      "type": "text"
+    },
+    "warrantySuccessMessage": {
+      "type": "text"
+    },
+    "sampleSuccessMessage": {
+      "type": "text"
+    },
+    "newsletterSuccessMessage": {
+      "type": "text"
+    },
+    "appointmentSuccessTitle": {
+      "type": "string",
+      "maxLength": 255,
+      "default": "Thank You for Reaching Out"
+    },
+    "warrantySuccessTitle": {
+      "type": "string",
+      "default": "Thank You for Reaching Out",
+      "maxLength": 255
+    },
+    "sampleSuccessTitle": {
+      "type": "string",
+      "maxLength": 255,
+      "default": "Thank You for Reaching Out"
+    },
+    "errorMessage": {
+      "type": "text"
     }
   }
 }

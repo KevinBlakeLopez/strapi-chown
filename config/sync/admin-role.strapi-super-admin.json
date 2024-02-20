@@ -417,7 +417,16 @@
           "preferredContactOptions",
           "tradeProfessionalPlaceholder",
           "projectNeedPlaceholder",
-          "projectDetailPlaceholder"
+          "projectDetailPlaceholder",
+          "newsletterSuccessTitle",
+          "appointmentSuccessMessage",
+          "warrantySuccessMessage",
+          "sampleSuccessMessage",
+          "newsletterSuccessMessage",
+          "appointmentSuccessTitle",
+          "warrantySuccessTitle",
+          "sampleSuccessTitle",
+          "errorMessage"
         ]
       },
       "conditions": []
@@ -491,7 +500,16 @@
           "preferredContactOptions",
           "tradeProfessionalPlaceholder",
           "projectNeedPlaceholder",
-          "projectDetailPlaceholder"
+          "projectDetailPlaceholder",
+          "newsletterSuccessTitle",
+          "appointmentSuccessMessage",
+          "warrantySuccessMessage",
+          "sampleSuccessMessage",
+          "newsletterSuccessMessage",
+          "appointmentSuccessTitle",
+          "warrantySuccessTitle",
+          "sampleSuccessTitle",
+          "errorMessage"
         ]
       },
       "conditions": []
@@ -558,7 +576,16 @@
           "preferredContactOptions",
           "tradeProfessionalPlaceholder",
           "projectNeedPlaceholder",
-          "projectDetailPlaceholder"
+          "projectDetailPlaceholder",
+          "newsletterSuccessTitle",
+          "appointmentSuccessMessage",
+          "warrantySuccessMessage",
+          "sampleSuccessMessage",
+          "newsletterSuccessMessage",
+          "appointmentSuccessTitle",
+          "warrantySuccessTitle",
+          "sampleSuccessTitle",
+          "errorMessage"
         ]
       },
       "conditions": []
