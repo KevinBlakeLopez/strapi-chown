@@ -915,8 +915,7 @@
           "title",
           "brands",
           "description",
-          "filterLabel",
-          "slug"
+          "filterLabel"
         ]
       },
       "conditions": []
@@ -944,8 +943,7 @@
           "title",
           "brands",
           "description",
-          "filterLabel",
-          "slug"
+          "filterLabel"
         ]
       },
       "conditions": []
@@ -959,8 +957,7 @@
           "title",
           "brands",
           "description",
-          "filterLabel",
-          "slug"
+          "filterLabel"
         ]
       },
       "conditions": []

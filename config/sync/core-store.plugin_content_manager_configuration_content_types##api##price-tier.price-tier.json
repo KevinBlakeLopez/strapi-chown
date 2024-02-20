@@ -77,20 +77,6 @@
           "sortable": true
         }
       },
-      "slug": {
-        "edit": {
-          "label": "Slug",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "slug",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -151,14 +137,16 @@
       }
     },
     "layouts": {
+      "list": [
+        "id",
+        "title",
+        "brands",
+        "description"
+      ],
       "edit": [
         [
           {
             "name": "title",
-            "size": 6
-          },
-          {
-            "name": "slug",
             "size": 6
           }
         ],
@@ -178,12 +166,6 @@
             "size": 6
           }
         ]
-      ],
-      "list": [
-        "id",
-        "title",
-        "brands",
-        "description"
       ]
     }
   },

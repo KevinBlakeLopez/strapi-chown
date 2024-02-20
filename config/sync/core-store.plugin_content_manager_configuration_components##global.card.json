@@ -51,7 +51,7 @@
       "link": {
         "edit": {
           "label": "Link",
-          "description": "",
+          "description": "URL, internal path or form name: Internal - (/slug), External - URL (https://....), or Form - form name (newsletter, service-inquiry, warranty-claim, or request-a-sample)",
           "placeholder": "",
           "visible": true,
           "editable": true
