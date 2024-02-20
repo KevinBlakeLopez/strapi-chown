@@ -63,6 +63,34 @@
           "sortable": true
         }
       },
+      "filterLabel": {
+        "edit": {
+          "label": "Filter Label",
+          "description": "Text Shown in Filter Dropdown",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "filterLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "slug": {
+        "edit": {
+          "label": "Slug",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "slug",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -130,13 +158,23 @@
             "size": 6
           },
           {
-            "name": "brands",
+            "name": "slug",
             "size": 6
           }
         ],
         [
           {
+            "name": "filterLabel",
+            "size": 6
+          },
+          {
             "name": "description",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "brands",
             "size": 6
           }
         ]

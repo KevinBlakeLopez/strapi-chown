@@ -23,6 +23,10 @@ module.exports = ({ env }) => ({
           field: 'slug',
           references: 'title',
         },
+        'price-tier': {
+          field: 'slug',
+          references: 'title',
+        },
       },
     },
   },
