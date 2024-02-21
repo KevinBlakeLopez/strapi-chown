@@ -27,7 +27,7 @@
           "placeholder": "",
           "visible": true,
           "editable": true,
-          "mainField": "attribution"
+          "mainField": "title"
         },
         "list": {
           "label": "quote",

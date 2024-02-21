@@ -30,12 +30,6 @@
           "intro.brandCta.label",
           "intro.brandCta.type",
           "intro.brandCta.style",
-          "intro.secondaryTitle",
-          "intro.secondaryDescription",
-          "intro.secondaryCta.link",
-          "intro.secondaryCta.label",
-          "intro.secondaryCta.type",
-          "intro.secondaryCta.style",
           "contentCta.headline",
           "contentCta.subcopy",
           "contentCta.cta.link",
@@ -97,12 +91,6 @@
           "intro.brandCta.label",
           "intro.brandCta.type",
           "intro.brandCta.style",
-          "intro.secondaryTitle",
-          "intro.secondaryDescription",
-          "intro.secondaryCta.link",
-          "intro.secondaryCta.label",
-          "intro.secondaryCta.type",
-          "intro.secondaryCta.style",
           "contentCta.headline",
           "contentCta.subcopy",
           "contentCta.cta.link",
@@ -150,12 +138,6 @@
           "intro.brandCta.label",
           "intro.brandCta.type",
           "intro.brandCta.style",
-          "intro.secondaryTitle",
-          "intro.secondaryDescription",
-          "intro.secondaryCta.link",
-          "intro.secondaryCta.label",
-          "intro.secondaryCta.type",
-          "intro.secondaryCta.style",
           "contentCta.headline",
           "contentCta.subcopy",
           "contentCta.cta.link",
@@ -621,7 +603,15 @@
           "chownCta.link",
           "chownCta.label",
           "chownCta.type",
-          "chownCta.style"
+          "chownCta.style",
+          "brandContentCta.headline",
+          "brandContentCta.subcopy",
+          "brandContentCta.cta.link",
+          "brandContentCta.cta.label",
+          "brandContentCta.cta.type",
+          "brandContentCta.cta.style",
+          "brandContentCta.bgImage",
+          "brandContentCta.bgColor"
         ]
       },
       "conditions": []
@@ -664,7 +654,15 @@
           "chownCta.link",
           "chownCta.label",
           "chownCta.type",
-          "chownCta.style"
+          "chownCta.style",
+          "brandContentCta.headline",
+          "brandContentCta.subcopy",
+          "brandContentCta.cta.link",
+          "brandContentCta.cta.label",
+          "brandContentCta.cta.type",
+          "brandContentCta.cta.style",
+          "brandContentCta.bgImage",
+          "brandContentCta.bgColor"
         ]
       },
       "conditions": []
@@ -700,7 +698,15 @@
           "chownCta.link",
           "chownCta.label",
           "chownCta.type",
-          "chownCta.style"
+          "chownCta.style",
+          "brandContentCta.headline",
+          "brandContentCta.subcopy",
+          "brandContentCta.cta.link",
+          "brandContentCta.cta.label",
+          "brandContentCta.cta.type",
+          "brandContentCta.cta.style",
+          "brandContentCta.bgImage",
+          "brandContentCta.bgColor"
         ]
       },
       "conditions": []
@@ -1143,7 +1149,8 @@
         "fields": [
           "quote",
           "attribution",
-          "image"
+          "image",
+          "title"
         ]
       },
       "conditions": []
@@ -1170,7 +1177,8 @@
         "fields": [
           "quote",
           "attribution",
-          "image"
+          "image",
+          "title"
         ]
       },
       "conditions": []
@@ -1183,7 +1191,8 @@
         "fields": [
           "quote",
           "attribution",
-          "image"
+          "image",
+          "title"
         ]
       },
       "conditions": []

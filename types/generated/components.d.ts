@@ -49,12 +49,6 @@ export interface BrandBladesIntro extends Schema.Component {
   attributes: {
     description: Attribute.RichText;
     brandCta: Attribute.Component<'global.call-to-action'>;
-    secondaryTitle: Attribute.String &
-      Attribute.SetMinMaxLength<{
-        maxLength: 255;
-      }>;
-    secondaryDescription: Attribute.RichText;
-    secondaryCta: Attribute.Component<'global.call-to-action'>;
   };
 }
 

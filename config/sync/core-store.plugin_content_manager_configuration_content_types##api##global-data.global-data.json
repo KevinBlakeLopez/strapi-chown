@@ -299,6 +299,20 @@
           "sortable": false
         }
       },
+      "brandContentCta": {
+        "edit": {
+          "label": "Brand Detail Content CTA",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "brandContentCta",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -463,6 +477,12 @@
         [
           {
             "name": "chownCta",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "brandContentCta",
             "size": 12
           }
         ]

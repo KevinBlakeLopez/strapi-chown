@@ -1554,6 +1554,7 @@ export interface ApiGlobalDataGlobalData extends Schema.SingleType {
       Attribute.DefaultTo<'Let Chown Help'>;
     chownDescription: Attribute.RichText;
     chownCta: Attribute.Component<'global.call-to-action'>;
+    brandContentCta: Attribute.Component<'page-blades.content-cta'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -1863,6 +1864,7 @@ export interface ApiQuoteQuote extends Schema.CollectionType {
     singularName: 'quote';
     pluralName: 'quotes';
     displayName: 'Quote';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1875,6 +1877,10 @@ export interface ApiQuoteQuote extends Schema.CollectionType {
         maxLength: 255;
       }>;
     image: Attribute.Media;
+    title: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
