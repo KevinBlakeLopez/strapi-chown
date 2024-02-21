@@ -818,6 +818,132 @@
           "sortable": true
         }
       },
+      "newsletterSuccessTitle": {
+        "edit": {
+          "label": "Newsletter Success Title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "newsletterSuccessTitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "appointmentSuccessMessage": {
+        "edit": {
+          "label": "Appointment Success Message",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "appointmentSuccessMessage",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "warrantySuccessMessage": {
+        "edit": {
+          "label": "Warranty Success Message",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "warrantySuccessMessage",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "sampleSuccessMessage": {
+        "edit": {
+          "label": "Sample Success Message",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "sampleSuccessMessage",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "newsletterSuccessMessage": {
+        "edit": {
+          "label": "Newsletter Success Message",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "newsletterSuccessMessage",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "appointmentSuccessTitle": {
+        "edit": {
+          "label": "Appointment Success Title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "appointmentSuccessTitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "warrantySuccessTitle": {
+        "edit": {
+          "label": "Warranty Success Title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "warrantySuccessTitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "sampleSuccessTitle": {
+        "edit": {
+          "label": "Sample Success Title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "sampleSuccessTitle",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "errorMessage": {
+        "edit": {
+          "label": "Error Message",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "errorMessage",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -883,9 +1009,31 @@
           {
             "name": "newsletterTitle",
             "size": 6
+          }
+        ],
+        [
+          {
+            "name": "newsletterSuccessTitle",
+            "size": 6
           },
           {
+            "name": "newsletterSuccessMessage",
+            "size": 6
+          }
+        ],
+        [
+          {
             "name": "sampleRequestTitle",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "sampleSuccessTitle",
+            "size": 6
+          },
+          {
+            "name": "sampleSuccessMessage",
             "size": 6
           }
         ],
@@ -897,11 +1045,37 @@
         ],
         [
           {
+            "name": "warrantySuccessTitle",
+            "size": 6
+          },
+          {
+            "name": "warrantySuccessMessage",
+            "size": 6
+          }
+        ],
+        [
+          {
             "name": "appointmentTitle",
             "size": 6
           },
           {
             "name": "appointmentSubtitle",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "appointmentSuccessTitle",
+            "size": 6
+          },
+          {
+            "name": "appointmentSuccessMessage",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "errorMessage",
             "size": 6
           }
         ],
