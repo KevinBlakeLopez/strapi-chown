@@ -7,8 +7,8 @@
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "secondaryTitle",
-      "defaultSortBy": "secondaryTitle",
+      "mainField": "id",
+      "defaultSortBy": "id",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -47,56 +47,12 @@
           "searchable": false,
           "sortable": false
         }
-      },
-      "secondaryTitle": {
-        "edit": {
-          "label": "Chown-based Title",
-          "description": "Chown specific block title",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "secondaryTitle",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "secondaryDescription": {
-        "edit": {
-          "label": "Chown-based Description",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "secondaryDescription",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "secondaryCta": {
-        "edit": {
-          "label": "Chown-based CTA",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "secondaryCta",
-          "searchable": false,
-          "sortable": false
-        }
       }
     },
     "layouts": {
       "list": [
         "id",
-        "brandCta",
-        "secondaryTitle",
-        "secondaryCta"
+        "brandCta"
       ],
       "edit": [
         [
@@ -108,24 +64,6 @@
         [
           {
             "name": "brandCta",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "secondaryTitle",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "secondaryDescription",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "secondaryCta",
             "size": 12
           }
         ]

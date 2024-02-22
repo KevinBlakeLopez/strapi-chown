@@ -62,6 +62,20 @@
           "sortable": false
         }
       },
+      "title": {
+        "edit": {
+          "label": "Title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "title",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -123,6 +137,12 @@
     },
     "layouts": {
       "edit": [
+        [
+          {
+            "name": "title",
+            "size": 6
+          }
+        ],
         [
           {
             "name": "quote",

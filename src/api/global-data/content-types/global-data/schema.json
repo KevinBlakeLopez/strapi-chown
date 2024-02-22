@@ -123,6 +123,11 @@
       "type": "component",
       "repeatable": false,
       "component": "global.call-to-action"
+    },
+    "brandContentCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-blades.content-cta"
     }
   }
 }

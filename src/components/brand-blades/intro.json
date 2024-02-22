@@ -13,20 +13,6 @@
       "type": "component",
       "repeatable": false,
       "component": "global.call-to-action"
-    },
-    "secondaryTitle": {
-      "type": "string",
-      "required": false,
-      "maxLength": 255
-    },
-    "secondaryDescription": {
-      "type": "richtext",
-      "required": false
-    },
-    "secondaryCta": {
-      "type": "component",
-      "repeatable": false,
-      "component": "global.call-to-action"
     }
   }
 }
