@@ -102,8 +102,8 @@
         },
         "list": {
           "label": "cost",
-          "searchable": true,
-          "sortable": true
+          "searchable": false,
+          "sortable": false
         }
       },
       "lead_time": {
@@ -361,7 +361,8 @@
       "list": [
         "id",
         "name",
-        "logo"
+        "logo",
+        "cost"
       ]
     }
   },

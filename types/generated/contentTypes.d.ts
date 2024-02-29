@@ -918,7 +918,7 @@ export interface ApiBrandBrand extends Schema.CollectionType {
     >;
     cost: Attribute.Relation<
       'api::brand.brand',
-      'manyToOne',
+      'manyToMany',
       'api::price-tier.price-tier'
     >;
     lead_time: Attribute.Relation<
@@ -1761,16 +1761,16 @@ export interface ApiPriceTierPriceTier extends Schema.CollectionType {
       Attribute.SetMinMaxLength<{
         maxLength: 255;
       }>;
-    brands: Attribute.Relation<
-      'api::price-tier.price-tier',
-      'oneToMany',
-      'api::brand.brand'
-    >;
     description: Attribute.Text;
     filterLabel: Attribute.String &
       Attribute.SetMinMaxLength<{
         maxLength: 255;
       }>;
+    brands: Attribute.Relation<
+      'api::price-tier.price-tier',
+      'manyToMany',
+      'api::brand.brand'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
