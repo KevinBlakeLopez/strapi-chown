@@ -43,7 +43,7 @@
     },
     "cost": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::price-tier.price-tier",
       "inversedBy": "brands"
     },

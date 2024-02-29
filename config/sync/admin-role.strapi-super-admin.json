@@ -946,9 +946,9 @@
       "properties": {
         "fields": [
           "title",
-          "brands",
           "description",
-          "filterLabel"
+          "filterLabel",
+          "brands"
         ]
       },
       "conditions": []
@@ -974,9 +974,9 @@
       "properties": {
         "fields": [
           "title",
-          "brands",
           "description",
-          "filterLabel"
+          "filterLabel",
+          "brands"
         ]
       },
       "conditions": []
@@ -988,9 +988,9 @@
       "properties": {
         "fields": [
           "title",
-          "brands",
           "description",
-          "filterLabel"
+          "filterLabel",
+          "brands"
         ]
       },
       "conditions": []

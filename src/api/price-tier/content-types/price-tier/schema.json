@@ -18,18 +18,18 @@
       "maxLength": 255,
       "unique": true
     },
-    "brands": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::brand.brand",
-      "mappedBy": "cost"
-    },
     "description": {
       "type": "text"
     },
     "filterLabel": {
       "type": "string",
       "maxLength": 255
+    },
+    "brands": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::brand.brand",
+      "mappedBy": "cost"
     }
   }
 }
