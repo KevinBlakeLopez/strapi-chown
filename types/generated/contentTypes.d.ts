@@ -1555,6 +1555,7 @@ export interface ApiGlobalDataGlobalData extends Schema.SingleType {
     chownDescription: Attribute.RichText;
     chownCta: Attribute.Component<'global.call-to-action'>;
     brandContentCta: Attribute.Component<'page-blades.content-cta'>;
+    projectHero: Attribute.Component<'page-blades.hero'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

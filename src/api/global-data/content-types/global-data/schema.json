@@ -128,6 +128,11 @@
       "type": "component",
       "repeatable": false,
       "component": "page-blades.content-cta"
+    },
+    "projectHero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-blades.hero"
     }
   }
 }
