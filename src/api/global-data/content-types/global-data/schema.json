@@ -133,6 +133,10 @@
       "type": "component",
       "repeatable": false,
       "component": "page-blades.hero"
+    },
+    "emptyResultsText": {
+      "type": "string",
+      "maxLength": 255
     }
   }
 }

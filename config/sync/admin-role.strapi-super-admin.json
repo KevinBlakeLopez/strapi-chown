@@ -621,7 +621,8 @@
           "projectHero.cta.label",
           "projectHero.cta.type",
           "projectHero.cta.style",
-          "projectHero.imageOrientation"
+          "projectHero.imageOrientation",
+          "emptyResultsText"
         ]
       },
       "conditions": []
@@ -682,7 +683,8 @@
           "projectHero.cta.label",
           "projectHero.cta.type",
           "projectHero.cta.style",
-          "projectHero.imageOrientation"
+          "projectHero.imageOrientation",
+          "emptyResultsText"
         ]
       },
       "conditions": []
@@ -736,7 +738,8 @@
           "projectHero.cta.label",
           "projectHero.cta.type",
           "projectHero.cta.style",
-          "projectHero.imageOrientation"
+          "projectHero.imageOrientation",
+          "emptyResultsText"
         ]
       },
       "conditions": []

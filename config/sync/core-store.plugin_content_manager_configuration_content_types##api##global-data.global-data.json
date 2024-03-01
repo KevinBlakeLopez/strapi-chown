@@ -327,6 +327,20 @@
           "sortable": false
         }
       },
+      "emptyResultsText": {
+        "edit": {
+          "label": "Brand/Project Grid - No results text",
+          "description": "Text shown if too many filters have been applied",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "emptyResultsText",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -452,6 +466,12 @@
           {
             "name": "leadTimeInfo",
             "size": 8
+          }
+        ],
+        [
+          {
+            "name": "emptyResultsText",
+            "size": 6
           }
         ],
         [
