@@ -313,6 +313,20 @@
           "sortable": false
         }
       },
+      "projectHero": {
+        "edit": {
+          "label": "Default Project Hero Blade",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "projectHero",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -483,6 +497,12 @@
         [
           {
             "name": "brandContentCta",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "projectHero",
             "size": 12
           }
         ]

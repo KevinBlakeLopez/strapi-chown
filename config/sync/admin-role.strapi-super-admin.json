@@ -611,7 +611,17 @@
           "brandContentCta.cta.type",
           "brandContentCta.cta.style",
           "brandContentCta.bgImage",
-          "brandContentCta.bgColor"
+          "brandContentCta.bgColor",
+          "projectHero.headline",
+          "projectHero.subcopy",
+          "projectHero.media.video",
+          "projectHero.media.image",
+          "projectHero.media.youtubeUrl",
+          "projectHero.cta.link",
+          "projectHero.cta.label",
+          "projectHero.cta.type",
+          "projectHero.cta.style",
+          "projectHero.imageOrientation"
         ]
       },
       "conditions": []
@@ -662,7 +672,17 @@
           "brandContentCta.cta.type",
           "brandContentCta.cta.style",
           "brandContentCta.bgImage",
-          "brandContentCta.bgColor"
+          "brandContentCta.bgColor",
+          "projectHero.headline",
+          "projectHero.subcopy",
+          "projectHero.media.video",
+          "projectHero.media.image",
+          "projectHero.media.youtubeUrl",
+          "projectHero.cta.link",
+          "projectHero.cta.label",
+          "projectHero.cta.type",
+          "projectHero.cta.style",
+          "projectHero.imageOrientation"
         ]
       },
       "conditions": []
@@ -706,7 +726,17 @@
           "brandContentCta.cta.type",
           "brandContentCta.cta.style",
           "brandContentCta.bgImage",
-          "brandContentCta.bgColor"
+          "brandContentCta.bgColor",
+          "projectHero.headline",
+          "projectHero.subcopy",
+          "projectHero.media.video",
+          "projectHero.media.image",
+          "projectHero.media.youtubeUrl",
+          "projectHero.cta.link",
+          "projectHero.cta.label",
+          "projectHero.cta.type",
+          "projectHero.cta.style",
+          "projectHero.imageOrientation"
         ]
       },
       "conditions": []
