@@ -37,12 +37,6 @@
           "contentCta.cta.style",
           "contentCta.bgImage",
           "contentCta.bgColor",
-          "featuredProjects.headline",
-          "featuredProjects.contentCard.title",
-          "featuredProjects.contentCard.image",
-          "featuredProjects.contentCard.link",
-          "featuredProjects.contentCard.linkType",
-          "featuredProjects.contentCard.project",
           "banner",
           "card"
         ]
@@ -97,12 +91,6 @@
           "contentCta.cta.style",
           "contentCta.bgImage",
           "contentCta.bgColor",
-          "featuredProjects.headline",
-          "featuredProjects.contentCard.title",
-          "featuredProjects.contentCard.image",
-          "featuredProjects.contentCard.link",
-          "featuredProjects.contentCard.linkType",
-          "featuredProjects.contentCard.project",
           "banner",
           "card"
         ]
@@ -143,12 +131,6 @@
           "contentCta.cta.style",
           "contentCta.bgImage",
           "contentCta.bgColor",
-          "featuredProjects.headline",
-          "featuredProjects.contentCard.title",
-          "featuredProjects.contentCard.image",
-          "featuredProjects.contentCard.link",
-          "featuredProjects.contentCard.linkType",
-          "featuredProjects.contentCard.project",
           "banner",
           "card"
         ]
