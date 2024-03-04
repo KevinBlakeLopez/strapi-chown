@@ -408,7 +408,9 @@
           "appointmentSuccessTitle",
           "warrantySuccessTitle",
           "sampleSuccessTitle",
-          "errorMessage"
+          "errorMessage",
+          "nearestLocationLabel",
+          "nearestLocationOptions"
         ]
       },
       "conditions": []
@@ -491,7 +493,9 @@
           "appointmentSuccessTitle",
           "warrantySuccessTitle",
           "sampleSuccessTitle",
-          "errorMessage"
+          "errorMessage",
+          "nearestLocationLabel",
+          "nearestLocationOptions"
         ]
       },
       "conditions": []
@@ -567,7 +571,9 @@
           "appointmentSuccessTitle",
           "warrantySuccessTitle",
           "sampleSuccessTitle",
-          "errorMessage"
+          "errorMessage",
+          "nearestLocationLabel",
+          "nearestLocationOptions"
         ]
       },
       "conditions": []
@@ -622,7 +628,14 @@
           "projectHero.cta.type",
           "projectHero.cta.style",
           "projectHero.imageOrientation",
-          "emptyResultsText"
+          "emptyResultsText",
+          "brandAssociatedProjects",
+          "errorPageContent.title",
+          "errorPageContent.message",
+          "errorPageContent.errorCta.link",
+          "errorPageContent.errorCta.label",
+          "errorPageContent.errorCta.type",
+          "errorPageContent.errorCta.style"
         ]
       },
       "conditions": []
@@ -684,7 +697,14 @@
           "projectHero.cta.type",
           "projectHero.cta.style",
           "projectHero.imageOrientation",
-          "emptyResultsText"
+          "emptyResultsText",
+          "brandAssociatedProjects",
+          "errorPageContent.title",
+          "errorPageContent.message",
+          "errorPageContent.errorCta.link",
+          "errorPageContent.errorCta.label",
+          "errorPageContent.errorCta.type",
+          "errorPageContent.errorCta.style"
         ]
       },
       "conditions": []
@@ -739,7 +759,14 @@
           "projectHero.cta.type",
           "projectHero.cta.style",
           "projectHero.imageOrientation",
-          "emptyResultsText"
+          "emptyResultsText",
+          "brandAssociatedProjects",
+          "errorPageContent.title",
+          "errorPageContent.message",
+          "errorPageContent.errorCta.link",
+          "errorPageContent.errorCta.label",
+          "errorPageContent.errorCta.type",
+          "errorPageContent.errorCta.style"
         ]
       },
       "conditions": []
@@ -807,9 +834,9 @@
         "fields": [
           "title",
           "slug",
-          "brands",
           "description",
-          "filterLabel"
+          "filterLabel",
+          "brands"
         ]
       },
       "conditions": []
@@ -836,9 +863,9 @@
         "fields": [
           "title",
           "slug",
-          "brands",
           "description",
-          "filterLabel"
+          "filterLabel",
+          "brands"
         ]
       },
       "conditions": []
@@ -851,9 +878,9 @@
         "fields": [
           "title",
           "slug",
-          "brands",
           "description",
-          "filterLabel"
+          "filterLabel",
+          "brands"
         ]
       },
       "conditions": []

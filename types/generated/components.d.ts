@@ -151,6 +151,21 @@ export interface GlobalColumn extends Schema.Component {
   };
 }
 
+export interface GlobalErrorPageContent extends Schema.Component {
+  collectionName: 'components_global_error_page_contents';
+  info: {
+    displayName: 'errorPageContent';
+  };
+  attributes: {
+    title: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
+    message: Attribute.RichText;
+    errorCta: Attribute.Component<'global.call-to-action'>;
+  };
+}
+
 export interface GlobalMediaImageAndVideoOnly extends Schema.Component {
   collectionName: 'components_global_media_image_and_video_onlies';
   info: {
@@ -616,6 +631,7 @@ declare module '@strapi/types' {
       'global.collection-image': GlobalCollectionImage;
       'global.collection': GlobalCollection;
       'global.column': GlobalColumn;
+      'global.error-page-content': GlobalErrorPageContent;
       'global.media-image-and-video-only': GlobalMediaImageAndVideoOnly;
       'global.media': GlobalMedia;
       'global.sections': GlobalSections;

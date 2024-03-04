@@ -137,6 +137,16 @@
     "emptyResultsText": {
       "type": "string",
       "maxLength": 255
+    },
+    "brandAssociatedProjects": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "errorPageContent": {
+      "displayName": "errorPageContent",
+      "type": "component",
+      "repeatable": false,
+      "component": "global.error-page-content"
     }
   }
 }

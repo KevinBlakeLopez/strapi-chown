@@ -22,17 +22,17 @@
       "type": "uid",
       "targetField": "title"
     },
-    "brands": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::brand.brand",
-      "mappedBy": "lead_time"
-    },
     "description": {
       "type": "text"
     },
     "filterLabel": {
       "type": "string"
+    },
+    "brands": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::brand.brand",
+      "mappedBy": "lead_time"
     }
   }
 }
