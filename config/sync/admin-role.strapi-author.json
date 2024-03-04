@@ -4,6 +4,758 @@
   "description": "Authors can manage the content they have created.",
   "permissions": [
     {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::brand.brand",
+      "properties": {
+        "fields": [
+          "name",
+          "logo",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.metaImage",
+          "slug",
+          "categories",
+          "cost",
+          "lead_time",
+          "projects",
+          "collections.headline",
+          "collections.subhead",
+          "collections.Collection.description",
+          "collections.Collection.title",
+          "collections.Collection.image.description",
+          "collections.Collection.image.image",
+          "intro.description",
+          "intro.brandCta.link",
+          "intro.brandCta.label",
+          "intro.brandCta.type",
+          "intro.brandCta.style",
+          "contentCta.headline",
+          "contentCta.subcopy",
+          "contentCta.cta.link",
+          "contentCta.cta.label",
+          "contentCta.cta.type",
+          "contentCta.cta.style",
+          "contentCta.bgImage",
+          "contentCta.bgColor",
+          "banner",
+          "card"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::brand.brand",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::brand.brand",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::brand.brand",
+      "properties": {
+        "fields": [
+          "name",
+          "logo",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.metaImage",
+          "slug",
+          "categories",
+          "cost",
+          "lead_time",
+          "projects",
+          "collections.headline",
+          "collections.subhead",
+          "collections.Collection.description",
+          "collections.Collection.title",
+          "collections.Collection.image.description",
+          "collections.Collection.image.image",
+          "intro.description",
+          "intro.brandCta.link",
+          "intro.brandCta.label",
+          "intro.brandCta.type",
+          "intro.brandCta.style",
+          "contentCta.headline",
+          "contentCta.subcopy",
+          "contentCta.cta.link",
+          "contentCta.cta.label",
+          "contentCta.cta.type",
+          "contentCta.cta.style",
+          "contentCta.bgImage",
+          "contentCta.bgColor",
+          "banner",
+          "card"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::brand.brand",
+      "properties": {
+        "fields": [
+          "name",
+          "logo",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.metaImage",
+          "slug",
+          "categories",
+          "cost",
+          "lead_time",
+          "projects",
+          "collections.headline",
+          "collections.subhead",
+          "collections.Collection.description",
+          "collections.Collection.title",
+          "collections.Collection.image.description",
+          "collections.Collection.image.image",
+          "intro.description",
+          "intro.brandCta.link",
+          "intro.brandCta.label",
+          "intro.brandCta.type",
+          "intro.brandCta.style",
+          "contentCta.headline",
+          "contentCta.subcopy",
+          "contentCta.cta.link",
+          "contentCta.cta.label",
+          "contentCta.cta.type",
+          "contentCta.cta.style",
+          "contentCta.bgImage",
+          "contentCta.bgColor",
+          "banner",
+          "card"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::designer.designer",
+      "properties": {
+        "fields": [
+          "name",
+          "headshot"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::designer.designer",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::designer.designer",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::designer.designer",
+      "properties": {
+        "fields": [
+          "name",
+          "headshot"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::designer.designer",
+      "properties": {
+        "fields": [
+          "name",
+          "headshot"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::global-data.global-data",
+      "properties": {
+        "fields": [
+          "siteTitle",
+          "copyright",
+          "defaultSeo.metaTitle",
+          "defaultSeo.metaDescription",
+          "defaultSeo.metaImage",
+          "socialMediaLinks.link",
+          "socialMediaLinks.label",
+          "showMoreLabel",
+          "clearFiltersLabel",
+          "designerLabel",
+          "photographerLabel",
+          "clientLabel",
+          "categoriesLabel",
+          "priceTierLabel",
+          "leadTimeLabel",
+          "leadTimeInfo",
+          "learnMoreLabel",
+          "associatedBrandLabel",
+          "locationLabel",
+          "brandsLabel",
+          "chownTitle",
+          "chownDescription",
+          "chownCta.link",
+          "chownCta.label",
+          "chownCta.type",
+          "chownCta.style",
+          "brandContentCta.headline",
+          "brandContentCta.subcopy",
+          "brandContentCta.cta.link",
+          "brandContentCta.cta.label",
+          "brandContentCta.cta.type",
+          "brandContentCta.cta.style",
+          "brandContentCta.bgImage",
+          "brandContentCta.bgColor",
+          "projectHero.headline",
+          "projectHero.subcopy",
+          "projectHero.media.video",
+          "projectHero.media.image",
+          "projectHero.media.youtubeUrl",
+          "projectHero.cta.link",
+          "projectHero.cta.label",
+          "projectHero.cta.type",
+          "projectHero.cta.style",
+          "projectHero.imageOrientation",
+          "emptyResultsText",
+          "brandAssociatedProjects",
+          "errorPageContent.title",
+          "errorPageContent.message",
+          "errorPageContent.errorCta.link",
+          "errorPageContent.errorCta.label",
+          "errorPageContent.errorCta.type",
+          "errorPageContent.errorCta.style"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::global-data.global-data",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::global-data.global-data",
+      "properties": {
+        "fields": [
+          "siteTitle",
+          "copyright",
+          "defaultSeo.metaTitle",
+          "defaultSeo.metaDescription",
+          "defaultSeo.metaImage",
+          "socialMediaLinks.link",
+          "socialMediaLinks.label",
+          "showMoreLabel",
+          "clearFiltersLabel",
+          "designerLabel",
+          "photographerLabel",
+          "clientLabel",
+          "categoriesLabel",
+          "priceTierLabel",
+          "leadTimeLabel",
+          "leadTimeInfo",
+          "learnMoreLabel",
+          "associatedBrandLabel",
+          "locationLabel",
+          "brandsLabel",
+          "chownTitle",
+          "chownDescription",
+          "chownCta.link",
+          "chownCta.label",
+          "chownCta.type",
+          "chownCta.style",
+          "brandContentCta.headline",
+          "brandContentCta.subcopy",
+          "brandContentCta.cta.link",
+          "brandContentCta.cta.label",
+          "brandContentCta.cta.type",
+          "brandContentCta.cta.style",
+          "brandContentCta.bgImage",
+          "brandContentCta.bgColor",
+          "projectHero.headline",
+          "projectHero.subcopy",
+          "projectHero.media.video",
+          "projectHero.media.image",
+          "projectHero.media.youtubeUrl",
+          "projectHero.cta.link",
+          "projectHero.cta.label",
+          "projectHero.cta.type",
+          "projectHero.cta.style",
+          "projectHero.imageOrientation",
+          "emptyResultsText",
+          "brandAssociatedProjects",
+          "errorPageContent.title",
+          "errorPageContent.message",
+          "errorPageContent.errorCta.link",
+          "errorPageContent.errorCta.label",
+          "errorPageContent.errorCta.type",
+          "errorPageContent.errorCta.style"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::global-data.global-data",
+      "properties": {
+        "fields": [
+          "siteTitle",
+          "copyright",
+          "defaultSeo.metaTitle",
+          "defaultSeo.metaDescription",
+          "defaultSeo.metaImage",
+          "socialMediaLinks.link",
+          "socialMediaLinks.label",
+          "showMoreLabel",
+          "clearFiltersLabel",
+          "designerLabel",
+          "photographerLabel",
+          "clientLabel",
+          "categoriesLabel",
+          "priceTierLabel",
+          "leadTimeLabel",
+          "leadTimeInfo",
+          "learnMoreLabel",
+          "associatedBrandLabel",
+          "locationLabel",
+          "brandsLabel",
+          "chownTitle",
+          "chownDescription",
+          "chownCta.link",
+          "chownCta.label",
+          "chownCta.type",
+          "chownCta.style",
+          "brandContentCta.headline",
+          "brandContentCta.subcopy",
+          "brandContentCta.cta.link",
+          "brandContentCta.cta.label",
+          "brandContentCta.cta.type",
+          "brandContentCta.cta.style",
+          "brandContentCta.bgImage",
+          "brandContentCta.bgColor",
+          "projectHero.headline",
+          "projectHero.subcopy",
+          "projectHero.media.video",
+          "projectHero.media.image",
+          "projectHero.media.youtubeUrl",
+          "projectHero.cta.link",
+          "projectHero.cta.label",
+          "projectHero.cta.type",
+          "projectHero.cta.style",
+          "projectHero.imageOrientation",
+          "emptyResultsText",
+          "brandAssociatedProjects",
+          "errorPageContent.title",
+          "errorPageContent.message",
+          "errorPageContent.errorCta.link",
+          "errorPageContent.errorCta.label",
+          "errorPageContent.errorCta.type",
+          "errorPageContent.errorCta.style"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::newsletter-cta.newsletter-cta",
+      "properties": {
+        "fields": [
+          "title",
+          "cta.link",
+          "cta.label",
+          "cta.type",
+          "cta.style"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::newsletter-cta.newsletter-cta",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::newsletter-cta.newsletter-cta",
+      "properties": {
+        "fields": [
+          "title",
+          "cta.link",
+          "cta.label",
+          "cta.type",
+          "cta.style"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::newsletter-cta.newsletter-cta",
+      "properties": {
+        "fields": [
+          "title",
+          "cta.link",
+          "cta.label",
+          "cta.type",
+          "cta.style"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::page.page",
+      "properties": {
+        "fields": [
+          "title",
+          "slug",
+          "pageContent",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.metaImage"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::page.page",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::page.page",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::page.page",
+      "properties": {
+        "fields": [
+          "title",
+          "slug",
+          "pageContent",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.metaImage"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::page.page",
+      "properties": {
+        "fields": [
+          "title",
+          "slug",
+          "pageContent",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.metaImage"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::project.project",
+      "properties": {
+        "fields": [
+          "title",
+          "slug",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.metaImage",
+          "categories",
+          "brands",
+          "designer",
+          "hero",
+          "card",
+          "intro.headline",
+          "intro.overview",
+          "intro.location",
+          "intro.photographer",
+          "intro.client",
+          "projectCta.headline",
+          "projectCta.subcopy",
+          "projectCta.cta.link",
+          "projectCta.cta.label",
+          "projectCta.cta.type",
+          "projectCta.cta.style",
+          "projectCta.bgImage",
+          "projectCta.bgColor",
+          "projectHero.headline",
+          "projectHero.subcopy",
+          "projectHero.media.video",
+          "projectHero.media.image",
+          "projectHero.media.youtubeUrl",
+          "projectHero.cta.link",
+          "projectHero.cta.label",
+          "projectHero.cta.type",
+          "projectHero.cta.style",
+          "projectHero.imageOrientation",
+          "projectDynamicContent"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::project.project",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::project.project",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::project.project",
+      "properties": {
+        "fields": [
+          "title",
+          "slug",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.metaImage",
+          "categories",
+          "brands",
+          "designer",
+          "hero",
+          "card",
+          "intro.headline",
+          "intro.overview",
+          "intro.location",
+          "intro.photographer",
+          "intro.client",
+          "projectCta.headline",
+          "projectCta.subcopy",
+          "projectCta.cta.link",
+          "projectCta.cta.label",
+          "projectCta.cta.type",
+          "projectCta.cta.style",
+          "projectCta.bgImage",
+          "projectCta.bgColor",
+          "projectHero.headline",
+          "projectHero.subcopy",
+          "projectHero.media.video",
+          "projectHero.media.image",
+          "projectHero.media.youtubeUrl",
+          "projectHero.cta.link",
+          "projectHero.cta.label",
+          "projectHero.cta.type",
+          "projectHero.cta.style",
+          "projectHero.imageOrientation",
+          "projectDynamicContent"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::project.project",
+      "properties": {
+        "fields": [
+          "title",
+          "slug",
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.metaImage",
+          "categories",
+          "brands",
+          "designer",
+          "hero",
+          "card",
+          "intro.headline",
+          "intro.overview",
+          "intro.location",
+          "intro.photographer",
+          "intro.client",
+          "projectCta.headline",
+          "projectCta.subcopy",
+          "projectCta.cta.link",
+          "projectCta.cta.label",
+          "projectCta.cta.type",
+          "projectCta.cta.style",
+          "projectCta.bgImage",
+          "projectCta.bgColor",
+          "projectHero.headline",
+          "projectHero.subcopy",
+          "projectHero.media.video",
+          "projectHero.media.image",
+          "projectHero.media.youtubeUrl",
+          "projectHero.cta.link",
+          "projectHero.cta.label",
+          "projectHero.cta.type",
+          "projectHero.cta.style",
+          "projectHero.imageOrientation",
+          "projectDynamicContent"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::quote.quote",
+      "properties": {
+        "fields": [
+          "quote",
+          "attribution",
+          "image",
+          "title"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::quote.quote",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::quote.quote",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::quote.quote",
+      "properties": {
+        "fields": [
+          "quote",
+          "attribution",
+          "image",
+          "title"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::quote.quote",
+      "properties": {
+        "fields": [
+          "quote",
+          "attribution",
+          "image",
+          "title"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::team-member.team-member",
+      "properties": {
+        "fields": [
+          "name",
+          "title",
+          "experience",
+          "image"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::team-member.team-member",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::team-member.team-member",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::team-member.team-member",
+      "properties": {
+        "fields": [
+          "name",
+          "title",
+          "experience",
+          "image"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::team-member.team-member",
+      "properties": {
+        "fields": [
+          "name",
+          "title",
+          "experience",
+          "image"
+        ]
+      },
+      "conditions": []
+    },
+    {
       "action": "plugin::upload.assets.copy-link",
       "actionParameters": {},
       "subject": null,
