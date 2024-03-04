@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_global_error_page_contents",
+  "info": {
+    "displayName": "errorPageContent"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "message": {
+      "type": "richtext"
+    },
+    "errorCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.call-to-action"
+    }
+  }
+}

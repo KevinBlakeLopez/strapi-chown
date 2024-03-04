@@ -341,6 +341,34 @@
           "sortable": true
         }
       },
+      "brandAssociatedProjects": {
+        "edit": {
+          "label": "Brand - Associated Projects Title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "brandAssociatedProjects",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "errorPageContent": {
+        "edit": {
+          "label": "Error Page Content",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "errorPageContent",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -522,7 +550,19 @@
         ],
         [
           {
+            "name": "brandAssociatedProjects",
+            "size": 6
+          }
+        ],
+        [
+          {
             "name": "projectHero",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "errorPageContent",
             "size": 12
           }
         ]

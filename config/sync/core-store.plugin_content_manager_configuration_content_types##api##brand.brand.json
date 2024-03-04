@@ -117,8 +117,8 @@
         },
         "list": {
           "label": "lead_time",
-          "searchable": true,
-          "sortable": true
+          "searchable": false,
+          "sortable": false
         }
       },
       "projects": {
@@ -280,6 +280,12 @@
       }
     },
     "layouts": {
+      "list": [
+        "id",
+        "name",
+        "logo",
+        "cost"
+      ],
       "edit": [
         [
           {
@@ -357,12 +363,6 @@
             "size": 12
           }
         ]
-      ],
-      "list": [
-        "id",
-        "name",
-        "logo",
-        "cost"
       ]
     }
   },

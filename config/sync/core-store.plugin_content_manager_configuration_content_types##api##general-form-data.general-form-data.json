@@ -944,6 +944,34 @@
           "sortable": true
         }
       },
+      "nearestLocationLabel": {
+        "edit": {
+          "label": "Nearest Location Label",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "nearestLocationLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "nearestLocationOptions": {
+        "edit": {
+          "label": "Nearest Location Options",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "nearestLocationOptions",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -1316,6 +1344,18 @@
         [
           {
             "name": "locationOptions",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "nearestLocationLabel",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "nearestLocationOptions",
             "size": 12
           }
         ],

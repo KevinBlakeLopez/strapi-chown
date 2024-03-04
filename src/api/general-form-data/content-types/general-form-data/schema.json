@@ -365,6 +365,14 @@
     },
     "errorMessage": {
       "type": "text"
+    },
+    "nearestLocationLabel": {
+      "type": "string",
+      "maxLength": 255,
+      "default": "Select your nearest Chown location"
+    },
+    "nearestLocationOptions": {
+      "type": "json"
     }
   }
 }

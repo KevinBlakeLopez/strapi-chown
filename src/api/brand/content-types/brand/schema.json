@@ -49,7 +49,7 @@
     },
     "lead_time": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::lead-time.lead-time",
       "inversedBy": "brands"
     },

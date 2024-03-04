@@ -923,7 +923,7 @@ export interface ApiBrandBrand extends Schema.CollectionType {
     >;
     lead_time: Attribute.Relation<
       'api::brand.brand',
-      'manyToOne',
+      'manyToMany',
       'api::lead-time.lead-time'
     >;
     projects: Attribute.Relation<
@@ -1432,6 +1432,12 @@ export interface ApiGeneralFormDataGeneralFormData extends Schema.SingleType {
       }> &
       Attribute.DefaultTo<'Thank You for Reaching Out'>;
     errorMessage: Attribute.Text;
+    nearestLocationLabel: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }> &
+      Attribute.DefaultTo<'Select your nearest Chown location'>;
+    nearestLocationOptions: Attribute.JSON;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -1560,6 +1566,11 @@ export interface ApiGlobalDataGlobalData extends Schema.SingleType {
       Attribute.SetMinMaxLength<{
         maxLength: 255;
       }>;
+    brandAssociatedProjects: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
+    errorPageContent: Attribute.Component<'global.error-page-content'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -1635,13 +1646,13 @@ export interface ApiLeadTimeLeadTime extends Schema.CollectionType {
         maxLength: 255;
       }>;
     slug: Attribute.UID<'api::lead-time.lead-time', 'title'>;
-    brands: Attribute.Relation<
-      'api::lead-time.lead-time',
-      'oneToMany',
-      'api::brand.brand'
-    >;
     description: Attribute.Text;
     filterLabel: Attribute.String;
+    brands: Attribute.Relation<
+      'api::lead-time.lead-time',
+      'manyToMany',
+      'api::brand.brand'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
