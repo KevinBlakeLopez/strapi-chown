@@ -178,20 +178,6 @@
           "sortable": false
         }
       },
-      "featuredProjects": {
-        "edit": {
-          "label": "Feature Content Blade",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "featuredProjects",
-          "searchable": false,
-          "sortable": false
-        }
-      },
       "banner": {
         "edit": {
           "label": "Hero Image",
@@ -348,12 +334,6 @@
         [
           {
             "name": "contentCta",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "featuredProjects",
             "size": 12
           }
         ],

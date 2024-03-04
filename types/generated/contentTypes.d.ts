@@ -934,7 +934,6 @@ export interface ApiBrandBrand extends Schema.CollectionType {
     collections: Attribute.Component<'brand-blades.collections'>;
     intro: Attribute.Component<'brand-blades.intro'> & Attribute.Required;
     contentCta: Attribute.Component<'page-blades.content-cta'>;
-    featuredProjects: Attribute.Component<'page-blades.featured-content'>;
     banner: Attribute.Media;
     card: Attribute.Media;
     createdAt: Attribute.DateTime;
