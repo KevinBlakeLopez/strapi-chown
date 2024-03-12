@@ -397,6 +397,20 @@
           "sortable": true
         }
       },
+      "teamYears": {
+        "edit": {
+          "label": "Show Years of Experience for Team Members",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "teamYears",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -531,6 +545,10 @@
           }
         ],
         [
+          {
+            "name": "teamYears",
+            "size": 4
+          },
           {
             "name": "projectFilters",
             "size": 4
