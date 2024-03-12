@@ -193,7 +193,7 @@
       },
       "subcategories": {
         "edit": {
-          "label": "subcategories",
+          "label": "Subcategories",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -266,12 +266,6 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "title",
-        "designer",
-        "slug"
-      ],
       "edit": [
         [
           {
@@ -296,6 +290,10 @@
         [
           {
             "name": "categories",
+            "size": 6
+          },
+          {
+            "name": "subcategories",
             "size": 6
           }
         ],
@@ -338,13 +336,13 @@
             "name": "seo",
             "size": 12
           }
-        ],
-        [
-          {
-            "name": "subcategories",
-            "size": 6
-          }
         ]
+      ],
+      "list": [
+        "id",
+        "title",
+        "designer",
+        "slug"
       ]
     }
   },

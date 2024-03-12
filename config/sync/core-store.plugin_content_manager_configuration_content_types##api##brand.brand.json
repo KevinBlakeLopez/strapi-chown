@@ -208,7 +208,7 @@
       },
       "subcategories": {
         "edit": {
-          "label": "subcategories",
+          "label": "Subcategories",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -281,12 +281,6 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "name",
-        "logo",
-        "cost"
-      ],
       "edit": [
         [
           {
@@ -304,15 +298,21 @@
             "size": 6
           },
           {
-            "name": "cost",
+            "name": "subcategories",
             "size": 6
           }
         ],
         [
           {
-            "name": "lead_time",
+            "name": "cost",
             "size": 6
           },
+          {
+            "name": "lead_time",
+            "size": 6
+          }
+        ],
+        [
           {
             "name": "projects",
             "size": 6
@@ -357,13 +357,13 @@
             "name": "seo",
             "size": 12
           }
-        ],
-        [
-          {
-            "name": "subcategories",
-            "size": 6
-          }
         ]
+      ],
+      "list": [
+        "id",
+        "name",
+        "logo",
+        "cost"
       ]
     }
   },
