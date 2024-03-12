@@ -67,6 +67,12 @@
       "action": "api::quote.quote.findOne"
     },
     {
+      "action": "api::subcategory.subcategory.find"
+    },
+    {
+      "action": "api::subcategory.subcategory.findOne"
+    },
+    {
       "action": "api::team-member.team-member.find"
     },
     {
