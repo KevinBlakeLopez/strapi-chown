@@ -369,6 +369,20 @@
           "sortable": false
         }
       },
+      "projectFilters": {
+        "edit": {
+          "label": "Show Project Filters",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "projectFilters",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -494,6 +508,12 @@
           {
             "name": "leadTimeInfo",
             "size": 8
+          }
+        ],
+        [
+          {
+            "name": "projectFilters",
+            "size": 4
           }
         ],
         [
