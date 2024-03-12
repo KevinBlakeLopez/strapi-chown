@@ -936,6 +936,11 @@ export interface ApiBrandBrand extends Schema.CollectionType {
     contentCta: Attribute.Component<'page-blades.content-cta'>;
     banner: Attribute.Media;
     card: Attribute.Media;
+    subcategories: Attribute.Relation<
+      'api::brand.brand',
+      'manyToMany',
+      'api::subcategory.subcategory'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1855,6 +1860,11 @@ export interface ApiProjectProject extends Schema.CollectionType {
         'page-blades.rich-text'
       ]
     >;
+    subcategories: Attribute.Relation<
+      'api::project.project',
+      'manyToMany',
+      'api::subcategory.subcategory'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1907,6 +1917,54 @@ export interface ApiQuoteQuote extends Schema.CollectionType {
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::quote.quote',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiSubcategorySubcategory extends Schema.CollectionType {
+  collectionName: 'subcategories';
+  info: {
+    singularName: 'subcategory';
+    pluralName: 'subcategories';
+    displayName: 'Subcategory';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
+    slug: Attribute.UID<'api::subcategory.subcategory', 'title'> &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
+    brands: Attribute.Relation<
+      'api::subcategory.subcategory',
+      'manyToMany',
+      'api::brand.brand'
+    >;
+    projects: Attribute.Relation<
+      'api::subcategory.subcategory',
+      'manyToMany',
+      'api::project.project'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::subcategory.subcategory',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::subcategory.subcategory',
       'oneToOne',
       'admin::user'
     > &
@@ -1993,6 +2051,7 @@ declare module '@strapi/types' {
       'api::price-tier.price-tier': ApiPriceTierPriceTier;
       'api::project.project': ApiProjectProject;
       'api::quote.quote': ApiQuoteQuote;
+      'api::subcategory.subcategory': ApiSubcategorySubcategory;
       'api::team-member.team-member': ApiTeamMemberTeamMember;
     }
   }

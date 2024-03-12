@@ -91,6 +91,12 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "subcategories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::subcategory.subcategory",
+      "mappedBy": "brands"
     }
   }
 }

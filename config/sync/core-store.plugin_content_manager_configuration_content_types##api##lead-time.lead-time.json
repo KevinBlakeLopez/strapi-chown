@@ -79,7 +79,7 @@
       },
       "filterLabel": {
         "edit": {
-          "label": "Filter Label",
+          "label": "Card Label",
           "description": "Text Shown in Filter Dropdown",
           "placeholder": "",
           "visible": true,

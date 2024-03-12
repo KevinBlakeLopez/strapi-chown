@@ -1,7 +1,7 @@
 {
-  "key": "plugin_content_manager_configuration_content_types::api::price-tier.price-tier",
+  "key": "plugin_content_manager_configuration_content_types::api::subcategory.subcategory",
   "value": {
-    "uid": "api::price-tier.price-tier",
+    "uid": "api::subcategory.subcategory",
     "settings": {
       "bulkable": true,
       "filterable": true,
@@ -34,6 +34,20 @@
           "sortable": true
         }
       },
+      "slug": {
+        "edit": {
+          "label": "Slug",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "slug",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "brands": {
         "edit": {
           "label": "Brands",
@@ -49,32 +63,19 @@
           "sortable": false
         }
       },
-      "description": {
+      "projects": {
         "edit": {
-          "label": "Description",
+          "label": "Projects",
           "description": "",
           "placeholder": "",
           "visible": true,
-          "editable": true
+          "editable": true,
+          "mainField": "title"
         },
         "list": {
-          "label": "description",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "filterLabel": {
-        "edit": {
-          "label": "Filter Label",
-          "description": "Text Shown in Filter Dropdown",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "filterLabel",
-          "searchable": true,
-          "sortable": true
+          "label": "projects",
+          "searchable": false,
+          "sortable": false
         }
       },
       "createdAt": {
@@ -144,13 +145,17 @@
             "size": 6
           },
           {
-            "name": "brands",
+            "name": "slug",
             "size": 6
           }
         ],
         [
           {
-            "name": "description",
+            "name": "brands",
+            "size": 6
+          },
+          {
+            "name": "projects",
             "size": 6
           }
         ]
@@ -158,8 +163,8 @@
       "list": [
         "id",
         "title",
-        "brands",
-        "description"
+        "slug",
+        "brands"
       ]
     }
   },

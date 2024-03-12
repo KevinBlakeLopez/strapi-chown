@@ -86,6 +86,12 @@
         "page-blades.quote",
         "page-blades.rich-text"
       ]
+    },
+    "subcategories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::subcategory.subcategory",
+      "mappedBy": "projects"
     }
   }
 }
