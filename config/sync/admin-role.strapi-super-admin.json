@@ -621,7 +621,8 @@
           "errorPageContent.errorCta.label",
           "errorPageContent.errorCta.type",
           "errorPageContent.errorCta.style",
-          "projectFilters"
+          "projectFilters",
+          "subcategoriesLabel"
         ]
       },
       "conditions": []
@@ -691,7 +692,8 @@
           "errorPageContent.errorCta.label",
           "errorPageContent.errorCta.type",
           "errorPageContent.errorCta.style",
-          "projectFilters"
+          "projectFilters",
+          "subcategoriesLabel"
         ]
       },
       "conditions": []
@@ -754,7 +756,8 @@
           "errorPageContent.errorCta.label",
           "errorPageContent.errorCta.type",
           "errorPageContent.errorCta.style",
-          "projectFilters"
+          "projectFilters",
+          "subcategoriesLabel"
         ]
       },
       "conditions": []

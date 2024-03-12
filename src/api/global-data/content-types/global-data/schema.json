@@ -150,6 +150,10 @@
     },
     "projectFilters": {
       "type": "boolean"
+    },
+    "subcategoriesLabel": {
+      "type": "string",
+      "maxLength": 255
     }
   }
 }

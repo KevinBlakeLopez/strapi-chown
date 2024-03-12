@@ -1576,6 +1576,10 @@ export interface ApiGlobalDataGlobalData extends Schema.SingleType {
       }>;
     errorPageContent: Attribute.Component<'global.error-page-content'>;
     projectFilters: Attribute.Boolean;
+    subcategoriesLabel: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
