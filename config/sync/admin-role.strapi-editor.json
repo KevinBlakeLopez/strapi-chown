@@ -620,7 +620,9 @@
           "errorPageContent.errorCta.link",
           "errorPageContent.errorCta.label",
           "errorPageContent.errorCta.type",
-          "errorPageContent.errorCta.style"
+          "errorPageContent.errorCta.style",
+          "projectFilters",
+          "subcategoriesLabel"
         ]
       },
       "conditions": []
@@ -689,7 +691,9 @@
           "errorPageContent.errorCta.link",
           "errorPageContent.errorCta.label",
           "errorPageContent.errorCta.type",
-          "errorPageContent.errorCta.style"
+          "errorPageContent.errorCta.style",
+          "projectFilters",
+          "subcategoriesLabel"
         ]
       },
       "conditions": []
@@ -751,7 +755,9 @@
           "errorPageContent.errorCta.link",
           "errorPageContent.errorCta.label",
           "errorPageContent.errorCta.type",
-          "errorPageContent.errorCta.style"
+          "errorPageContent.errorCta.style",
+          "projectFilters",
+          "subcategoriesLabel"
         ]
       },
       "conditions": []
