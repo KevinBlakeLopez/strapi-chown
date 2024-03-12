@@ -206,6 +206,21 @@
           "sortable": false
         }
       },
+      "subcategories": {
+        "edit": {
+          "label": "subcategories",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "title"
+        },
+        "list": {
+          "label": "subcategories",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -341,6 +356,12 @@
           {
             "name": "seo",
             "size": 12
+          }
+        ],
+        [
+          {
+            "name": "subcategories",
+            "size": 6
           }
         ]
       ]

@@ -39,7 +39,8 @@
           "contentCta.bgImage",
           "contentCta.bgColor",
           "banner",
-          "card"
+          "card",
+          "subcategories"
         ]
       },
       "conditions": []
@@ -94,7 +95,8 @@
           "contentCta.bgImage",
           "contentCta.bgColor",
           "banner",
-          "card"
+          "card",
+          "subcategories"
         ]
       },
       "conditions": []
@@ -135,7 +137,8 @@
           "contentCta.bgImage",
           "contentCta.bgColor",
           "banner",
-          "card"
+          "card",
+          "subcategories"
         ]
       },
       "conditions": []
@@ -617,7 +620,9 @@
           "errorPageContent.errorCta.link",
           "errorPageContent.errorCta.label",
           "errorPageContent.errorCta.type",
-          "errorPageContent.errorCta.style"
+          "errorPageContent.errorCta.style",
+          "projectFilters",
+          "subcategoriesLabel"
         ]
       },
       "conditions": []
@@ -686,7 +691,9 @@
           "errorPageContent.errorCta.link",
           "errorPageContent.errorCta.label",
           "errorPageContent.errorCta.type",
-          "errorPageContent.errorCta.style"
+          "errorPageContent.errorCta.style",
+          "projectFilters",
+          "subcategoriesLabel"
         ]
       },
       "conditions": []
@@ -748,7 +755,9 @@
           "errorPageContent.errorCta.link",
           "errorPageContent.errorCta.label",
           "errorPageContent.errorCta.type",
-          "errorPageContent.errorCta.style"
+          "errorPageContent.errorCta.style",
+          "projectFilters",
+          "subcategoriesLabel"
         ]
       },
       "conditions": []
@@ -1076,7 +1085,8 @@
           "projectHero.cta.type",
           "projectHero.cta.style",
           "projectHero.imageOrientation",
-          "projectDynamicContent"
+          "projectDynamicContent",
+          "subcategories"
         ]
       },
       "conditions": []
@@ -1134,7 +1144,8 @@
           "projectHero.cta.type",
           "projectHero.cta.style",
           "projectHero.imageOrientation",
-          "projectDynamicContent"
+          "projectDynamicContent",
+          "subcategories"
         ]
       },
       "conditions": []
@@ -1178,7 +1189,8 @@
           "projectHero.cta.type",
           "projectHero.cta.style",
           "projectHero.imageOrientation",
-          "projectDynamicContent"
+          "projectDynamicContent",
+          "subcategories"
         ]
       },
       "conditions": []
@@ -1235,6 +1247,62 @@
           "attribution",
           "image",
           "title"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::subcategory.subcategory",
+      "properties": {
+        "fields": [
+          "title",
+          "slug",
+          "brands",
+          "projects"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::subcategory.subcategory",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::subcategory.subcategory",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::subcategory.subcategory",
+      "properties": {
+        "fields": [
+          "title",
+          "slug",
+          "brands",
+          "projects"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::subcategory.subcategory",
+      "properties": {
+        "fields": [
+          "title",
+          "slug",
+          "brands",
+          "projects"
         ]
       },
       "conditions": []

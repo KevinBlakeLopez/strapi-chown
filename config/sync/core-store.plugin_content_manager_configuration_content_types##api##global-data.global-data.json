@@ -369,6 +369,34 @@
           "sortable": false
         }
       },
+      "projectFilters": {
+        "edit": {
+          "label": "Show Project Filters",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "projectFilters",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "subcategoriesLabel": {
+        "edit": {
+          "label": "Subcategories Label",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "subcategoriesLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -474,9 +502,15 @@
           {
             "name": "associatedBrandLabel",
             "size": 6
-          },
+          }
+        ],
+        [
           {
             "name": "categoriesLabel",
+            "size": 6
+          },
+          {
+            "name": "subcategoriesLabel",
             "size": 6
           }
         ],
@@ -494,6 +528,12 @@
           {
             "name": "leadTimeInfo",
             "size": 8
+          }
+        ],
+        [
+          {
+            "name": "projectFilters",
+            "size": 4
           }
         ],
         [

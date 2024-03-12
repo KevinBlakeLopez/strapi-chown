@@ -147,6 +147,13 @@
       "type": "component",
       "repeatable": false,
       "component": "global.error-page-content"
+    },
+    "projectFilters": {
+      "type": "boolean"
+    },
+    "subcategoriesLabel": {
+      "type": "string",
+      "maxLength": 255
     }
   }
 }

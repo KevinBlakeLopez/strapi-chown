@@ -19,6 +19,10 @@ module.exports = ({ env }) => ({
           field: 'slug',
           references: 'title',
         },
+        subcategory: {
+          field: 'slug',
+          references: 'title',
+        },
         'lead-time': {
           field: 'slug',
           references: 'title',
