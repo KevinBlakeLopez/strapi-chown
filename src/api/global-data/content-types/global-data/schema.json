@@ -154,6 +154,9 @@
     "subcategoriesLabel": {
       "type": "string",
       "maxLength": 255
+    },
+    "teamYears": {
+      "type": "boolean"
     }
   }
 }

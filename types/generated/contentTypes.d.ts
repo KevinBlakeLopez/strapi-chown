@@ -1580,6 +1580,7 @@ export interface ApiGlobalDataGlobalData extends Schema.SingleType {
       Attribute.SetMinMaxLength<{
         maxLength: 255;
       }>;
+    teamYears: Attribute.Boolean;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
