@@ -1920,6 +1920,7 @@ export interface ApiTeamMemberTeamMember extends Schema.CollectionType {
     singularName: 'team-member';
     pluralName: 'team-members';
     displayName: 'Team Member';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1936,7 +1937,6 @@ export interface ApiTeamMemberTeamMember extends Schema.CollectionType {
         maxLength: 255;
       }>;
     experience: Attribute.String &
-      Attribute.Required &
       Attribute.SetMinMaxLength<{
         maxLength: 255;
       }>;

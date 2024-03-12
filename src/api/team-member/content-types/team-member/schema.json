@@ -4,7 +4,8 @@
   "info": {
     "singularName": "team-member",
     "pluralName": "team-members",
-    "displayName": "Team Member"
+    "displayName": "Team Member",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -23,16 +24,16 @@
     },
     "experience": {
       "type": "string",
-      "required": true,
+      "required": false,
       "maxLength": 255
     },
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }
