@@ -442,7 +442,7 @@ export interface PageBladesProposition extends Schema.Component {
         maxLength: 255;
       }>;
     subcopy: Attribute.RichText;
-    images: Attribute.Media & Attribute.Required;
+    images: Attribute.Component<'global.collection-image', true>;
   };
 }
 
