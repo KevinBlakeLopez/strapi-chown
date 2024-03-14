@@ -50,7 +50,7 @@
       },
       "images": {
         "edit": {
-          "label": "Images",
+          "label": "Proposition Images",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -85,7 +85,7 @@
         [
           {
             "name": "images",
-            "size": 6
+            "size": 12
           }
         ]
       ]
