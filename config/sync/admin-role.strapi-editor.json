@@ -622,7 +622,8 @@
           "errorPageContent.errorCta.type",
           "errorPageContent.errorCta.style",
           "projectFilters",
-          "subcategoriesLabel"
+          "subcategoriesLabel",
+          "teamYears"
         ]
       },
       "conditions": []
@@ -693,7 +694,8 @@
           "errorPageContent.errorCta.type",
           "errorPageContent.errorCta.style",
           "projectFilters",
-          "subcategoriesLabel"
+          "subcategoriesLabel",
+          "teamYears"
         ]
       },
       "conditions": []
@@ -757,7 +759,8 @@
           "errorPageContent.errorCta.type",
           "errorPageContent.errorCta.style",
           "projectFilters",
-          "subcategoriesLabel"
+          "subcategoriesLabel",
+          "teamYears"
         ]
       },
       "conditions": []
