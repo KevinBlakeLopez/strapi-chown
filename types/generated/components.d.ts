@@ -35,7 +35,6 @@ export interface BrandBladesCollections extends Schema.Component {
       Attribute.Required &
       Attribute.SetMinMax<{
         min: 1;
-        max: 6;
       }>;
   };
 }
