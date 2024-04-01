@@ -22,7 +22,6 @@
       "repeatable": true,
       "component": "global.collection",
       "required": true,
-      "max": 6,
       "min": 1
     }
   }
