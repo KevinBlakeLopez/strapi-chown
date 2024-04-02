@@ -187,6 +187,7 @@ export interface GlobalMedia extends Schema.Component {
     video: Attribute.Media;
     image: Attribute.Media & Attribute.Required;
     youtubeUrl: Attribute.Text & Attribute.CustomField<'plugin::oembed.oembed'>;
+    youtubeId: Attribute.String;
   };
 }
 
