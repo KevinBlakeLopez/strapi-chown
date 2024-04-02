@@ -6,7 +6,7 @@
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "youtubeId",
+      "mainField": "id",
       "defaultSortBy": "id",
       "defaultSortOrder": "ASC"
     },
@@ -60,20 +60,6 @@
           "searchable": true,
           "sortable": true
         }
-      },
-      "youtubeId": {
-        "edit": {
-          "label": "Youtube ID",
-          "description": "Unique Video ID at the end of Youtube URL",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "youtubeId",
-          "searchable": true,
-          "sortable": true
-        }
       }
     },
     "layouts": {
@@ -97,10 +83,6 @@
         [
           {
             "name": "youtubeUrl",
-            "size": 6
-          },
-          {
-            "name": "youtubeId",
             "size": 6
           }
         ]
