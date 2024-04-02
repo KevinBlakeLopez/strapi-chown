@@ -25,9 +25,6 @@
     "youtubeUrl": {
       "type": "customField",
       "customField": "plugin::oembed.oembed"
-    },
-    "youtubeId": {
-      "type": "string"
     }
   }
 }
