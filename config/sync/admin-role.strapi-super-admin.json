@@ -398,7 +398,8 @@
           "nearestLocationOptions",
           "lastNameLabel",
           "lastNamePlaceholder",
-          "cityPlaceholder"
+          "cityPlaceholder",
+          "warrantyToEmail"
         ]
       },
       "conditions": []
@@ -486,7 +487,8 @@
           "nearestLocationOptions",
           "lastNameLabel",
           "lastNamePlaceholder",
-          "cityPlaceholder"
+          "cityPlaceholder",
+          "warrantyToEmail"
         ]
       },
       "conditions": []
@@ -567,7 +569,8 @@
           "nearestLocationOptions",
           "lastNameLabel",
           "lastNamePlaceholder",
-          "cityPlaceholder"
+          "cityPlaceholder",
+          "warrantyToEmail"
         ]
       },
       "conditions": []

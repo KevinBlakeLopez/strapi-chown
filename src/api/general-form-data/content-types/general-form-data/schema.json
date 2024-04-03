@@ -384,6 +384,9 @@
     "cityPlaceholder": {
       "type": "string",
       "maxLength": 255
+    },
+    "warrantyToEmail": {
+      "type": "string"
     }
   }
 }

@@ -1014,6 +1014,20 @@
           "sortable": true
         }
       },
+      "warrantyToEmail": {
+        "edit": {
+          "label": "Warranty Form: To Email Address",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "warrantyToEmail",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -1444,6 +1458,12 @@
           },
           {
             "name": "submitButtonLabel",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "warrantyToEmail",
             "size": 6
           }
         ]
