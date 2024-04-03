@@ -78,7 +78,7 @@
       },
       "nameLabel": {
         "edit": {
-          "label": "Name Label",
+          "label": "First Name Label",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -92,7 +92,7 @@
       },
       "namePlaceholder": {
         "edit": {
-          "label": "Name Placeholder",
+          "label": "First Name Placeholder",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -972,6 +972,34 @@
           "sortable": false
         }
       },
+      "lastNameLabel": {
+        "edit": {
+          "label": "Last Name Label",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "lastNameLabel",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "lastNamePlaceholder": {
+        "edit": {
+          "label": "Last Name Placeholder",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "lastNamePlaceholder",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -1114,6 +1142,16 @@
           },
           {
             "name": "namePlaceholder",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "lastNameLabel",
+            "size": 6
+          },
+          {
+            "name": "lastNamePlaceholder",
             "size": 6
           }
         ],

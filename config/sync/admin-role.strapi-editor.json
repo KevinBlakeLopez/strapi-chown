@@ -395,7 +395,9 @@
           "sampleSuccessTitle",
           "errorMessage",
           "nearestLocationLabel",
-          "nearestLocationOptions"
+          "nearestLocationOptions",
+          "lastNameLabel",
+          "lastNamePlaceholder"
         ]
       },
       "conditions": []
@@ -480,7 +482,9 @@
           "sampleSuccessTitle",
           "errorMessage",
           "nearestLocationLabel",
-          "nearestLocationOptions"
+          "nearestLocationOptions",
+          "lastNameLabel",
+          "lastNamePlaceholder"
         ]
       },
       "conditions": []
@@ -558,7 +562,9 @@
           "sampleSuccessTitle",
           "errorMessage",
           "nearestLocationLabel",
-          "nearestLocationOptions"
+          "nearestLocationOptions",
+          "lastNameLabel",
+          "lastNamePlaceholder"
         ]
       },
       "conditions": []
