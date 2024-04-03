@@ -1000,6 +1000,20 @@
           "sortable": true
         }
       },
+      "cityPlaceholder": {
+        "edit": {
+          "label": "City Placeholder",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "cityPlaceholder",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -1178,6 +1192,10 @@
         [
           {
             "name": "cityLabel",
+            "size": 6
+          },
+          {
+            "name": "cityPlaceholder",
             "size": 6
           }
         ],
