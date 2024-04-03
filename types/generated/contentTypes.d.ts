@@ -1442,6 +1442,11 @@ export interface ApiGeneralFormDataGeneralFormData extends Schema.SingleType {
       }> &
       Attribute.DefaultTo<'Select your nearest Chown location'>;
     nearestLocationOptions: Attribute.JSON;
+    lastNameLabel: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
+    lastNamePlaceholder: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
