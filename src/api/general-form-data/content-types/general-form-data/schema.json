@@ -380,6 +380,10 @@
     },
     "lastNamePlaceholder": {
       "type": "string"
+    },
+    "cityPlaceholder": {
+      "type": "string",
+      "maxLength": 255
     }
   }
 }

@@ -397,7 +397,8 @@
           "nearestLocationLabel",
           "nearestLocationOptions",
           "lastNameLabel",
-          "lastNamePlaceholder"
+          "lastNamePlaceholder",
+          "cityPlaceholder"
         ]
       },
       "conditions": []
@@ -484,7 +485,8 @@
           "nearestLocationLabel",
           "nearestLocationOptions",
           "lastNameLabel",
-          "lastNamePlaceholder"
+          "lastNamePlaceholder",
+          "cityPlaceholder"
         ]
       },
       "conditions": []
@@ -564,7 +566,8 @@
           "nearestLocationLabel",
           "nearestLocationOptions",
           "lastNameLabel",
-          "lastNamePlaceholder"
+          "lastNamePlaceholder",
+          "cityPlaceholder"
         ]
       },
       "conditions": []
