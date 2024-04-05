@@ -157,6 +157,10 @@
     },
     "teamYears": {
       "type": "boolean"
+    },
+    "leadTimeDisclaimer": {
+      "type": "string",
+      "maxLength": 255
     }
   }
 }

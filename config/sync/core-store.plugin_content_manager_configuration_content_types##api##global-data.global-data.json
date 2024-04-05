@@ -411,6 +411,20 @@
           "sortable": true
         }
       },
+      "leadTimeDisclaimer": {
+        "edit": {
+          "label": "Lead Time Disclaimer",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "leadTimeDisclaimer",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -542,6 +556,12 @@
           {
             "name": "leadTimeInfo",
             "size": 8
+          }
+        ],
+        [
+          {
+            "name": "leadTimeDisclaimer",
+            "size": 6
           }
         ],
         [
