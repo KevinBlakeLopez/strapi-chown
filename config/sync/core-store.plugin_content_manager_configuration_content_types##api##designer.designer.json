@@ -48,6 +48,20 @@
           "sortable": false
         }
       },
+      "designerCTA": {
+        "edit": {
+          "label": "Link for Designer",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "designerCTA",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -117,6 +131,12 @@
           {
             "name": "headshot",
             "size": 6
+          }
+        ],
+        [
+          {
+            "name": "designerCTA",
+            "size": 12
           }
         ]
       ],

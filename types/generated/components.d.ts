@@ -150,6 +150,23 @@ export interface GlobalColumn extends Schema.Component {
   };
 }
 
+export interface GlobalDesignerCta extends Schema.Component {
+  collectionName: 'components_global_designer_ctas';
+  info: {
+    displayName: 'Designer CTA';
+  };
+  attributes: {
+    linkUrl: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
+    label: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
+  };
+}
+
 export interface GlobalErrorPageContent extends Schema.Component {
   collectionName: 'components_global_error_page_contents';
   info: {
@@ -630,6 +647,7 @@ declare module '@strapi/types' {
       'global.collection-image': GlobalCollectionImage;
       'global.collection': GlobalCollection;
       'global.column': GlobalColumn;
+      'global.designer-cta': GlobalDesignerCta;
       'global.error-page-content': GlobalErrorPageContent;
       'global.media-image-and-video-only': GlobalMediaImageAndVideoOnly;
       'global.media': GlobalMedia;
