@@ -399,7 +399,8 @@
           "lastNameLabel",
           "lastNamePlaceholder",
           "cityPlaceholder",
-          "warrantyToEmail"
+          "warrantyToEmail",
+          "requestSampleMailingList"
         ]
       },
       "conditions": []
@@ -488,7 +489,8 @@
           "lastNameLabel",
           "lastNamePlaceholder",
           "cityPlaceholder",
-          "warrantyToEmail"
+          "warrantyToEmail",
+          "requestSampleMailingList"
         ]
       },
       "conditions": []
@@ -570,7 +572,8 @@
           "lastNameLabel",
           "lastNamePlaceholder",
           "cityPlaceholder",
-          "warrantyToEmail"
+          "warrantyToEmail",
+          "requestSampleMailingList"
         ]
       },
       "conditions": []
@@ -635,7 +638,8 @@
           "errorPageContent.errorCta.style",
           "projectFilters",
           "subcategoriesLabel",
-          "teamYears"
+          "teamYears",
+          "leadTimeDisclaimer"
         ]
       },
       "conditions": []
@@ -707,7 +711,8 @@
           "errorPageContent.errorCta.style",
           "projectFilters",
           "subcategoriesLabel",
-          "teamYears"
+          "teamYears",
+          "leadTimeDisclaimer"
         ]
       },
       "conditions": []
@@ -772,7 +777,8 @@
           "errorPageContent.errorCta.style",
           "projectFilters",
           "subcategoriesLabel",
-          "teamYears"
+          "teamYears",
+          "leadTimeDisclaimer"
         ]
       },
       "conditions": []

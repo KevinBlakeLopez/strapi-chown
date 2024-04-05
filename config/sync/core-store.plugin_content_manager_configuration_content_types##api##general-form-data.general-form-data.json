@@ -1028,6 +1028,20 @@
           "sortable": true
         }
       },
+      "requestSampleMailingList": {
+        "edit": {
+          "label": "Request A Sample Mailing List",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "requestSampleMailingList",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -1465,6 +1479,12 @@
           {
             "name": "warrantyToEmail",
             "size": 6
+          }
+        ],
+        [
+          {
+            "name": "requestSampleMailingList",
+            "size": 12
           }
         ]
       ],
