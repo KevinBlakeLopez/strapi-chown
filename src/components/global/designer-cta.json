@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_global_designer_ctas",
+  "info": {
+    "displayName": "Designer CTA"
+  },
+  "options": {},
+  "attributes": {
+    "linkUrl": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "label": {
+      "type": "string",
+      "maxLength": 255
+    }
+  }
+}

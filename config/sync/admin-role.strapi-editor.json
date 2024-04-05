@@ -209,7 +209,9 @@
       "properties": {
         "fields": [
           "name",
-          "headshot"
+          "headshot",
+          "designerCTA.linkUrl",
+          "designerCTA.label"
         ]
       },
       "conditions": []
@@ -235,7 +237,9 @@
       "properties": {
         "fields": [
           "name",
-          "headshot"
+          "headshot",
+          "designerCTA.linkUrl",
+          "designerCTA.label"
         ]
       },
       "conditions": []
@@ -247,7 +251,9 @@
       "properties": {
         "fields": [
           "name",
-          "headshot"
+          "headshot",
+          "designerCTA.linkUrl",
+          "designerCTA.label"
         ]
       },
       "conditions": []

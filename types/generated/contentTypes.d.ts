@@ -1013,6 +1013,7 @@ export interface ApiDesignerDesigner extends Schema.CollectionType {
     singularName: 'designer';
     pluralName: 'designers';
     displayName: 'Designer';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1020,6 +1021,7 @@ export interface ApiDesignerDesigner extends Schema.CollectionType {
   attributes: {
     name: Attribute.String;
     headshot: Attribute.Media;
+    designerCTA: Attribute.Component<'global.designer-cta'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

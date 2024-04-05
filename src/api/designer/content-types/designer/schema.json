@@ -4,7 +4,8 @@
   "info": {
     "singularName": "designer",
     "pluralName": "designers",
-    "displayName": "Designer"
+    "displayName": "Designer",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,11 +16,18 @@
       "type": "string"
     },
     "headshot": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "designerCTA": {
+      "displayName": "Designer CTA",
+      "type": "component",
+      "repeatable": false,
+      "component": "global.designer-cta"
     }
   }
 }
