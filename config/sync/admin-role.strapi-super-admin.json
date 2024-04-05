@@ -399,7 +399,8 @@
           "lastNameLabel",
           "lastNamePlaceholder",
           "cityPlaceholder",
-          "warrantyToEmail"
+          "warrantyToEmail",
+          "requestSampleMailingList"
         ]
       },
       "conditions": []
@@ -488,7 +489,8 @@
           "lastNameLabel",
           "lastNamePlaceholder",
           "cityPlaceholder",
-          "warrantyToEmail"
+          "warrantyToEmail",
+          "requestSampleMailingList"
         ]
       },
       "conditions": []
@@ -570,7 +572,8 @@
           "lastNameLabel",
           "lastNamePlaceholder",
           "cityPlaceholder",
-          "warrantyToEmail"
+          "warrantyToEmail",
+          "requestSampleMailingList"
         ]
       },
       "conditions": []

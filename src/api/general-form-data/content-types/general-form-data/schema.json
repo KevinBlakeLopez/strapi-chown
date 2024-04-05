@@ -387,6 +387,9 @@
     },
     "warrantyToEmail": {
       "type": "string"
+    },
+    "requestSampleMailingList": {
+      "type": "json"
     }
   }
 }

@@ -1452,6 +1452,7 @@ export interface ApiGeneralFormDataGeneralFormData extends Schema.SingleType {
         maxLength: 255;
       }>;
     warrantyToEmail: Attribute.String;
+    requestSampleMailingList: Attribute.JSON;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

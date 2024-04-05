@@ -39,7 +39,8 @@
           "contentCta.bgImage",
           "contentCta.bgColor",
           "banner",
-          "card"
+          "card",
+          "subcategories"
         ]
       },
       "conditions": []
@@ -94,7 +95,8 @@
           "contentCta.bgImage",
           "contentCta.bgColor",
           "banner",
-          "card"
+          "card",
+          "subcategories"
         ]
       },
       "conditions": []
@@ -135,7 +137,8 @@
           "contentCta.bgImage",
           "contentCta.bgColor",
           "banner",
-          "card"
+          "card",
+          "subcategories"
         ]
       },
       "conditions": []
@@ -247,7 +250,10 @@
           "errorPageContent.errorCta.link",
           "errorPageContent.errorCta.label",
           "errorPageContent.errorCta.type",
-          "errorPageContent.errorCta.style"
+          "errorPageContent.errorCta.style",
+          "projectFilters",
+          "subcategoriesLabel",
+          "teamYears"
         ]
       },
       "conditions": []
@@ -316,7 +322,10 @@
           "errorPageContent.errorCta.link",
           "errorPageContent.errorCta.label",
           "errorPageContent.errorCta.type",
-          "errorPageContent.errorCta.style"
+          "errorPageContent.errorCta.style",
+          "projectFilters",
+          "subcategoriesLabel",
+          "teamYears"
         ]
       },
       "conditions": []
@@ -378,7 +387,10 @@
           "errorPageContent.errorCta.link",
           "errorPageContent.errorCta.label",
           "errorPageContent.errorCta.type",
-          "errorPageContent.errorCta.style"
+          "errorPageContent.errorCta.style",
+          "projectFilters",
+          "subcategoriesLabel",
+          "teamYears"
         ]
       },
       "conditions": []
@@ -536,7 +548,8 @@
           "projectHero.cta.type",
           "projectHero.cta.style",
           "projectHero.imageOrientation",
-          "projectDynamicContent"
+          "projectDynamicContent",
+          "subcategories"
         ]
       },
       "conditions": []
@@ -594,7 +607,8 @@
           "projectHero.cta.type",
           "projectHero.cta.style",
           "projectHero.imageOrientation",
-          "projectDynamicContent"
+          "projectDynamicContent",
+          "subcategories"
         ]
       },
       "conditions": []
@@ -638,7 +652,8 @@
           "projectHero.cta.type",
           "projectHero.cta.style",
           "projectHero.imageOrientation",
-          "projectDynamicContent"
+          "projectDynamicContent",
+          "subcategories"
         ]
       },
       "conditions": []
