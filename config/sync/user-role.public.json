@@ -79,9 +79,6 @@
       "action": "api::team-member.team-member.findOne"
     },
     {
-      "action": "plugin::redirects.redirect.find"
-    },
-    {
       "action": "plugin::users-permissions.auth.callback"
     },
     {
