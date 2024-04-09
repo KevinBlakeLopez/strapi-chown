@@ -390,6 +390,10 @@
     },
     "requestSampleMailingList": {
       "type": "json"
+    },
+    "subscribedErrorMessage": {
+      "type": "string",
+      "maxLength": 255
     }
   }
 }

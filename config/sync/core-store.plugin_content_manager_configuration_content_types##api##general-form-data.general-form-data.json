@@ -1042,6 +1042,20 @@
           "sortable": false
         }
       },
+      "subscribedErrorMessage": {
+        "edit": {
+          "label": "Error Message - Already Subscribed",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "subscribedErrorMessage",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -1485,6 +1499,12 @@
           {
             "name": "requestSampleMailingList",
             "size": 12
+          }
+        ],
+        [
+          {
+            "name": "subscribedErrorMessage",
+            "size": 6
           }
         ]
       ],
