@@ -1056,6 +1056,20 @@
           "sortable": true
         }
       },
+      "fileSizeErrorMessage": {
+        "edit": {
+          "label": "Error Message - File Size",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "fileSizeErrorMessage",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -1504,6 +1518,10 @@
         [
           {
             "name": "subscribedErrorMessage",
+            "size": 6
+          },
+          {
+            "name": "fileSizeErrorMessage",
             "size": 6
           }
         ]

@@ -1459,6 +1459,7 @@ export interface ApiGeneralFormDataGeneralFormData extends Schema.SingleType {
       Attribute.SetMinMaxLength<{
         maxLength: 255;
       }>;
+    fileSizeErrorMessage: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
