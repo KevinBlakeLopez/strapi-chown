@@ -406,7 +406,8 @@
           "lastNamePlaceholder",
           "cityPlaceholder",
           "warrantyToEmail",
-          "requestSampleMailingList"
+          "requestSampleMailingList",
+          "subscribedErrorMessage"
         ]
       },
       "conditions": []
@@ -496,7 +497,8 @@
           "lastNamePlaceholder",
           "cityPlaceholder",
           "warrantyToEmail",
-          "requestSampleMailingList"
+          "requestSampleMailingList",
+          "subscribedErrorMessage"
         ]
       },
       "conditions": []
@@ -579,7 +581,8 @@
           "lastNamePlaceholder",
           "cityPlaceholder",
           "warrantyToEmail",
-          "requestSampleMailingList"
+          "requestSampleMailingList",
+          "subscribedErrorMessage"
         ]
       },
       "conditions": []
