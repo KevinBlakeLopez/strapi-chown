@@ -394,6 +394,9 @@
     "subscribedErrorMessage": {
       "type": "string",
       "maxLength": 255
+    },
+    "fileSizeErrorMessage": {
+      "type": "string"
     }
   }
 }
