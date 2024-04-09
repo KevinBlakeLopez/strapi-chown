@@ -150,7 +150,9 @@
       "properties": {
         "fields": [
           "name",
-          "headshot"
+          "headshot",
+          "designerCTA.linkUrl",
+          "designerCTA.label"
         ]
       },
       "conditions": []
@@ -176,7 +178,9 @@
       "properties": {
         "fields": [
           "name",
-          "headshot"
+          "headshot",
+          "designerCTA.linkUrl",
+          "designerCTA.label"
         ]
       },
       "conditions": []
@@ -188,7 +192,9 @@
       "properties": {
         "fields": [
           "name",
-          "headshot"
+          "headshot",
+          "designerCTA.linkUrl",
+          "designerCTA.label"
         ]
       },
       "conditions": []
@@ -253,7 +259,8 @@
           "errorPageContent.errorCta.style",
           "projectFilters",
           "subcategoriesLabel",
-          "teamYears"
+          "teamYears",
+          "leadTimeDisclaimer"
         ]
       },
       "conditions": []
@@ -325,7 +332,8 @@
           "errorPageContent.errorCta.style",
           "projectFilters",
           "subcategoriesLabel",
-          "teamYears"
+          "teamYears",
+          "leadTimeDisclaimer"
         ]
       },
       "conditions": []
@@ -390,7 +398,8 @@
           "errorPageContent.errorCta.style",
           "projectFilters",
           "subcategoriesLabel",
-          "teamYears"
+          "teamYears",
+          "leadTimeDisclaimer"
         ]
       },
       "conditions": []

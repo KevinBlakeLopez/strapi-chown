@@ -407,7 +407,8 @@
           "cityPlaceholder",
           "warrantyToEmail",
           "requestSampleMailingList",
-          "subscribedErrorMessage"
+          "subscribedErrorMessage",
+          "fileSizeErrorMessage"
         ]
       },
       "conditions": []
@@ -498,7 +499,8 @@
           "cityPlaceholder",
           "warrantyToEmail",
           "requestSampleMailingList",
-          "subscribedErrorMessage"
+          "subscribedErrorMessage",
+          "fileSizeErrorMessage"
         ]
       },
       "conditions": []
@@ -582,7 +584,8 @@
           "cityPlaceholder",
           "warrantyToEmail",
           "requestSampleMailingList",
-          "subscribedErrorMessage"
+          "subscribedErrorMessage",
+          "fileSizeErrorMessage"
         ]
       },
       "conditions": []

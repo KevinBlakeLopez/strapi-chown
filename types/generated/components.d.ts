@@ -33,9 +33,12 @@ export interface BrandBladesCollections extends Schema.Component {
       }>;
     Collection: Attribute.Component<'global.collection', true> &
       Attribute.Required &
-      Attribute.SetMinMax<{
-        min: 1;
-      }>;
+      Attribute.SetMinMax<
+        {
+          min: 1;
+        },
+        number
+      >;
   };
 }
 
@@ -130,9 +133,12 @@ export interface GlobalCollection extends Schema.Component {
       }>;
     image: Attribute.Component<'global.collection-image', true> &
       Attribute.Required &
-      Attribute.SetMinMax<{
-        min: 1;
-      }>;
+      Attribute.SetMinMax<
+        {
+          min: 1;
+        },
+        number
+      >;
   };
 }
 
@@ -365,10 +371,13 @@ export interface PageBladesFeaturedContent extends Schema.Component {
       }>;
     contentCard: Attribute.Component<'global.card', true> &
       Attribute.Required &
-      Attribute.SetMinMax<{
-        min: 1;
-        max: 5;
-      }>;
+      Attribute.SetMinMax<
+        {
+          min: 1;
+          max: 5;
+        },
+        number
+      >;
   };
 }
 
@@ -438,10 +447,13 @@ export interface PageBladesMultiColumns extends Schema.Component {
   attributes: {
     columns: Attribute.Component<'global.column', true> &
       Attribute.Required &
-      Attribute.SetMinMax<{
-        min: 2;
-        max: 3;
-      }>;
+      Attribute.SetMinMax<
+        {
+          min: 2;
+          max: 3;
+        },
+        number
+      >;
   };
 }
 
@@ -507,10 +519,13 @@ export interface PageBladesTeamMembers extends Schema.Component {
       'api::team-member.team-member'
     > &
       Attribute.Required &
-      Attribute.SetMinMax<{
-        min: 1;
-        max: 6;
-      }>;
+      Attribute.SetMinMax<
+        {
+          min: 1;
+          max: 6;
+        },
+        number
+      >;
   };
 }
 
