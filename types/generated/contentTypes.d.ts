@@ -890,17 +890,9 @@ export interface PluginRedirectsRedirect extends Schema.CollectionType {
   attributes: {
     from: Attribute.String & Attribute.Required;
     to: Attribute.String & Attribute.Required;
-    type: Attribute.Enumeration<
-      [
-        'found_302',
-        'moved_permanently_301',
-        'temporary_redirect_307',
-        'gone_410',
-        'unavailable_for_legal_reasons_451'
-      ]
-    > &
+    type: Attribute.Enumeration<['permanent', 'temporary']> &
       Attribute.Required &
-      Attribute.DefaultTo<'found_302'>;
+      Attribute.DefaultTo<'permanent'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

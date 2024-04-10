@@ -34,10 +34,10 @@
       "action": "api::header-navigation.header-navigation.find"
     },
     {
-      "action": "api::lead-time.lead-time.delete"
+      "action": "api::lead-time.lead-time.find"
     },
     {
-      "action": "api::lead-time.lead-time.find"
+      "action": "api::lead-time.lead-time.findOne"
     },
     {
       "action": "api::newsletter-cta.newsletter-cta.find"
@@ -77,6 +77,21 @@
     },
     {
       "action": "api::team-member.team-member.findOne"
+    },
+    {
+      "action": "plugin::redirects.content-type.find"
+    },
+    {
+      "action": "plugin::redirects.content-type.search"
+    },
+    {
+      "action": "plugin::redirects.redirect.find"
+    },
+    {
+      "action": "plugin::upload.content-api.find"
+    },
+    {
+      "action": "plugin::upload.content-api.findOne"
     },
     {
       "action": "plugin::users-permissions.auth.callback"
