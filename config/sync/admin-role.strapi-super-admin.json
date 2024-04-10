@@ -1727,13 +1727,6 @@
       "conditions": []
     },
     {
-      "action": "plugin::redirects.read",
-      "actionParameters": {},
-      "subject": null,
-      "properties": {},
-      "conditions": []
-    },
-    {
       "action": "plugin::seo.read",
       "actionParameters": {},
       "subject": null,

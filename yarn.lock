@@ -3131,7 +3131,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@strapi/design-system@npm:^1.14.0":
+"@strapi/design-system@npm:^1.6.3":
   version: 1.17.0
   resolution: "@strapi/design-system@npm:1.17.0"
   dependencies:
@@ -3255,7 +3255,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@strapi/helper-plugin@npm:4.22.1, @strapi/helper-plugin@npm:^4.20.1":
+"@strapi/helper-plugin@npm:4.22.1, @strapi/helper-plugin@npm:^4.6.0":
   version: 4.22.1
   resolution: "@strapi/helper-plugin@npm:4.22.1"
   dependencies:
@@ -3325,7 +3325,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@strapi/icons@npm:^1.14.0":
+"@strapi/icons@npm:^1.6.3":
   version: 1.17.0
   resolution: "@strapi/icons@npm:1.17.0"
   peerDependencies:
@@ -6449,7 +6449,7 @@ __metadata:
     strapi-plugin-oembed: "npm:^1.2.1"
     strapi-plugin-preview-button: "npm:^2.2.2"
     strapi-plugin-publisher: "npm:^1.5.7"
-    strapi-plugin-redirects: "npm:^1.0.2"
+    strapi-plugin-redirects: "npm:^0.0.6"
     strapi-plugin-slugify: "npm:^2.3.8"
     strapi-provider-upload-dos: "npm:^4.0.5"
     styled-components: "npm:5.3.11"
@@ -7055,7 +7055,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"csvtojson@npm:^2.0.10":
+"csvtojson@npm:2.0.10":
   version: 2.0.10
   resolution: "csvtojson@npm:2.0.10"
   dependencies:
@@ -14841,23 +14841,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"strapi-plugin-redirects@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "strapi-plugin-redirects@npm:1.0.2"
+"strapi-plugin-redirects@npm:^0.0.6":
+  version: 0.0.6
+  resolution: "strapi-plugin-redirects@npm:0.0.6"
   dependencies:
-    "@strapi/design-system": "npm:^1.14.0"
-    "@strapi/helper-plugin": "npm:^4.20.1"
-    "@strapi/icons": "npm:^1.14.0"
-    csvtojson: "npm:^2.0.10"
+    "@strapi/design-system": "npm:^1.6.3"
+    "@strapi/helper-plugin": "npm:^4.6.0"
+    "@strapi/icons": "npm:^1.6.3"
+    csvtojson: "npm:2.0.10"
     lodash: "npm:4.17.21"
     prop-types: "npm:^15.7.2"
   peerDependencies:
-    "@strapi/strapi": ^4.15.5
-    react: ^18.0.0
-    react-dom: ^18.0.0
-    react-router-dom: ^6.22.0
+    "@strapi/strapi": ^4.11.4
+    react: ^17.0.2
+    react-dom: ^17.0.2
+    react-router-dom: ^5.3.4
     styled-components: 5.3.3
-  checksum: 10c0/a72f89d7203b148b4c9552dba8feee831b68cb6cf2cbb88f3cf57a56fd4b5ce431028598eef44e515b3354297a3143e956ccaea7fd59e2d1c18d37ae1a75cde0
+  checksum: 10c0/34229b5e251ee6e710bdb39f331cbbfcc1d9a9543d56160d40d0d217d2845078cf80efeede3e2b1c9ec660930668c370bcfa76be17dd6fe7563761a864487b7d
   languageName: node
   linkType: hard
 
