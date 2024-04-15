@@ -1,3 +1,7 @@
+const { RedisCache } = require('apollo-server-cache-redis');
+const apolloServerPluginResponseCache = require('apollo-server-plugin-response-cache').default;
+const ApolloServerPluginCacheControl = require('apollo-server-core').ApolloServerPluginCacheControl;
+
 module.exports = ({ env }) => ({
   slugify: {
     enabled: true,
@@ -93,25 +97,18 @@ module.exports = ({ env }) => ({
       },
     },
   },
-  // upload: {
-  //   config: {
-  //     provider: "strapi-provider-upload-dos",
-  //     providerOptions: {
-  //       key: env('DO_SPACE_ACCESS_KEY'),
-  //       secret: env('DO_SPACE_SECRET_KEY'),
-  //       endpoint: env('DO_SPACE_ENDPOINT'),
-  //       space: env('DO_SPACE_BUCKET'),
-  //       directory: env('DO_SPACE_DIRECTORY'),
-  //       cdn: env('DO_SPACE_CDN'),
-  //     },
-  //   },
-  // },
   'duplicate-button': true,
   publisher: {
     enabled: true,
   },
   seo: {
     enabled: true,
+  },
+  'advanced-cache-manager': {
+    enabled: true,
+    config: {
+      max_age: env('STRAPI_GRAPHQL_MAX_AGE')
+    }
   },
   graphql: {
     enabled: true,
@@ -123,6 +120,38 @@ module.exports = ({ env }) => ({
       maxLimit: -1,
       apolloServer: {
         tracing: true,
+        apolloServer: {
+          // use redis for storing cache
+          cache: (() => {
+            if (env('REDIS_HOST')) {
+              const redisCache = new RedisCache({
+                host: env('REDIS_HOST'),
+                password: env('REDIS_PASSWORD')
+              });
+              redisCache.cacheType = 'RedisCache';
+              return redisCache;
+            }
+          })(),
+          plugins: [
+            // cache behavior lower age override higher age
+            ApolloServerPluginCacheControl({ defaultMaxAge: env('STRAPI_GRAPHQL_DEFAULT_MAX_AGE') }),
+            // customize your cache behavior according to your use case
+            apolloServerPluginResponseCache({
+              shouldReadFromCache: async(requestContext) => {
+                return true;
+              },
+              shouldWriteToCache: async(requestContext) => {
+                return true;
+              },
+              extraCacheKeyData: async(requestContext) => {
+                return true;
+              },
+              sessionId: async (requestContext) => {
+                return null;
+              },
+            }),
+          ]
+        },
       },
     },
   },
