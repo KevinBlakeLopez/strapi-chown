@@ -1,6 +1,5 @@
-const { RedisCache } = require('apollo-server-cache-redis');
-const apolloServerPluginResponseCache = require('apollo-server-plugin-response-cache').default;
-const ApolloServerPluginCacheControl = require('apollo-server-core').ApolloServerPluginCacheControl;
+import { KeyvAdapter } from "@apollo/utils.keyvadapter";
+import Keyv from "keyv";
 
 module.exports = ({ env }) => ({
   slugify: {
@@ -104,12 +103,6 @@ module.exports = ({ env }) => ({
   seo: {
     enabled: true,
   },
-  'advanced-cache-manager': {
-    enabled: true,
-    config: {
-      max_age: env('STRAPI_GRAPHQL_MAX_AGE')
-    }
-  },
   graphql: {
     enabled: true,
     config: {
@@ -120,38 +113,7 @@ module.exports = ({ env }) => ({
       maxLimit: -1,
       apolloServer: {
         tracing: true,
-        apolloServer: {
-          // use redis for storing cache
-          cache: (() => {
-            if (env('REDIS_HOST')) {
-              const redisCache = new RedisCache({
-                host: env('REDIS_HOST'),
-                password: env('REDIS_PASSWORD')
-              });
-              redisCache.cacheType = 'RedisCache';
-              return redisCache;
-            }
-          })(),
-          plugins: [
-            // cache behavior lower age override higher age
-            ApolloServerPluginCacheControl({ defaultMaxAge: env('STRAPI_GRAPHQL_DEFAULT_MAX_AGE') }),
-            // customize your cache behavior according to your use case
-            apolloServerPluginResponseCache({
-              shouldReadFromCache: async(requestContext) => {
-                return true;
-              },
-              shouldWriteToCache: async(requestContext) => {
-                return true;
-              },
-              extraCacheKeyData: async(requestContext) => {
-                return true;
-              },
-              sessionId: async (requestContext) => {
-                return null;
-              },
-            }),
-          ]
-        },
+        cache: new KeyvAdapter(new Keyv(process.env.REDIS_URL))
       },
     },
   },
