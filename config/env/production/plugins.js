@@ -1,5 +1,11 @@
-const { KeyvAdapter } = require("@apollo/utils.keyvadapter");
 const Keyv = require("keyv");
+const KeyvMemcache = ("@keyv/memcache");
+const { KeyvAdapter } = require("@apollo/utils.keyvadapter");
+
+const memcache = new KeyvMemcache(`${process.env.MEMCACHE_SERVER}`, {
+  retries: 10,
+  expires: 60,
+});
 
 module.exports = ({ env }) => ({
   slugify: {
@@ -113,7 +119,7 @@ module.exports = ({ env }) => ({
       maxLimit: -1,
       apolloServer: {
         tracing: true,
-        cache: new KeyvAdapter(new Keyv(`${process.env.REDIS_URL}`)),
+        cache: new KeyvAdapter(new Keyv({ store: memcache })),
       },
     },
   },
