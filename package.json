@@ -10,7 +10,6 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@10life/strapi-plugin-advanced-cache-manager": "^1.0.6",
     "@apollo/utils.keyvadapter": "^3.1.0",
     "@keyv/redis": "^2.8.4",
     "@strapi/plugin-cloud": "4.22.1",
@@ -20,9 +19,6 @@
     "@strapi/plugin-users-permissions": "4.22.1",
     "@strapi/provider-upload-cloudinary": "^4.22.1",
     "@strapi/strapi": "4.22.1",
-    "apollo-server-cache-redis": "^3.3.1",
-    "apollo-server-core": "^3.13.0",
-    "apollo-server-plugin-response-cache": "^3.8.2",
     "better-sqlite3": "8.7.0",
     "keyv": "^4.5.4",
     "pg": "^8.11.5",

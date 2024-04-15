@@ -1,4 +1,5 @@
-const { InMemoryLRUCache } = require('@apollo/utils.keyvaluecache');
+const { KeyvAdapter } = require("@apollo/utils.keyvadapter");
+const Keyv = require("keyv");
 
 module.exports = ({ env }) => ({
   slugify: {
@@ -112,7 +113,7 @@ module.exports = ({ env }) => ({
       maxLimit: -1,
       apolloServer: {
         tracing: true,
-        cache: new InMemoryLRUCache,
+        cache: new KeyvAdapter(new Keyv(process.env.REDIS_URL)),
       },
     },
   },
