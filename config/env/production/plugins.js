@@ -1,8 +1,14 @@
 const Keyv = require("keyv");
 const KeyvMemcache = ("@keyv/memcache");
 const { KeyvAdapter } = require("@apollo/utils.keyvadapter");
+const apolloServerPluginResponseCache = require('apollo-server-plugin-response-cache').default;
+const ApolloServerPluginCacheControl = require('apollo-server-core').ApolloServerPluginCacheControl;
 
-const memcache = new KeyvMemcache(`${process.env.MEMCACHE_SERVER}`, {
+const servers = [
+  process.env.MEMCACHE_SERVER
+].join(",");
+
+const memcache = new KeyvMemcache(servers, {
   retries: 10,
   expires: 60,
 });
@@ -120,6 +126,25 @@ module.exports = ({ env }) => ({
       apolloServer: {
         tracing: true,
         cache: new KeyvAdapter(new Keyv({ store: memcache })),
+        plugins: [
+          // cache behavior lower age override higher age
+          ApolloServerPluginCacheControl({ defaultMaxAge: env('STRAPI_GRAPHQL_DEFAULT_MAX_AGE') }),
+          // customize your cache behavior according to your use case
+          apolloServerPluginResponseCache({
+            shouldReadFromCache: async(requestContext) => {
+              return true;
+            },
+            shouldWriteToCache: async(requestContext) => {
+              return true;
+            },
+            extraCacheKeyData: async(requestContext) => {
+              return true;
+            },
+            sessionId: async (requestContext) => {
+              return null;
+            },
+          }),
+        ]
       },
     },
   },
