@@ -115,6 +115,28 @@ module.exports = ({ env }) => ({
   seo: {
     enabled: true,
   },
+  'advanced-cache-manager': {
+    enabled: true,
+    config: {
+      max_age: env('STRAPI_GRAPHQL_MAX_AGE'),
+      cache_control_matrix: [
+        { query: 'globalData', maxAge: env('STRAPI_GRAPHQL_MAX_AGE'), scope: "PUBLIC" },
+        { query: 'headerNavigation', maxAge: env('STRAPI_GRAPHQL_MAX_AGE'), scope: "PUBLIC" },
+        { query: 'footerNavigation', maxAge: env('STRAPI_GRAPHQL_MAX_AGE'), scope: "PUBLIC" },
+        { query: 'generalFormData', maxAge: env('STRAPI_GRAPHQL_MAX_AGE'), scope: "PUBLIC" },
+        { query: 'newsletterCta', maxAge: env('STRAPI_GRAPHQL_MAX_AGE'), scope: "PUBLIC" },
+        { query: 'brands', maxAge: env('STRAPI_GRAPHQL_MAX_AGE'), scope: "PUBLIC" },
+        { query: 'categories', maxAge: env('STRAPI_GRAPHQL_MAX_AGE'), scope: "PUBLIC" },
+        { query: 'generalFormData', maxAge: env('STRAPI_GRAPHQL_MAX_AGE'), scope: "PUBLIC" },
+        { query: 'generalFormData', maxAge: env('STRAPI_GRAPHQL_MAX_AGE'), scope: "PUBLIC" },
+        { query: 'priceTiers', maxAge: env('STRAPI_GRAPHQL_MAX_AGE'), scope: "PUBLIC" },
+        { query: 'leadTimes', maxAge: env('STRAPI_GRAPHQL_MAX_AGE'), scope: "PUBLIC" },
+        { query: 'pages', maxAge: env('STRAPI_GRAPHQL_MAX_AGE'), scope: "PUBLIC" },
+        { query: 'brands', maxAge: env('STRAPI_GRAPHQL_MAX_AGE'), scope: "PUBLIC" },
+        { query: 'projects', maxAge: env('STRAPI_GRAPHQL_MAX_AGE'), scope: "PUBLIC" },
+      ],
+    }
+  },
   graphql: {
     enabled: true,
     config: {
