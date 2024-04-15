@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@10life/strapi-plugin-advanced-cache-manager": "^1.0.6",
+    "@apollo/utils.keyvadapter": "^3.1.0",
+    "@keyv/redis": "^2.8.4",
     "@strapi/plugin-cloud": "4.22.1",
     "@strapi/plugin-graphql": "^4.22.1",
     "@strapi/plugin-i18n": "4.22.1",
@@ -22,6 +24,7 @@
     "apollo-server-core": "^3.13.0",
     "apollo-server-plugin-response-cache": "^3.8.2",
     "better-sqlite3": "8.7.0",
+    "keyv": "^4.5.4",
     "pg": "^8.11.5",
     "pg-connection-string": "^2.6.4",
     "react": "^18.2.0",
