@@ -10,7 +10,7 @@ const servers = [
 
 const memcache = new KeyvMemcache(servers, {
   retries: 10,
-  expires: 60,
+  expires: Number(process.env.STRAPI_GRAPHQL_DEFAULT_MAX_AGE),
 });
 
 module.exports = ({ env }) => ({
@@ -39,10 +39,6 @@ module.exports = ({ env }) => ({
           references: 'title',
         },
         'lead-time': {
-          field: 'slug',
-          references: 'title',
-        },
-        'price-tier': {
           field: 'slug',
           references: 'title',
         },
@@ -125,15 +121,13 @@ module.exports = ({ env }) => ({
         { query: 'footerNavigation', maxAge: env('STRAPI_GRAPHQL_MAX_AGE'), scope: "PUBLIC" },
         { query: 'generalFormData', maxAge: env('STRAPI_GRAPHQL_MAX_AGE'), scope: "PUBLIC" },
         { query: 'newsletterCta', maxAge: env('STRAPI_GRAPHQL_MAX_AGE'), scope: "PUBLIC" },
-        { query: 'brands', maxAge: env('STRAPI_GRAPHQL_MAX_AGE'), scope: "PUBLIC" },
         { query: 'categories', maxAge: env('STRAPI_GRAPHQL_MAX_AGE'), scope: "PUBLIC" },
-        { query: 'generalFormData', maxAge: env('STRAPI_GRAPHQL_MAX_AGE'), scope: "PUBLIC" },
         { query: 'generalFormData', maxAge: env('STRAPI_GRAPHQL_MAX_AGE'), scope: "PUBLIC" },
         { query: 'priceTiers', maxAge: env('STRAPI_GRAPHQL_MAX_AGE'), scope: "PUBLIC" },
         { query: 'leadTimes', maxAge: env('STRAPI_GRAPHQL_MAX_AGE'), scope: "PUBLIC" },
-        { query: 'pages', maxAge: env('STRAPI_GRAPHQL_MAX_AGE'), scope: "PUBLIC" },
-        { query: 'brands', maxAge: env('STRAPI_GRAPHQL_MAX_AGE'), scope: "PUBLIC" },
-        { query: 'projects', maxAge: env('STRAPI_GRAPHQL_MAX_AGE'), scope: "PUBLIC" },
+        { query: 'pages', maxAge: env('STRAPI_GRAPHQL_MIN_AGE'), scope: "PUBLIC" },
+        { query: 'brands', maxAge: env('STRAPI_GRAPHQL_MIN_AGE'), scope: "PUBLIC" },
+        { query: 'projects', maxAge: env('STRAPI_GRAPHQL_MIN_AGE'), scope: "PUBLIC" },
       ],
     }
   },
