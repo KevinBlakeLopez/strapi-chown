@@ -1,6 +1,6 @@
 const Keyv = require("keyv");
-const KeyvMemcache = ("@keyv/memcache");
 const { KeyvAdapter } = require("@apollo/utils.keyvadapter");
+const KeyvMemcache = require('@keyv/memcache');
 const apolloServerPluginResponseCache = require('apollo-server-plugin-response-cache').default;
 const ApolloServerPluginCacheControl = require('apollo-server-core').ApolloServerPluginCacheControl;
 
