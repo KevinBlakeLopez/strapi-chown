@@ -1,4 +1,4 @@
-import { InMemoryLRUCache } from '@apollo/utils.keyvaluecache';
+const { InMemoryLRUCache } = require('@apollo/utils.keyvaluecache');
 
 module.exports = ({ env }) => ({
   slugify: {
