@@ -1,5 +1,4 @@
-import { KeyvAdapter } from "@apollo/utils.keyvadapter";
-import Keyv from "keyv";
+import { InMemoryLRUCache } from '@apollo/utils.keyvaluecache';
 
 module.exports = ({ env }) => ({
   slugify: {
@@ -113,7 +112,7 @@ module.exports = ({ env }) => ({
       maxLimit: -1,
       apolloServer: {
         tracing: true,
-        cache: new KeyvAdapter(new Keyv(process.env.REDIS_URL))
+        cache: new InMemoryLRUCache,
       },
     },
   },
