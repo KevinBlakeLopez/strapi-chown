@@ -10,6 +10,7 @@
     "strapi": "strapi"
   },
   "dependencies": {
+    "@10life/strapi-plugin-advanced-cache-manager": "^1.0.6",
     "@apollo/utils.keyvadapter": "^3.1.0",
     "@keyv/memcache": "^1.4.1",
     "@strapi/plugin-cloud": "4.22.1",
