@@ -57,6 +57,9 @@ module.exports = ({ env }) => ({
   seo: {
     enabled: true,
   },
+  'advanced-cache-manager': {
+    enabled: false,
+  },
   graphql: {
     enabled: true,
     config: {
