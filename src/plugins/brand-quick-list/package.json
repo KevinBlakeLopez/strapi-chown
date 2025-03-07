@@ -1,0 +1,9 @@
+{
+    "name": "strapi-plugin-brand-quick-list",
+    "version": "1.0.0",
+    "strapi": {
+      "kind": "plugin",
+      "name": "brand-quick-list"
+    },
+    "main": "strapi-server.js"
+  }

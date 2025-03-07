@@ -13,6 +13,9 @@
     "@10life/strapi-plugin-advanced-cache-manager": "^1.0.6",
     "@apollo/utils.keyvadapter": "^3.1.0",
     "@keyv/memcache": "^1.4.1",
+    "@strapi/design-system": "^1.19.0",
+    "@strapi/helper-plugin": "4.25.12",
+    "@strapi/icons": "^1.19.0",
     "@strapi/plugin-cloud": "4.22.1",
     "@strapi/plugin-graphql": "^4.22.1",
     "@strapi/plugin-i18n": "4.22.1",
@@ -20,14 +23,21 @@
     "@strapi/plugin-users-permissions": "4.22.1",
     "@strapi/provider-upload-cloudinary": "^4.22.1",
     "@strapi/strapi": "4.22.1",
+    "@strapi/utils": "^5.11.0",
     "apollo-server-core": "^3.13.0",
     "apollo-server-plugin-response-cache": "^3.8.2",
     "better-sqlite3": "8.7.0",
+    "graphql": "^16.10.0",
     "keyv": "^4.5.4",
+    "lodash": "^4.17.21",
     "pg": "^8.11.5",
     "pg-connection-string": "^2.6.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "prop-types": "^15.8.1",
+    "qs": "^6.14.0",
+    "react": "18",
+    "react-dom": "18",
+    "react-intl": "^7.1.6",
+    "react-is": "^19.0.0",
     "react-router-dom": "5.3.4",
     "strapi-plugin-config-sync": "^1.2.3",
     "strapi-plugin-duplicate-button": "^1.1.14",
@@ -49,6 +59,13 @@
     "node": ">=18.0.0 <=20.x.x",
     "npm": ">=6.0.0"
   },
+  "resolutions": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "styled-components": "5.3.3",
+    "@strapi/utils": "^4.13.1",
+    "react-intl": "^6.4.1"
+  },
   "license": "MIT",
-  "packageManager": "yarn@4.1.0"
+  "packageManager": "yarn@4.7.0"
 }
